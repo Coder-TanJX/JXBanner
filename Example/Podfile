@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'JXBanner_Example' do
+  pod 'JXBanner', :path => '../'
+
+  target 'JXBanner_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end

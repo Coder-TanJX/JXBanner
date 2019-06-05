@@ -1,0 +1,6 @@
+framework module Pods_JXBanner_Example {
+  umbrella header "Pods-JXBanner_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

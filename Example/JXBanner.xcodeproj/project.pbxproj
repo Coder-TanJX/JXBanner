@@ -7,14 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FAA5ADE22A26C7200CC3696 /* XMGLineLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AC822A26C7200CC3696 /* XMGLineLayout.swift */; };
+		1FAA5ADF22A26C7200CC3696 /* JXBannerPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AC922A26C7200CC3696 /* JXBannerPageControl.swift */; };
+		1FAA5AE022A26C7200CC3696 /* JXBannerPageControlType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5ACA22A26C7200CC3696 /* JXBannerPageControlType.swift */; };
+		1FAA5AE122A26C7200CC3696 /* JXBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5ACD22A26C7200CC3696 /* JXBannerCell.swift */; };
+		1FAA5AE222A26C7200CC3696 /* JXBannerBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5ACE22A26C7200CC3696 /* JXBannerBaseCell.swift */; };
+		1FAA5AE322A26C7200CC3696 /* JXBannerTransformLinear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AD122A26C7200CC3696 /* JXBannerTransformLinear.swift */; };
+		1FAA5AE422A26C7200CC3696 /* JXBannerTransformCoverflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AD222A26C7200CC3696 /* JXBannerTransformCoverflow.swift */; };
+		1FAA5AE522A26C7200CC3696 /* JXBannerTransformable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AD322A26C7200CC3696 /* JXBannerTransformable.swift */; };
+		1FAA5AE622A26C7200CC3696 /* JXBannerTransformContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AD422A26C7200CC3696 /* JXBannerTransformContext.swift */; };
+		1FAA5AE722A26C7200CC3696 /* JXBannerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AD622A26C7200CC3696 /* JXBannerType.swift */; };
+		1FAA5AE822A26C7200CC3696 /* JXBannerLayoutParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AD722A26C7200CC3696 /* JXBannerLayoutParams.swift */; };
+		1FAA5AE922A26C7200CC3696 /* JXBannerParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AD822A26C7200CC3696 /* JXBannerParams.swift */; };
+		1FAA5AEA22A26C7200CC3696 /* JXBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AD922A26C7200CC3696 /* JXBanner.swift */; };
+		1FAA5AEB22A26C7200CC3696 /* JXBannerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5ADB22A26C7200CC3696 /* JXBannerDelegate.swift */; };
+		1FAA5AEC22A26C7200CC3696 /* JXBannerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5ADC22A26C7200CC3696 /* JXBannerDataSource.swift */; };
+		1FAA5AED22A26C7200CC3696 /* JXBannerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5ADD22A26C7200CC3696 /* JXBannerLayout.swift */; };
+		1FAA5AF022A26C7C00CC3696 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AEE22A26C7C00CC3696 /* ViewController.swift */; };
+		1FAA5AF122A26C7C00CC3696 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AEF22A26C7C00CC3696 /* ViewController2.swift */; };
+		1FAA5AF322A26CA400CC3696 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FAA5AF222A26CA400CC3696 /* Main.storyboard */; };
+		1FAA5AF522A26F6B00CC3696 /* JXBannerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AF422A26F6B00CC3696 /* JXBannerBase.swift */; };
+		1FAA5AF822A270A000CC3696 /* IndexPath+Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AF722A270A000CC3696 /* IndexPath+Calculate.swift */; };
+		1FAA5AFE22A2A40D00CC3696 /* JXBannerSystemPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AFD22A2A40D00CC3696 /* JXBannerSystemPageControl.swift */; };
+		1FAA5B0222A36F0A00CC3696 /* JXBannerCustomPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5B0122A36F0A00CC3696 /* JXBannerCustomPageControl.swift */; };
+		1FAA5B0522A378B000CC3696 /* active.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FAA5B0322A378B000CC3696 /* active.png */; };
+		1FAA5B0622A378B000CC3696 /* inactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FAA5B0422A378B000CC3696 /* inactive.png */; };
+		1FAA5B2822A3B3A100CC3696 /* ScrollingPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5B2322A3B3A000CC3696 /* ScrollingPageControl.swift */; };
+		1FAA5B2922A3B3A100CC3696 /* FilledPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5B2422A3B3A000CC3696 /* FilledPageControl.swift */; };
+		1FAA5B2B22A3B3A100CC3696 /* PillPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5B2622A3B3A000CC3696 /* PillPageControl.swift */; };
+		1FAA5B2C22A3B3A100CC3696 /* SnakePageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5B2722A3B3A000CC3696 /* SnakePageControl.swift */; };
 		53088A265BA7D9AC3B26AAA2 /* Pods_JXBanner_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69253EFB2BEA3E4346A791AE /* Pods_JXBanner_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		B0B03113818AA3A02D0A84A0 /* Pods_JXBanner_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A2189A67C1B9A40F5D5183 /* Pods_JXBanner_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,25 +54,49 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3A28A027C91E941C00E473D0 /* Pods-JXBanner_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXBanner_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JXBanner_Tests/Pods-JXBanner_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		1FAA5AC822A26C7200CC3696 /* XMGLineLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMGLineLayout.swift; sourceTree = "<group>"; };
+		1FAA5AC922A26C7200CC3696 /* JXBannerPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerPageControl.swift; sourceTree = "<group>"; };
+		1FAA5ACA22A26C7200CC3696 /* JXBannerPageControlType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerPageControlType.swift; sourceTree = "<group>"; };
+		1FAA5ACD22A26C7200CC3696 /* JXBannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerCell.swift; sourceTree = "<group>"; };
+		1FAA5ACE22A26C7200CC3696 /* JXBannerBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerBaseCell.swift; sourceTree = "<group>"; };
+		1FAA5AD122A26C7200CC3696 /* JXBannerTransformLinear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerTransformLinear.swift; sourceTree = "<group>"; };
+		1FAA5AD222A26C7200CC3696 /* JXBannerTransformCoverflow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerTransformCoverflow.swift; sourceTree = "<group>"; };
+		1FAA5AD322A26C7200CC3696 /* JXBannerTransformable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerTransformable.swift; sourceTree = "<group>"; };
+		1FAA5AD422A26C7200CC3696 /* JXBannerTransformContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerTransformContext.swift; sourceTree = "<group>"; };
+		1FAA5AD622A26C7200CC3696 /* JXBannerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerType.swift; sourceTree = "<group>"; };
+		1FAA5AD722A26C7200CC3696 /* JXBannerLayoutParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerLayoutParams.swift; sourceTree = "<group>"; };
+		1FAA5AD822A26C7200CC3696 /* JXBannerParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerParams.swift; sourceTree = "<group>"; };
+		1FAA5AD922A26C7200CC3696 /* JXBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBanner.swift; sourceTree = "<group>"; };
+		1FAA5ADB22A26C7200CC3696 /* JXBannerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerDelegate.swift; sourceTree = "<group>"; };
+		1FAA5ADC22A26C7200CC3696 /* JXBannerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerDataSource.swift; sourceTree = "<group>"; };
+		1FAA5ADD22A26C7200CC3696 /* JXBannerLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerLayout.swift; sourceTree = "<group>"; };
+		1FAA5AEE22A26C7C00CC3696 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1FAA5AEF22A26C7C00CC3696 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		1FAA5AF222A26CA400CC3696 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1FAA5AF422A26F6B00CC3696 /* JXBannerBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXBannerBase.swift; sourceTree = "<group>"; };
+		1FAA5AF722A270A000CC3696 /* IndexPath+Calculate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IndexPath+Calculate.swift"; sourceTree = "<group>"; };
+		1FAA5AFD22A2A40D00CC3696 /* JXBannerSystemPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXBannerSystemPageControl.swift; sourceTree = "<group>"; };
+		1FAA5B0122A36F0A00CC3696 /* JXBannerCustomPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXBannerCustomPageControl.swift; sourceTree = "<group>"; };
+		1FAA5B0322A378B000CC3696 /* active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = active.png; sourceTree = "<group>"; };
+		1FAA5B0422A378B000CC3696 /* inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inactive.png; sourceTree = "<group>"; };
+		1FAA5B2322A3B3A000CC3696 /* ScrollingPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollingPageControl.swift; sourceTree = "<group>"; };
+		1FAA5B2422A3B3A000CC3696 /* FilledPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilledPageControl.swift; sourceTree = "<group>"; };
+		1FAA5B2622A3B3A000CC3696 /* PillPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PillPageControl.swift; sourceTree = "<group>"; };
+		1FAA5B2722A3B3A000CC3696 /* SnakePageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakePageControl.swift; sourceTree = "<group>"; };
 		4E59FFEBD8020BF5A12489A9 /* Pods-JXBanner_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXBanner_Example.release.xcconfig"; path = "Target Support Files/Pods-JXBanner_Example/Pods-JXBanner_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* JXBanner_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXBanner_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* JXBanner_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JXBanner_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		69253EFB2BEA3E4346A791AE /* Pods_JXBanner_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JXBanner_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		86DD0217E9DE21DAB1A6418E /* JXBanner.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JXBanner.podspec; path = ../JXBanner.podspec; sourceTree = "<group>"; };
-		A2A2189A67C1B9A40F5D5183 /* Pods_JXBanner_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JXBanner_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8BAC75A289C5E5883552C0B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		B37FA8DFCA403B9BCA5A97D5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		86DD0217E9DE21DAB1A6418E /* JXBanner.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JXBanner.podspec; path = ../JXBanner.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A8BAC75A289C5E5883552C0B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B37FA8DFCA403B9BCA5A97D5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B51C18B590623891456CB045 /* Pods-JXBanner_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXBanner_Example.debug.xcconfig"; path = "Target Support Files/Pods-JXBanner_Example/Pods-JXBanner_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F1824D32A75B5BC37D0E2313 /* Pods-JXBanner_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXBanner_Tests.release.xcconfig"; path = "Target Support Files/Pods-JXBanner_Tests/Pods-JXBanner_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +112,109 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0B03113818AA3A02D0A84A0 /* Pods_JXBanner_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FAA5AC722A26C7200CC3696 /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				1FAA5ACB22A26C7200CC3696 /* Banner */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		1FAA5ACB22A26C7200CC3696 /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				1FAA5AF622A26F8600CC3696 /* Common */,
+				1FAA5ACC22A26C7200CC3696 /* Cell */,
+				1FAA5ACF22A26C7200CC3696 /* PageControl */,
+				1FAA5AD022A26C7200CC3696 /* Transform */,
+				1FAA5AD522A26C7200CC3696 /* Banner */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		1FAA5ACC22A26C7200CC3696 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1FAA5ACD22A26C7200CC3696 /* JXBannerCell.swift */,
+				1FAA5ACE22A26C7200CC3696 /* JXBannerBaseCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1FAA5ACF22A26C7200CC3696 /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				1FAA5AC922A26C7200CC3696 /* JXBannerPageControl.swift */,
+				1FAA5ACA22A26C7200CC3696 /* JXBannerPageControlType.swift */,
+				1FAA5AFD22A2A40D00CC3696 /* JXBannerSystemPageControl.swift */,
+				1FAA5B0122A36F0A00CC3696 /* JXBannerCustomPageControl.swift */,
+			);
+			path = PageControl;
+			sourceTree = "<group>";
+		};
+		1FAA5AD022A26C7200CC3696 /* Transform */ = {
+			isa = PBXGroup;
+			children = (
+				1FAA5AD122A26C7200CC3696 /* JXBannerTransformLinear.swift */,
+				1FAA5AD222A26C7200CC3696 /* JXBannerTransformCoverflow.swift */,
+				1FAA5AD322A26C7200CC3696 /* JXBannerTransformable.swift */,
+				1FAA5AD422A26C7200CC3696 /* JXBannerTransformContext.swift */,
+			);
+			path = Transform;
+			sourceTree = "<group>";
+		};
+		1FAA5AD522A26C7200CC3696 /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				1FAA5ADA22A26C7200CC3696 /* API */,
+				1FAA5AD922A26C7200CC3696 /* JXBanner.swift */,
+				1FAA5AF422A26F6B00CC3696 /* JXBannerBase.swift */,
+				1FAA5ADD22A26C7200CC3696 /* JXBannerLayout.swift */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		1FAA5ADA22A26C7200CC3696 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				1FAA5AD622A26C7200CC3696 /* JXBannerType.swift */,
+				1FAA5ADB22A26C7200CC3696 /* JXBannerDelegate.swift */,
+				1FAA5ADC22A26C7200CC3696 /* JXBannerDataSource.swift */,
+				1FAA5AD822A26C7200CC3696 /* JXBannerParams.swift */,
+				1FAA5AD722A26C7200CC3696 /* JXBannerLayoutParams.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		1FAA5AF622A26F8600CC3696 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1FAA5AF722A270A000CC3696 /* IndexPath+Calculate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1FAA5B2222A3B3A000CC3696 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1FAA5B2322A3B3A000CC3696 /* ScrollingPageControl.swift */,
+				1FAA5B2422A3B3A000CC3696 /* FilledPageControl.swift */,
+				1FAA5B2622A3B3A000CC3696 /* PillPageControl.swift */,
+				1FAA5B2722A3B3A000CC3696 /* SnakePageControl.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		4FC073646F1C0DF9E1D9E731 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				69253EFB2BEA3E4346A791AE /* Pods_JXBanner_Example.framework */,
-				A2A2189A67C1B9A40F5D5183 /* Pods_JXBanner_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -83,10 +224,7 @@
 			children = (
 				B51C18B590623891456CB045 /* Pods-JXBanner_Example.debug.xcconfig */,
 				4E59FFEBD8020BF5A12489A9 /* Pods-JXBanner_Example.release.xcconfig */,
-				3A28A027C91E941C00E473D0 /* Pods-JXBanner_Tests.debug.xcconfig */,
-				F1824D32A75B5BC37D0E2313 /* Pods-JXBanner_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -114,10 +252,16 @@
 		607FACD21AFB9204008FA782 /* Example for JXBanner */ = {
 			isa = PBXGroup;
 			children = (
+				1FAA5AC822A26C7200CC3696 /* XMGLineLayout.swift */,
+				1FAA5AC722A26C7200CC3696 /* Banner */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				1FAA5AEE22A26C7C00CC3696 /* ViewController.swift */,
+				1FAA5B2222A3B3A000CC3696 /* Classes */,
+				1FAA5AEF22A26C7C00CC3696 /* ViewController2.swift */,
+				1FAA5B0322A378B000CC3696 /* active.png */,
+				1FAA5B0422A378B000CC3696 /* inactive.png */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				1FAA5AF222A26CA400CC3696 /* Main.storyboard */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
@@ -186,11 +330,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "JXBanner_Tests" */;
 			buildPhases = (
-				CF43640D1D4BE21852749CCA /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				ADE4D538DE6041454E294FC2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,7 +356,9 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 4855K38AS6;
 						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -228,6 +372,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -247,8 +392,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				1FAA5AF322A26CA400CC3696 /* Main.storyboard in Resources */,
+				1FAA5B0522A378B000CC3696 /* active.png in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				1FAA5B0622A378B000CC3696 /* inactive.png in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,50 +432,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ADE4D538DE6041454E294FC2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JXBanner_Tests/Pods-JXBanner_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JXBanner_Tests/Pods-JXBanner_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CF43640D1D4BE21852749CCA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-JXBanner_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		E52533D96E9C53E2FA8E96EF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -338,13 +441,17 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-JXBanner_Example/Pods-JXBanner_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/JXBanner/JXBanner.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXBanner.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -358,7 +465,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				1FAA5B2922A3B3A100CC3696 /* FilledPageControl.swift in Sources */,
+				1FAA5B2822A3B3A100CC3696 /* ScrollingPageControl.swift in Sources */,
+				1FAA5AF522A26F6B00CC3696 /* JXBannerBase.swift in Sources */,
+				1FAA5B0222A36F0A00CC3696 /* JXBannerCustomPageControl.swift in Sources */,
+				1FAA5AE922A26C7200CC3696 /* JXBannerParams.swift in Sources */,
+				1FAA5AE622A26C7200CC3696 /* JXBannerTransformContext.swift in Sources */,
+				1FAA5AE022A26C7200CC3696 /* JXBannerPageControlType.swift in Sources */,
+				1FAA5ADE22A26C7200CC3696 /* XMGLineLayout.swift in Sources */,
+				1FAA5AED22A26C7200CC3696 /* JXBannerLayout.swift in Sources */,
+				1FAA5AE822A26C7200CC3696 /* JXBannerLayoutParams.swift in Sources */,
+				1FAA5AE122A26C7200CC3696 /* JXBannerCell.swift in Sources */,
+				1FAA5AEC22A26C7200CC3696 /* JXBannerDataSource.swift in Sources */,
+				1FAA5AFE22A2A40D00CC3696 /* JXBannerSystemPageControl.swift in Sources */,
+				1FAA5ADF22A26C7200CC3696 /* JXBannerPageControl.swift in Sources */,
+				1FAA5B2C22A3B3A100CC3696 /* SnakePageControl.swift in Sources */,
+				1FAA5AEA22A26C7200CC3696 /* JXBanner.swift in Sources */,
+				1FAA5AF122A26C7C00CC3696 /* ViewController2.swift in Sources */,
+				1FAA5AE422A26C7200CC3696 /* JXBannerTransformCoverflow.swift in Sources */,
+				1FAA5AE722A26C7200CC3696 /* JXBannerType.swift in Sources */,
+				1FAA5B2B22A3B3A100CC3696 /* PillPageControl.swift in Sources */,
+				1FAA5AF022A26C7C00CC3696 /* ViewController.swift in Sources */,
+				1FAA5AEB22A26C7200CC3696 /* JXBannerDelegate.swift in Sources */,
+				1FAA5AE222A26C7200CC3696 /* JXBannerBaseCell.swift in Sources */,
+				1FAA5AF822A270A000CC3696 /* IndexPath+Calculate.swift in Sources */,
+				1FAA5AE322A26C7200CC3696 /* JXBannerTransformLinear.swift in Sources */,
+				1FAA5AE522A26C7200CC3696 /* JXBannerTransformable.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,14 +514,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -505,13 +629,17 @@
 			baseConfigurationReference = B51C18B590623891456CB045 /* Pods-JXBanner_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4855K38AS6;
 				INFOPLIST_FILE = JXBanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -520,19 +648,22 @@
 			baseConfigurationReference = 4E59FFEBD8020BF5A12489A9 /* Pods-JXBanner_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4855K38AS6;
 				INFOPLIST_FILE = JXBanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A28A027C91E941C00E473D0 /* Pods-JXBanner_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -554,7 +685,6 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1824D32A75B5BC37D0E2313 /* Pods-JXBanner_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

@@ -1,0 +1,27 @@
+PODS:
+  - Alamofire (4.8.2)
+  - JXBanner (0.1.0)
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - JXBanner (from `../`)
+  - SnapKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - SnapKit
+
+EXTERNAL SOURCES:
+  JXBanner:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  JXBanner: 9e448e220dd377d0c159477beeebde781f43deba
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: 2239270a292cc6efb2bb3983daaac4962894eb00
+
+COCOAPODS: 1.6.1

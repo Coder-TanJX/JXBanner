@@ -1,5 +1,5 @@
 import XCTest
-import JXBanner
+
 
 class Tests: XCTestCase {
     

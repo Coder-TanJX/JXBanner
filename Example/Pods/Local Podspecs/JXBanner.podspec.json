@@ -1,0 +1,22 @@
+{
+  "name": "JXBanner",
+  "version": "0.1.0",
+  "summary": "A short description of JXBanner.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Code_TanJX/JXBanner",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Code_TanJX": "code_tanjx@163.com"
+  },
+  "source": {
+    "git": "https://github.com/Code_TanJX/JXBanner.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "JXBanner/Classes/**/*"
+}

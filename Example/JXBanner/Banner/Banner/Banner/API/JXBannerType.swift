@@ -28,7 +28,7 @@ public protocol JXBannerType: UIView {
     /// Delegate protocol for JXBannerType
     var delegate: JXBannerDelegate? { get set }
     
-    /// Outside of pageControl
-//    var outerPageControl: (UIView & JXBannerPageControlType)? { get set }
+    /// The refresh UI
+    func reloadView()
     
 }

@@ -21,6 +21,7 @@ class JXBanner: UIView, JXBannerType {
         super.init(coder: aDecoder)
         installNotifications()
         setupSubViews()
+        self.autoresizingMask = []
     }
     
     override init(frame: CGRect) {
@@ -77,7 +78,7 @@ class JXBanner: UIView, JXBannerType {
         return layout
     }()
     
-    private lazy var collectionView: UICollectionView = {
+    lazy var collectionView: UICollectionView = {
         let collectionView: UICollectionView =
             UICollectionView(frame: self.bounds,
                              collectionViewLayout: self.layout)
@@ -87,8 +88,6 @@ class JXBanner: UIView, JXBannerType {
         collectionView.showsVerticalScrollIndicator = false
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.decelerationRate = UIScrollView.DecelerationRate(rawValue: 0.01)
-        collectionView.register(UICollectionViewCell.classForCoder(),
-                                forCellWithReuseIdentifier: "tempCell")
         return collectionView
     }()
     
@@ -220,6 +219,7 @@ extension JXBanner {
                         userInfo: nil,
                         repeats: true)
                 }
+                RunLoop.current.add(self.timer!, forMode: .common)
             }
             let interval =  (params.timeInterval < params.minLaunchInterval)
                 ? params.minLaunchInterval : params.timeInterval
@@ -271,7 +271,7 @@ extension JXBanner {
         
         
 
-        print(currentIndexPath)
+//        print(currentIndexPath)
     }
     
     fileprivate func scrollToIndexPath(
@@ -363,7 +363,7 @@ extension JXBanner {
     /// Rolling in the
     func scrollViewDidScroll(
         _ scrollView: UIScrollView) {
-        pause()
+//        pause()
     }
     
     /// cell错位检测和调整

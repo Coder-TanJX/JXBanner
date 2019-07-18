@@ -11,7 +11,7 @@ import UIKit
 class ViewController2: UIViewController {
 
 
-    @IBOutlet weak var banner: JXBanner!
+    @IBOutlet weak var banner: JXTestBanner!
     
     override func viewDidLoad() {
         super.viewDidLoad()

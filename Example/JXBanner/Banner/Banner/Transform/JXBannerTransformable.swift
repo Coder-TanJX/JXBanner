@@ -13,5 +13,4 @@ protocol JXBannerTransformable {
     func transformToAttributes(collectionView: UICollectionView,
                                params: JXBannerLayoutParams,
                                attributes: UICollectionViewLayoutAttributes) -> Void
-    
 }

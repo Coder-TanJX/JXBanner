@@ -10,12 +10,6 @@ import UIKit
 
 struct JXBannerTransformCoverflow: JXBannerTransformable {
     
-    enum JXCellLocation {
-        case left
-        case center
-        case right
-    }
-    
     func transformToAttributes(collectionView: UICollectionView,
                                params: JXBannerLayoutParams,
                                attributes: UICollectionViewLayoutAttributes) {
@@ -35,34 +29,6 @@ struct JXBannerTransformCoverflow: JXBannerTransformable {
                                             alpha: alpha)
     }
     
-    
-//    func applyCoverflowTransformToAttributes(viewCentetX: CGFloat,
-//                                             params: JXBannerLayoutParams,
-//                                             attributes: UICollectionViewLayoutAttributes,
-//                                             angle: CGFloat,
-//                                             alpha: CGFloat) -> Void {
-//        var transform3D: CATransform3D = CATransform3DIdentity
-//        transform3D.m34 = -0.002
-//        var _angle: CGFloat = angle
-//        var _alpha: CGFloat = alpha
-//        let location = cellLocation(viewCentetX: viewCentetX,
-//                                    itemCenterX: attributes.center.x)
-//        switch location {
-//        case .left:
-//            _angle = angle
-//        case .right:
-//            _angle = -angle
-//        case .center:
-//            _angle = 0
-//            _alpha = 1
-//        }
-//        attributes.alpha = _alpha
-//        attributes.transform3D = CATransform3DRotate(transform3D,
-//                                                     CGFloat(Double.pi) * _angle,
-//                                                     0, 1, 0)
-//
-//    }
-    
     func applyCoverflowTransformToAttributes(viewCentetX: CGFloat,
                                              params: JXBannerLayoutParams,
                                              attributes: UICollectionViewLayoutAttributes,
@@ -72,7 +38,7 @@ struct JXBannerTransformCoverflow: JXBannerTransformable {
         transform3D.m34 = -0.002
         var _angle: CGFloat = angle
         var _alpha: CGFloat = alpha
-        let location = cellLocation(viewCentetX: viewCentetX,
+        let location = JXBannerTransfrom.itemLocation(viewCentetX: viewCentetX,
                                     itemCenterX: attributes.center.x)
         
         var translate: CGFloat = 0.0
@@ -91,26 +57,6 @@ struct JXBannerTransformCoverflow: JXBannerTransformable {
         transform3D = CATransform3DRotate(transform3D,
                                                      CGFloat.pi * _angle,
                                                      0, 1, 0)
-        
-        
-//        transform3D = CATransform3DRotate(transform3D, M_PI*_angle, 0, 1, 0);
-//        if (_layout.adjustSpacingWhenScroling) {
-            attributes.transform3D = CATransform3DTranslate(transform3D, translate, 0, 0)
-//        }
-        
+        attributes.transform3D = CATransform3DTranslate(transform3D, translate, 0, 0)
     }
-    
-    func cellLocation(viewCentetX: CGFloat,
-                  itemCenterX: CGFloat) -> JXCellLocation {
-        var location: JXCellLocation = .right
-        if abs(itemCenterX - viewCentetX) < 0.5 {
-            location = .center
-        }else if (itemCenterX - viewCentetX) < 0 {
-            location = .left
-        }
-        return location
-    }
-    
-
-
 }

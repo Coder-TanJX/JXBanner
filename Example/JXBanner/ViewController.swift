@@ -8,24 +8,36 @@
 
 import UIKit
 import SnapKit
+import JXPageControl
 
 class ViewController: UIViewController {
  
-    lazy var banner: JXBanner = {
-        let banner = JXBanner(frame: CGRect(x: 0,
+    lazy var banner: JXTestBanner = {
+        let banner = JXTestBanner(frame: CGRect(x: 0,
                                             y: 100,
                                             width: view.frame.size.width,
-                                            height: 200))
+                                            height: 100))
         banner.backgroundColor = UIColor.black
         banner.delegate = self
         banner.dataSource = self
         return banner
     }()
     
+    lazy var pageControl: JXPageControlJump = {
+        let pageControl = JXPageControlJump(frame: CGRect(x: 0, y: 0, width: 100, height: 20))
+        pageControl.backgroundColor = UIColor.red.withAlphaComponent(0.3)
+        return pageControl
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(banner)
+
+        self.automaticallyAdjustsScrollViewInsets = false
+        
+        //TODO:- 未做边界保护
     }
+    
 }
 
 //MARK:- JXBannerDataSource
@@ -41,6 +53,7 @@ extension ViewController: JXBannerDataSource {
     /// How many pages does banner View have?
     public func jxBanner(numberOfItems banner: JXBannerType)
         -> Int {
+            pageControl.numberOfPages = 3
             return 3
     }
     
@@ -75,7 +88,7 @@ extension ViewController: JXBannerDataSource {
         -> JXBannerLayoutParams {
             return layoutParams
                 .layoutType(JXBannerTransformLinear())
-                .itemSize(CGSize(width: 300, height: 200))
+                .itemSize(CGSize(width: 80, height: 100))
                 .itemSpacing(0)
     }
     
@@ -83,28 +96,17 @@ extension ViewController: JXBannerDataSource {
                   numberOfPages: Int,
                   contentView: UIView)
         -> (UIView & JXBannerPageControlType)? {
-            let pageControl: JXBannerSystemPageControl = JXBannerSystemPageControl()
-//            pageControl.activeImageSize = CGSize(width: 20, height: 10)
-//            pageControl.inactiveImageSize = CGSize(width: 10, height: 10)
-//            let active: UIImage = UIImage(named: "active") ?? UIImage()
-//            let inactive: UIImage = UIImage(named: "inactive") ?? UIImage()
-//            pageControl.activeImage = active
-//            pageControl.inactiveImage = inactive
-            pageControl.numberOfPages = numberOfPages
+
             banner.addSubview(pageControl)
-            pageControl.snp.makeConstraints { (make) in
-                make.left.right.bottom.equalTo(contentView)
-                make.height.equalTo(20)
+            
+            pageControl.snp.makeConstraints { (maker) in
+                maker.left.right.bottom.equalTo(contentView)
+                maker.height.equalTo(20)
             }
-            pageControl.currentPageIndicatorTintColor = UIColor(
-                red: 85.0/255.0,
-                green: 190.0/255.0,
-                blue: 1.0,
-                alpha: 1.0
-            )
-            pageControl.pageIndicatorTintColor = .white
-    
-            return pageControl
+            
+            pageControl.contentMode = .center
+            
+            return nil
     }
 }
 
@@ -115,6 +117,11 @@ extension ViewController: JXBannerDelegate {
     public func jxBanner(_ banner: JXBannerType,
                              didSelectItemAt index: Int) {
         print(index)
+    }
+    
+    func jxBanner(_ banner: JXBannerType,
+                  center index: Int) {
+        pageControl.currentPage = index
     }
     
     func jxBanner(_ banner: JXBannerType, contentView: UIView) {

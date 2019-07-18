@@ -10,12 +10,6 @@ import UIKit
 
 struct JXBannerTransformLinear: JXBannerTransformable {
     
-    enum JXTransformLocation {
-        case left
-        case center
-        case right
-    }
-    
     func transformToAttributes(collectionView: UICollectionView,
                                params: JXBannerLayoutParams,
                                attributes: UICollectionViewLayoutAttributes) {
@@ -27,12 +21,11 @@ struct JXBannerTransformLinear: JXBannerTransformable {
         let scale = max(1 - delta / collectionViewWidth * params.rateOfChange, params.minimumScale)
         let alpha = max(1 - delta / collectionViewWidth, params.minimumAlpha)
         
-        
         var transform: CGAffineTransform = CGAffineTransform(scaleX: scale, y: scale)
         var _alpha = alpha
         if params.adjustSpacingWhenScroling {
             
-            let location = cellLocation(viewCentetX: centetX,
+            let location = JXBannerTransfrom.itemLocation(viewCentetX: centetX,
                                         itemCenterX: attributes.center.x)
             var translate: CGFloat = 0
             switch location {
@@ -51,18 +44,6 @@ struct JXBannerTransformLinear: JXBannerTransformable {
         attributes.alpha = _alpha;
 
     }
-    
-    func cellLocation(viewCentetX: CGFloat,
-                      itemCenterX: CGFloat) -> JXTransformLocation {
-        var location: JXTransformLocation = .right
-        if abs(itemCenterX - viewCentetX) < 0.5 {
-            location = .center
-        }else if (itemCenterX - viewCentetX) < 0 {
-            location = .left
-        }
-        return location
-    }
-    
 }
 
 

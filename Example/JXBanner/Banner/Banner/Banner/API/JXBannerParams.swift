@@ -8,32 +8,10 @@
 
 import UIKit
 
-public class JXBannerParams {
+import JXPageControl
 
-    var isAutoPlay: Bool = true
-    
-    var isCycleChain: Bool = true
-    
-    var isBounces: Bool = true
-    
-    var timeInterval: TimeInterval = 5.0
-    
-    var minLaunchInterval: TimeInterval = 3.0
-    
-    var edgeTransitionType: JXBannerTransitionType? = .fade
-    
-    var edgeTransitionSubtype: CATransitionSubtype = .fromRight
-    
-//    var isShowPageControl: Bool = false
-    
-//    var pageControl: JXBannerPageControlType = JXBannerSystemPageControl()
-    
-    
-    
-}
-
-// MARK: - Set function
-extension JXBannerParams {
+// MARK: - Public enum
+public extension JXBannerParams {
     
     enum JXBannerTransitionType : String {
         case fade
@@ -54,13 +32,47 @@ extension JXBannerParams {
         case flipFromRight
     }
     
-    func isAutoPlay(_ isAutoPlay: Bool) -> JXBannerParams {
-        self.isAutoPlay = isAutoPlay
-        return self
+    enum CycleWay {
+        case forward
+        case skipEnd
+        case rollingBack
     }
     
-    func isCycleChain(_ isCycleChain: Bool) -> JXBannerParams {
-        self.isCycleChain = isCycleChain
+    enum RollingDirection {
+        case right
+        case left
+    }
+}
+
+// MARK: - Property list
+public class JXBannerParams {
+
+    var isAutoPlay: Bool = true
+    
+    var isBounces: Bool = true
+    
+    var timeInterval: TimeInterval = 5.0
+    
+    var minLaunchInterval: TimeInterval = 3.0
+    
+    var cycleWay: CycleWay = .forward
+    
+    var edgeTransitionType: JXBannerTransitionType? = .fade
+    
+    var edgeTransitionSubtype: CATransitionSubtype = .fromRight
+    
+    var showDefaultPageControl: Bool = true
+    
+    internal var pageControl: JXPageControlType?
+    
+    internal var currentRollingDirection: RollingDirection = .right
+}
+
+// MARK: - Set function
+public extension JXBannerParams {
+    
+    func isAutoPlay(_ isAutoPlay: Bool) -> JXBannerParams {
+        self.isAutoPlay = isAutoPlay
         return self
     }
     
@@ -79,6 +91,11 @@ extension JXBannerParams {
         return self
     }
     
+    func cycleWay(_ cycleWay: CycleWay) -> JXBannerParams {
+        self.cycleWay = cycleWay
+        return self
+    }
+    
     func edgeTransitionType(_ edgeTransitionType: JXBannerTransitionType?) -> JXBannerParams {
         self.edgeTransitionType = edgeTransitionType
         return self
@@ -86,6 +103,11 @@ extension JXBannerParams {
     
     func edgeTransitionSubtype(_ edgeTransitionSubtype: CATransitionSubtype) -> JXBannerParams {
         self.edgeTransitionSubtype = edgeTransitionSubtype
+        return self
+    }
+    
+    internal func currentRollingDirection(_ currentRollingDirection: RollingDirection) -> JXBannerParams {
+        self.currentRollingDirection = currentRollingDirection
         return self
     }
 

@@ -29,7 +29,7 @@ public class JXBannerLayoutParams {
 }
 
 // MARK: - Set function
-extension JXBannerLayoutParams {
+public extension JXBannerLayoutParams {
     
     func itemSize(_ itemSize: CGSize) -> JXBannerLayoutParams {
         self.itemSize = itemSize
@@ -46,7 +46,7 @@ extension JXBannerLayoutParams {
         return self
     }
     
-    func layoutType(_ layoutType: JXBannerTransformable) -> JXBannerLayoutParams {
+    func layoutType(_ layoutType: JXBannerTransformable?) -> JXBannerLayoutParams {
         self.layoutType = layoutType
         return self
     }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol JXBannerTransformable {
+public protocol JXBannerTransformable {
 
     func transformToAttributes(collectionView: UICollectionView,
                                params: JXBannerLayoutParams,

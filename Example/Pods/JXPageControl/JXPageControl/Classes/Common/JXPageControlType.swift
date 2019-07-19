@@ -34,7 +34,7 @@ public class JXPageControlAlignment: NSObject {
     }
 }
 
-protocol JXPageControlType {
+ public protocol JXPageControlType {
 
     /// Default is 0
     var numberOfPages: Int { get set }

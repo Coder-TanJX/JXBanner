@@ -25,7 +25,7 @@ class JXBaseBanner: UIView {
     /// Setup UI
     func setupSubViews() {
         self.addSubview(collectionView)
-        self.addSubview(contentView)
+        self.addSubview(outsideContentView)
     }
     
     func installNotifications() {
@@ -50,12 +50,6 @@ class JXBaseBanner: UIView {
     }
     
     //MARK: - override
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        self.contentView.frame = self.bounds
-        self.collectionView.frame = self.bounds
-    }
-    
     override func removeFromSuperview() {
         stop()
         super.removeFromSuperview()
@@ -74,17 +68,27 @@ class JXBaseBanner: UIView {
         let collectionView: UICollectionView =
             UICollectionView(frame: self.bounds,
                              collectionViewLayout: self.layout)
+        collectionView.backgroundColor = UIColor.clear
         collectionView.isPagingEnabled = false
         collectionView.showsVerticalScrollIndicator = false
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.decelerationRate = UIScrollView.DecelerationRate(rawValue: 0.01)
+        collectionView.autoresizingMask = [
+            .flexibleWidth,
+            .flexibleHeight
+        ]
         return collectionView
     }()
     
-    lazy var contentView: UIView = {
-        let contentView: UIView = UIView()
-        contentView.isUserInteractionEnabled = false
-        return contentView
+    lazy var outsideContentView: UIView = {
+        let outsideContentView: UIView = UIView()
+        outsideContentView.frame = self.bounds
+        outsideContentView.isUserInteractionEnabled = false
+        outsideContentView.autoresizingMask = [
+            .flexibleWidth,
+            .flexibleHeight
+        ]
+        return outsideContentView
     }()
     
     var pageCount: Int = 0
@@ -115,7 +119,9 @@ extension JXBaseBanner {
     }
     
     func start() {
-        if params.timeInterval > 0 && params.isAutoPlay {
+        if params.timeInterval > 0,
+            params.isAutoPlay,
+            pageCount > 1 {
             if self.timer == nil {
                 if #available(iOS 10.0, *) {
                     self.timer = Timer.scheduledTimer(

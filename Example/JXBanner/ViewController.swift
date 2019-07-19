@@ -12,29 +12,37 @@ import JXPageControl
 
 class ViewController: UIViewController {
  
-    lazy var banner: JXTestBanner = {
-        let banner = JXTestBanner(frame: CGRect(x: 0,
-                                            y: 100,
-                                            width: view.frame.size.width,
-                                            height: 100))
-        banner.backgroundColor = UIColor.black
+    lazy var banner: JXBanner = {
+        let banner = JXBanner()
+        banner.snp.makeConstraints { (maker) in
+            maker.left.right.equalTo(view)
+            maker.height.equalTo(200)
+            maker.top.equalTo(view.snp_top).offset(100)
+        }
         banner.delegate = self
         banner.dataSource = self
         return banner
     }()
     
     lazy var pageControl: JXPageControlJump = {
-        let pageControl = JXPageControlJump(frame: CGRect(x: 0, y: 0, width: 100, height: 20))
-        pageControl.backgroundColor = UIColor.red.withAlphaComponent(0.3)
+        let pageControl = JXPageControlJump()
+        pageControl.snp.makeConstraints { (maker) in
+            maker.left.right.bottom.equalTo(banner)
+            maker.height.equalTo(20)
+        }
+        pageControl.contentMode = .bottom
+        pageControl.activeSize = CGSize(width: 20, height: 8)
+        pageControl.inactiveSize = CGSize(width: 8, height: 8)
+        pageControl.columnSpacing = 0
         return pageControl
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(banner)
+        banner.addSubview(pageControl)
 
         self.automaticallyAdjustsScrollViewInsets = false
-        
         //TODO:- 未做边界保护
     }
     
@@ -79,7 +87,7 @@ extension ViewController: JXBannerDataSource {
             return params
                 .timeInterval(1)
                 .isAutoPlay(true)
-                .isCycleChain(true)
+                .cycleWay(.rollingBack)
     }
     
     /// Set the closure of the banner layout Params
@@ -87,8 +95,8 @@ extension ViewController: JXBannerDataSource {
                              layoutParams: JXBannerLayoutParams)
         -> JXBannerLayoutParams {
             return layoutParams
-                .layoutType(JXBannerTransformLinear())
-                .itemSize(CGSize(width: 80, height: 100))
+                .layoutType(JXBannerTransformCoverflow())
+                .itemSize(CGSize(width: 250, height: 200))
                 .itemSpacing(0)
     }
     
@@ -97,15 +105,6 @@ extension ViewController: JXBannerDataSource {
                   contentView: UIView)
         -> (UIView & JXBannerPageControlType)? {
 
-            banner.addSubview(pageControl)
-            
-            pageControl.snp.makeConstraints { (maker) in
-                maker.left.right.bottom.equalTo(contentView)
-                maker.height.equalTo(20)
-            }
-            
-            pageControl.contentMode = .center
-            
             return nil
     }
 }
@@ -126,8 +125,8 @@ extension ViewController: JXBannerDelegate {
     
     func jxBanner(_ banner: JXBannerType, contentView: UIView) {
         let label: UILabel = UILabel()
-        label.frame = CGRect(x: 0, y: 0, width: 100, height: 20)
-        label.text = "1111111111111111"
+        label.frame = CGRect(x: 0, y: 0, width: 100, height: 15)
+        label.text = "JXBanner"
         contentView.addSubview(label)
     }
     

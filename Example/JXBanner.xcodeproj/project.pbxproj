@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F30BDF622A8E751002107EF /* JXBaseBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30BDF522A8E751002107EF /* JXBaseBanner.swift */; };
-		1F30BDF822A8E917002107EF /* JXTestBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30BDF722A8E917002107EF /* JXTestBanner.swift */; };
+		1F30BDF822A8E917002107EF /* JXBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30BDF722A8E917002107EF /* JXBanner.swift */; };
 		1F30BDFE22A92122002107EF /* JXBannerTransfrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30BDFD22A92122002107EF /* JXBannerTransfrom.swift */; };
 		1FAA5ADE22A26C7200CC3696 /* XMGLineLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AC822A26C7200CC3696 /* XMGLineLayout.swift */; };
 		1FAA5ADF22A26C7200CC3696 /* JXBannerPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AC922A26C7200CC3696 /* JXBannerPageControl.swift */; };
@@ -22,7 +22,6 @@
 		1FAA5AE722A26C7200CC3696 /* JXBannerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AD622A26C7200CC3696 /* JXBannerType.swift */; };
 		1FAA5AE822A26C7200CC3696 /* JXBannerLayoutParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AD722A26C7200CC3696 /* JXBannerLayoutParams.swift */; };
 		1FAA5AE922A26C7200CC3696 /* JXBannerParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AD822A26C7200CC3696 /* JXBannerParams.swift */; };
-		1FAA5AEA22A26C7200CC3696 /* JXBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AD922A26C7200CC3696 /* JXBanner.swift */; };
 		1FAA5AEB22A26C7200CC3696 /* JXBannerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5ADB22A26C7200CC3696 /* JXBannerDelegate.swift */; };
 		1FAA5AEC22A26C7200CC3696 /* JXBannerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5ADC22A26C7200CC3696 /* JXBannerDataSource.swift */; };
 		1FAA5AED22A26C7200CC3696 /* JXBannerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5ADD22A26C7200CC3696 /* JXBannerLayout.swift */; };
@@ -53,7 +52,7 @@
 
 /* Begin PBXFileReference section */
 		1F30BDF522A8E751002107EF /* JXBaseBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXBaseBanner.swift; sourceTree = "<group>"; };
-		1F30BDF722A8E917002107EF /* JXTestBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXTestBanner.swift; sourceTree = "<group>"; };
+		1F30BDF722A8E917002107EF /* JXBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXBanner.swift; sourceTree = "<group>"; };
 		1F30BDFD22A92122002107EF /* JXBannerTransfrom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXBannerTransfrom.swift; sourceTree = "<group>"; };
 		1FAA5AC822A26C7200CC3696 /* XMGLineLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMGLineLayout.swift; sourceTree = "<group>"; };
 		1FAA5AC922A26C7200CC3696 /* JXBannerPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerPageControl.swift; sourceTree = "<group>"; };
@@ -67,7 +66,6 @@
 		1FAA5AD622A26C7200CC3696 /* JXBannerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerType.swift; sourceTree = "<group>"; };
 		1FAA5AD722A26C7200CC3696 /* JXBannerLayoutParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerLayoutParams.swift; sourceTree = "<group>"; };
 		1FAA5AD822A26C7200CC3696 /* JXBannerParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerParams.swift; sourceTree = "<group>"; };
-		1FAA5AD922A26C7200CC3696 /* JXBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBanner.swift; sourceTree = "<group>"; };
 		1FAA5ADB22A26C7200CC3696 /* JXBannerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerDelegate.swift; sourceTree = "<group>"; };
 		1FAA5ADC22A26C7200CC3696 /* JXBannerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerDataSource.swift; sourceTree = "<group>"; };
 		1FAA5ADD22A26C7200CC3696 /* JXBannerLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerLayout.swift; sourceTree = "<group>"; };
@@ -170,8 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				1FAA5ADA22A26C7200CC3696 /* API */,
-				1FAA5AD922A26C7200CC3696 /* JXBanner.swift */,
-				1F30BDF722A8E917002107EF /* JXTestBanner.swift */,
+				1F30BDF722A8E917002107EF /* JXBanner.swift */,
 				1F30BDF522A8E751002107EF /* JXBaseBanner.swift */,
 				1FAA5ADD22A26C7200CC3696 /* JXBannerLayout.swift */,
 			);
@@ -456,7 +453,7 @@
 				1FAA5B0222A36F0A00CC3696 /* JXBannerCustomPageControl.swift in Sources */,
 				1FAA5AE922A26C7200CC3696 /* JXBannerParams.swift in Sources */,
 				1F30BDF622A8E751002107EF /* JXBaseBanner.swift in Sources */,
-				1F30BDF822A8E917002107EF /* JXTestBanner.swift in Sources */,
+				1F30BDF822A8E917002107EF /* JXBanner.swift in Sources */,
 				1FAA5AE622A26C7200CC3696 /* JXBannerTransformContext.swift in Sources */,
 				1FAA5AE022A26C7200CC3696 /* JXBannerPageControlType.swift in Sources */,
 				1FAA5ADE22A26C7200CC3696 /* XMGLineLayout.swift in Sources */,
@@ -466,7 +463,6 @@
 				1FAA5AEC22A26C7200CC3696 /* JXBannerDataSource.swift in Sources */,
 				1FAA5AFE22A2A40D00CC3696 /* JXBannerSystemPageControl.swift in Sources */,
 				1FAA5ADF22A26C7200CC3696 /* JXBannerPageControl.swift in Sources */,
-				1FAA5AEA22A26C7200CC3696 /* JXBanner.swift in Sources */,
 				1FAA5AF122A26C7C00CC3696 /* ViewController2.swift in Sources */,
 				1FAA5AE422A26C7200CC3696 /* JXBannerTransformCoverflow.swift in Sources */,
 				1F30BDFE22A92122002107EF /* JXBannerTransfrom.swift in Sources */,

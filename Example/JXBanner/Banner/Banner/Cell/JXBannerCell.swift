@@ -20,7 +20,6 @@ class JXBannerCell: JXBannerBaseCell {
     
     private func addsubviews() {
         contentView.addSubview(imageView)
-        imageView.addSubview(descriptionView)
         imageView.addSubview(descriptionLabel)
         backgroundColor = UIColor.yellow
     }
@@ -34,7 +33,6 @@ class JXBannerCell: JXBannerBaseCell {
         let desW = imageView.frame.size.width
         let desH = 24.0
         let desY = Double(imageView.bounds.maxY) - desH
-        descriptionView.frame = CGRect(x: 0.0, y: desY, width: Double(desW), height: desH)
         descriptionLabel.frame = CGRect(x: 20, y: desY, width: Double(desW - 40.0), height: desH)
     }
     
@@ -42,18 +40,10 @@ class JXBannerCell: JXBannerBaseCell {
     // MARK:- Lazy loading Cell subView
     public lazy var imageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.backgroundColor = PLACEHOLDER_GRAY
         imageView.isUserInteractionEnabled = true
         imageView.layer.cornerRadius = 9
         imageView.clipsToBounds = true
         return imageView
-    }()
-    
-    public lazy var descriptionView: UIImageView = {
-        let descriptionView = UIImageView()
-        descriptionView.image = nil
-        descriptionView.backgroundColor = UIColor(white: 0.0, alpha: 0.5)
-        return descriptionView
     }()
     
     public var descriptionLabel: UILabel = {

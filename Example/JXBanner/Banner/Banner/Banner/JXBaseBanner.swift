@@ -8,7 +8,9 @@
 
 import UIKit
 
-class JXBaseBanner: UIView {
+let kMultiplier = 4
+
+public class JXBaseBanner: UIView {
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -24,8 +26,9 @@ class JXBaseBanner: UIView {
     
     /// Setup UI
     func setupSubViews() {
+        self.addSubview(placeholderImgView)
         self.addSubview(collectionView)
-        self.addSubview(outsideContentView)
+        self.addSubview(coverView)
     }
     
     func installNotifications() {
@@ -50,7 +53,14 @@ class JXBaseBanner: UIView {
     }
     
     //MARK: - override
-    override func removeFromSuperview() {
+    override public func layoutSubviews() {
+        super.layoutSubviews()
+        if pageCount > 0 {
+            scrollToIndexPath(currentIndexPath, animated: false)
+        }
+    }
+    
+    override public func removeFromSuperview() {
         stop()
         super.removeFromSuperview()
     }
@@ -62,6 +72,12 @@ class JXBaseBanner: UIView {
         let layout = JXBannerLayout()
         layout.params = JXBannerLayoutParams()
         return layout
+    }()
+    
+    public lazy var placeholderImgView: UIImageView = {
+        let placeholder = UIImageView()
+        placeholder.frame = self.bounds
+        return placeholder
     }()
     
     lazy var collectionView: UICollectionView = {
@@ -80,29 +96,27 @@ class JXBaseBanner: UIView {
         return collectionView
     }()
     
-    lazy var outsideContentView: UIView = {
-        let outsideContentView: UIView = UIView()
-        outsideContentView.frame = self.bounds
-        outsideContentView.isUserInteractionEnabled = false
-        outsideContentView.autoresizingMask = [
+    lazy var coverView: UIView = {
+        let coverView: UIView = UIView()
+        coverView.frame = self.bounds
+        coverView.isUserInteractionEnabled = false
+        coverView.autoresizingMask = [
             .flexibleWidth,
             .flexibleHeight
         ]
-        return outsideContentView
+        return coverView
     }()
     
     var pageCount: Int = 0
     
     var params: JXBannerParams = JXBannerParams()
-
-    /// Outside of pageControl
-    var pageControl: (UIView & JXBannerPageControlType)?
     
     /// Current shows indexpath of cell
     var currentIndexPath: IndexPath = IndexPath(row: 0, section: 0)
     
     var cellRegister: JXBannerCellRegister = JXBannerCellRegister(type: JXBannerCell.self,
                                                                   reuseIdentifier: "JXBannerCell")
+    func setCurrentIndex(){}
 }
 
 // MARK: - Method of timer animation
@@ -156,8 +170,29 @@ extension JXBaseBanner {
     func scrollToIndexPath(
         _ indexPath: IndexPath, animated: Bool) {
         
-        //FIXME: 越界bug
+        // Handle indexpath bounds
+        if params.cycleWay == .forward {
+            
+            if indexPath.row >= kMultiplier * pageCount - pageCount{
+                currentIndexPath = IndexPath(row: (kMultiplier * pageCount / 2),
+                                             section: 0)
+                scrollToIndexPath(currentIndexPath, animated: false)
+                setCurrentIndex()
+                start()
+                return
+                
+            }else if indexPath.row == -1 + pageCount {
+                currentIndexPath = IndexPath(row: (kMultiplier * pageCount / 2) + (pageCount - 1),
+                                             section: 0)
+                scrollToIndexPath(currentIndexPath, animated: false)
+                
+                setCurrentIndex()
+                start()
+                return
+            }
+        }
         
+ 
         collectionView.scrollToItem(at: indexPath,
                                     at: .centeredHorizontally,
                                     animated: animated)
@@ -166,7 +201,7 @@ extension JXBaseBanner {
                                     animated: animated)
     }
     
-    override func willMove(toSuperview newSuperview: UIView?) {
+    override public func willMove(toSuperview newSuperview: UIView?) {
         super.willMove(toSuperview: newSuperview)
         if newSuperview == nil {
             stop()

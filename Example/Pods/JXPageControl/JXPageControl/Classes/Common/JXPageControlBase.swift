@@ -8,23 +8,23 @@
 
 import UIKit
 
-@IBDesignable public class JXPageControlBase: UIView, JXPageControlType {
+@IBDesignable open class JXPageControlBase: UIView, JXPageControlType {
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
         setBase()
     }
     
-    internal required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setBase()
     }
     
-    func setBase() {
+    open func setBase() {
         addSubview(contentView)
     }
     
-    public override var contentMode: UIViewContentMode {
+    open override var contentMode: UIViewContentMode {
         didSet {
             switch contentMode {
                 
@@ -55,8 +55,7 @@ import UIKit
         }
     }
     
-    
-    public override func layoutSubviews() {
+    open override func layoutSubviews() {
         super.layoutSubviews()
         layoutContentView()
     }
@@ -196,6 +195,8 @@ import UIKit
     func resetHidden() {
         if hidesForSinglePage,
             numberOfPages == 1 {
+            contentView.isHidden = true
+        }else if numberOfPages == 0 {
             contentView.isHidden = true
         }else {
             contentView.isHidden = false

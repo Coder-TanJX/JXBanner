@@ -19,8 +19,7 @@ public protocol JXBannerDelegate {
     
     /// This is a view to add mask subview
     func jxBanner(_ banner: JXBannerType,
-                  contentView: UIView)
-    
+                  coverView: UIView)
 }
 
 extension JXBannerDelegate {
@@ -39,7 +38,7 @@ extension JXBannerDelegate {
     
     /// This is a view to add mask subview
     func jxBanner(_ banner: JXBannerType,
-                  contentView: UIView) {
+                  coverView: UIView) {
         
     }
 }

@@ -4,6 +4,6 @@ target 'JXBanner_Example' do
   pod 'JXBanner', :path => '../'
   pod 'Alamofire'
   pod 'SnapKit'
-  pod 'JXPageControl'
+  pod 'JXPageControl', '0.1.3'
   
 end

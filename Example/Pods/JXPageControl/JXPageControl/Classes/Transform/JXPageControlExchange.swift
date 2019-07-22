@@ -9,7 +9,7 @@
 import UIKit
 
 
-@IBDesignable public class JXPageControlExchange: JXPageControlBase {
+@IBDesignable open class JXPageControlExchange: JXPageControlBase {
 
     // MARK: - -------------------------- Custom property list --------------------------
 

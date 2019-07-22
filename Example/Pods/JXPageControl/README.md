@@ -63,6 +63,8 @@ JXPageControlJump | JXPageControlScale
 
 ####  JXPageControl introduction [ JXPageControl 介绍 ]
 
+JXPageControl ADAPTS to Swift and objective-c
+
 &nbsp;
 
 * JXPageControlBase -   Base class for all pageControl 

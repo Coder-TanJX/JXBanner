@@ -7,18 +7,18 @@
 //
 
 import UIKit
+import JXPageControl
 
-private let kMultiplier = 1000
-
-class JXBanner: JXBaseBanner, JXBannerType {
+// MARK: - JXBannerType
+public class JXBanner: JXBaseBanner, JXBannerType {
 
     
-    internal required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupBase()
     }
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         setupBase()
     }
@@ -28,15 +28,44 @@ class JXBanner: JXBaseBanner, JXBannerType {
         collectionView.delegate = self
     }
     
-    var dataSource: JXBannerDataSource? { didSet { reloadView() }}
+    public var dataSource: JXBannerDataSource? { didSet { reloadView() }}
     
-    var delegate: JXBannerDelegate?
+    public var delegate: JXBannerDelegate?
     
+    /// Outside of pageControl
+    var pageControl: (UIView & JXPageControlType)?
+    
+    override func setCurrentIndex() {
+        let point = CGPoint(x: collectionView.contentOffset.x + collectionView.frame.width * 0.5,
+                            y: collectionView.contentOffset.y + collectionView.frame.height * 0.5)
+        if let indexPath = collectionView.indexPathForItem(at: point) {
+            let currentPage = indexOfIndexPath(indexPath)
+            pageControl?.progress = CGFloat(currentPage)
+            delegate?.jxBanner(self, center: currentPage)
+        }
+    }
+
     /// The refresh UI, get data from
-    func reloadView() {
+    public func reloadView() {
         
         // Stop Animation
         stop()
+        
+        // refresh
+        refreshDataSource()
+        refreshDelegate()
+        refreshData()
+        
+        // Start Animation
+        start()
+    }
+
+}
+
+// MARK: - Private mothod
+extension JXBanner {
+    
+    private func refreshDataSource() {
         
         // DataSource
         if let count = dataSource?.jxBanner(numberOfItems: self),
@@ -62,35 +91,45 @@ class JXBanner: JXBaseBanner, JXBannerType {
                                                     layoutParams: layout.params!)
             
             // PageControl
-            if var tempPageControl = dataSource?.jxBanner(pageControl: self,
-                                                          numberOfPages: count,
-                                                          contentView: outsideContentView) {
-                tempPageControl.currentPage = 0
-                outsideContentView.addSubview(tempPageControl)
-                self.pageControl = tempPageControl
+            self.pageControl?.removeFromSuperview()
+            self.pageControl = nil
+            let pBuilder = dataSource?.jxBanner(pageControl: self,
+                                                numberOfPages: count,
+                                                coverView: coverView,
+                                                builder: pageControlBuilder())
+            if let tempPageControl = pBuilder?.pageControl,
+                let layout = pBuilder?.layout{
+                pageControl = tempPageControl
+                pageControl?.numberOfPages = count
+                coverView.addSubview(tempPageControl)
+                layout()
             }
-            
         }
-        
+    }
+    
+    private func refreshDelegate() {
         // Dalegate
         if let tempDelegate = delegate {
-            tempDelegate.jxBanner(self, contentView: outsideContentView)
+            tempDelegate.jxBanner(self, coverView: coverView)
         }
+    }
+    
+    private func refreshData() {
         
         // Reinitialize data
         params.currentRollingDirection = .right
         collectionView.setCollectionViewLayout(layout, animated: true)
         collectionView.bounces = params.isBounces
         collectionView.reloadData()
+        if pageCount == 1,
+            params.cycleWay == .forward {
+            params.cycleWay = .skipEnd
+        }
+        //        placeholderImgView.frame = self.bounds
+        placeholderImgView.backgroundColor = UIColor.red
+        //        placeholderImgView.center = collectionView.center
         reinitializeIndexPath()
-        
-        // Start Animation
-        start()
     }
-}
-
-// MARK: - Private mothod
-extension JXBanner {
     
     /// Reload current indexpath
     private func reinitializeIndexPath() {
@@ -102,8 +141,9 @@ extension JXBanner {
         }else {
             currentIndexPath = IndexPath(row: 0, section: 0)
         }
-        
-        scrollToIndexPath(currentIndexPath, animated: false)
+        if pageCount > 0 {
+            scrollToIndexPath(currentIndexPath, animated: false)
+        }
     }
     
     @objc internal override func autoScroll() {
@@ -170,8 +210,6 @@ extension JXBanner {
                 scrollToIndexPath(currentIndexPath, animated: true)
             }
         }
-        
-        print(currentIndexPath)
     }
     
     /// cell错位检测和调整
@@ -208,11 +246,11 @@ extension JXBanner {
 extension JXBanner {
     
     /// Began to drag and drop
-    func scrollViewWillBeginDragging(
+    public func scrollViewWillBeginDragging(
         _ scrollView: UIScrollView) { pause() }
     
     /// The drag is about to end
-    func scrollViewWillEndDragging(
+    public func scrollViewWillEndDragging(
         _ scrollView: UIScrollView,
         withVelocity velocity: CGPoint,
         targetContentOffset: UnsafeMutablePointer<CGPoint>) {
@@ -240,25 +278,25 @@ extension JXBanner {
     }
     
     /// It's going to start slowing down
-    func scrollViewWillBeginDecelerating(
+    public  func scrollViewWillBeginDecelerating(
         _ scrollView: UIScrollView) {
         scrollToIndexPath(currentIndexPath,
                           animated: true)
     }
     
     /// End to slow down
-    func scrollViewDidEndDecelerating(
+    public func scrollViewDidEndDecelerating(
         _ scrollView: UIScrollView) {}
     
     /// Scroll animation complete
-    func scrollViewDidEndScrollingAnimation(
+    public func scrollViewDidEndScrollingAnimation(
         _ scrollView: UIScrollView) {
         start()
         setCurrentIndex()
     }
     
     /// Rolling in the
-    func scrollViewDidScroll(
+    public func scrollViewDidScroll(
         _ scrollView: UIScrollView) {
         pause()
     }
@@ -270,15 +308,17 @@ extension JXBanner:
     UICollectionViewDataSource,
 UICollectionViewDelegate {
     
-    func collectionView(_ collectionView: UICollectionView,
+    public func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int)
         -> Int {
             return params.cycleWay == .forward ? kMultiplier * pageCount : pageCount
     }
     
-    func collectionView(_ collectionView: UICollectionView,
+    public func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath)
         -> UICollectionViewCell {
+            
+            print(indexPath)
             
             let cell = collectionView.dequeueReusableCell(
                 withReuseIdentifier: cellRegister.reuseIdentifier,
@@ -294,7 +334,7 @@ UICollectionViewDelegate {
     }
     
     
-    func collectionView(_ collectionView: UICollectionView,
+    public func collectionView(_ collectionView: UICollectionView,
                         didSelectItemAt indexPath: IndexPath) {
         delegate?.jxBanner(self,
                            didSelectItemAt: indexOfIndexPath(indexPath))
@@ -304,18 +344,5 @@ UICollectionViewDelegate {
     func indexOfIndexPath(_ indexPath : IndexPath)
         -> Int {
             return Int(indexPath.item % pageCount)
-    }
-}
-
-
-//MARK:- Private func
-extension JXBanner {
-    
-    func setCurrentIndex() {
-        let point = CGPoint(x: collectionView.contentOffset.x + collectionView.frame.width * 0.5,
-                            y: collectionView.contentOffset.y + collectionView.frame.height * 0.5)
-        if let indexPath = collectionView.indexPathForItem(at: point) {
-            delegate?.jxBanner(self, center: indexOfIndexPath(indexPath))
-        }
     }
 }

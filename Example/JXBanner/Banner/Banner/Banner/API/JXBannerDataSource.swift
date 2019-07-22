@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JXPageControl
 
 public protocol JXBannerDataSource {
     
@@ -37,10 +38,14 @@ public protocol JXBannerDataSource {
     /// External pageControl replaces the default pageControl
     func jxBanner(pageControl banner: JXBannerType,
                   numberOfPages: Int,
-                  contentView: UIView)
-        -> (UIView & JXBannerPageControlType)?
+                  coverView: UIView,
+                  builder: pageControlBuilder) -> pageControlBuilder
 }
 
+public class pageControlBuilder {
+    var pageControl: (UIView & JXPageControlType)?
+    var layout: (() -> ())?
+}
 
 extension JXBannerDataSource {
     
@@ -61,9 +66,23 @@ extension JXBannerDataSource {
     /// External pageControl replaces the default pageControl
     func jxBanner(pageControl banner: JXBannerType,
                   numberOfPages: Int,
-                  contentView: UIView)
-        -> (UIView & JXBannerPageControlType)? {
-        return nil
+                  coverView: UIView,
+                  builder: pageControlBuilder) -> pageControlBuilder {
+        let pageControl = JXPageControlJump()
+        pageControl.contentMode = .bottom
+        pageControl.activeSize = CGSize(width: 15, height: 6)
+        pageControl.inactiveSize = CGSize(width: 6, height: 6)
+        pageControl.columnSpacing = 0
+        pageControl.contentMode = .right
+        builder.pageControl = pageControl
+        builder.layout = {
+            pageControl.snp.makeConstraints { (maker) in
+                maker.left.bottom.equalTo(coverView)
+                maker.right.equalTo(coverView).offset(-20)
+                maker.height.equalTo(20)
+            }
+        }
+        return builder
     }
     
 }

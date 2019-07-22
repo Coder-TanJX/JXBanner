@@ -8,9 +8,9 @@
 
 import UIKit
 
-class JXPageControlBoldLine: JXPageControlJump {
+@IBDesignable open class JXPageControlBoldLine: JXPageControlJump {
 
-    override func setBase() {
+    override open func setBase() {
         super.setBase()
         indicatorSize = CGSize(width: 15, height: 6)
         isAnimation = false

@@ -11,13 +11,13 @@ import UIKit
 
 //private let kMinContentSize = CGSize(width: 2, height: 2)
 
-@IBDesignable public class JXPageControlEllipse: JXPageControlJump {
+@IBDesignable open class JXPageControlEllipse: JXPageControlJump {
     
-    override func setBase() {
+    override open func setBase() {
         super.setBase()
         inactiveSize = CGSize(width: 6, height: 6)
         activeSize = CGSize(width: 15, height: 6)
-        columnSpacing = 5.0
+        columnSpacing = 0
         isAnimation = false
     }
 }

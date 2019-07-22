@@ -31,9 +31,9 @@ class JXBannerCell: JXBannerBaseCell {
         imageView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
         let desW = imageView.frame.size.width
-        let desH = 24.0
-        let desY = Double(imageView.bounds.maxY) - desH
-        descriptionLabel.frame = CGRect(x: 20, y: desY, width: Double(desW - 40.0), height: desH)
+        let desH: CGFloat = 24.0
+        let desY = imageView.bounds.maxY - desH
+        descriptionLabel.frame = CGRect(x: 0, y: desY, width: desW, height: desH)
     }
     
     
@@ -48,6 +48,7 @@ class JXBannerCell: JXBannerBaseCell {
     
     public var descriptionLabel: UILabel = {
         let descriptionLabel = UILabel()
+        descriptionLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
         descriptionLabel.textColor = UIColor.white
         descriptionLabel.font = UIFont.systemFont(ofSize: 12)
         return descriptionLabel

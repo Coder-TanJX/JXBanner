@@ -8,9 +8,9 @@
 
 import UIKit
 
-@IBDesignable public class JXPageControlLine: JXPageControlJump {
+@IBDesignable open class JXPageControlLine: JXPageControlJump {
     
-    override func setBase() {
+    override open func setBase() {
         super.setBase()
         indicatorSize = CGSize(width: 15, height: 2)
         isAnimation = false

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JXPageControl
 
 public protocol JXBannerPageControlType {
     
@@ -16,4 +17,5 @@ public protocol JXBannerPageControlType {
     /// default is 0. value pinned to 0..numberOfPages-1
     var currentPage: Int { get set }
     
+    var delegate: JXPageControlType? { get set }
 }

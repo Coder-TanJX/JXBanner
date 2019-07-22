@@ -1,21 +1,21 @@
 PODS:
   - Alamofire (4.8.2)
   - JXBanner (0.1.0)
-  - JXPageControl (0.1.0):
-    - JXPageControl/Common (= 0.1.0)
-    - JXPageControl/Jump (= 0.1.0)
-    - JXPageControl/Transform (= 0.1.0)
-  - JXPageControl/Common (0.1.0)
-  - JXPageControl/Jump (0.1.0):
+  - JXPageControl (0.1.3):
+    - JXPageControl/Common (= 0.1.3)
+    - JXPageControl/Jump (= 0.1.3)
+    - JXPageControl/Transform (= 0.1.3)
+  - JXPageControl/Common (0.1.3)
+  - JXPageControl/Jump (0.1.3):
     - JXPageControl/Common
-  - JXPageControl/Transform (0.1.0):
+  - JXPageControl/Transform (0.1.3):
     - JXPageControl/Common
   - SnapKit (4.2.0)
 
 DEPENDENCIES:
   - Alamofire
   - JXBanner (from `../`)
-  - JXPageControl
+  - JXPageControl (= 0.1.3)
   - SnapKit
 
 SPEC REPOS:
@@ -31,9 +31,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   JXBanner: 9e448e220dd377d0c159477beeebde781f43deba
-  JXPageControl: 4371b14a59db68ac8faeb6189139789355bec289
+  JXPageControl: eea52838699a4949063e600b25eb9e8b6e20ae3f
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: 265f2ba5787c7ca75366718e589294551785c020
+PODFILE CHECKSUM: 5ba36ed491c1c5d00156a2b1f2b15a7df48d9a8b
 
 COCOAPODS: 1.6.1

@@ -7,5 +7,14 @@
 //
 
 import UIKit
+import JXPageControl
 
-class JXBannerSystemPageControl: UIPageControl, JXBannerPageControlType {}
+class JXBannerDefaultPageControl: JXPageControlEllipse, JXBannerPageControlType {
+    var delegate: JXPageControlType?
+    
+    override func setBase() {
+        super.setBase()
+        activeSize = CGSize(width: 20, height: 8)
+        inactiveSize = CGSize(width: 8, height: 8)
+    }
+}

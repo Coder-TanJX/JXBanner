@@ -11,7 +11,6 @@
 		1F30BDF822A8E917002107EF /* JXBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30BDF722A8E917002107EF /* JXBanner.swift */; };
 		1F30BDFE22A92122002107EF /* JXBannerTransfrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30BDFD22A92122002107EF /* JXBannerTransfrom.swift */; };
 		1FAA5ADE22A26C7200CC3696 /* XMGLineLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AC822A26C7200CC3696 /* XMGLineLayout.swift */; };
-		1FAA5ADF22A26C7200CC3696 /* JXBannerPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AC922A26C7200CC3696 /* JXBannerPageControl.swift */; };
 		1FAA5AE022A26C7200CC3696 /* JXBannerPageControlType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5ACA22A26C7200CC3696 /* JXBannerPageControlType.swift */; };
 		1FAA5AE122A26C7200CC3696 /* JXBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5ACD22A26C7200CC3696 /* JXBannerCell.swift */; };
 		1FAA5AE222A26C7200CC3696 /* JXBannerBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5ACE22A26C7200CC3696 /* JXBannerBaseCell.swift */; };
@@ -30,7 +29,6 @@
 		1FAA5AF322A26CA400CC3696 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FAA5AF222A26CA400CC3696 /* Main.storyboard */; };
 		1FAA5AF822A270A000CC3696 /* IndexPath+Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AF722A270A000CC3696 /* IndexPath+Calculate.swift */; };
 		1FAA5AFE22A2A40D00CC3696 /* JXBannerSystemPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AFD22A2A40D00CC3696 /* JXBannerSystemPageControl.swift */; };
-		1FAA5B0222A36F0A00CC3696 /* JXBannerCustomPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5B0122A36F0A00CC3696 /* JXBannerCustomPageControl.swift */; };
 		1FAA5B0522A378B000CC3696 /* active.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FAA5B0322A378B000CC3696 /* active.png */; };
 		1FAA5B0622A378B000CC3696 /* inactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FAA5B0422A378B000CC3696 /* inactive.png */; };
 		53088A265BA7D9AC3B26AAA2 /* Pods_JXBanner_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69253EFB2BEA3E4346A791AE /* Pods_JXBanner_Example.framework */; };
@@ -55,7 +53,6 @@
 		1F30BDF722A8E917002107EF /* JXBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXBanner.swift; sourceTree = "<group>"; };
 		1F30BDFD22A92122002107EF /* JXBannerTransfrom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXBannerTransfrom.swift; sourceTree = "<group>"; };
 		1FAA5AC822A26C7200CC3696 /* XMGLineLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMGLineLayout.swift; sourceTree = "<group>"; };
-		1FAA5AC922A26C7200CC3696 /* JXBannerPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerPageControl.swift; sourceTree = "<group>"; };
 		1FAA5ACA22A26C7200CC3696 /* JXBannerPageControlType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerPageControlType.swift; sourceTree = "<group>"; };
 		1FAA5ACD22A26C7200CC3696 /* JXBannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerCell.swift; sourceTree = "<group>"; };
 		1FAA5ACE22A26C7200CC3696 /* JXBannerBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerBaseCell.swift; sourceTree = "<group>"; };
@@ -74,7 +71,6 @@
 		1FAA5AF222A26CA400CC3696 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1FAA5AF722A270A000CC3696 /* IndexPath+Calculate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IndexPath+Calculate.swift"; sourceTree = "<group>"; };
 		1FAA5AFD22A2A40D00CC3696 /* JXBannerSystemPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXBannerSystemPageControl.swift; sourceTree = "<group>"; };
-		1FAA5B0122A36F0A00CC3696 /* JXBannerCustomPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXBannerCustomPageControl.swift; sourceTree = "<group>"; };
 		1FAA5B0322A378B000CC3696 /* active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = active.png; sourceTree = "<group>"; };
 		1FAA5B0422A378B000CC3696 /* inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inactive.png; sourceTree = "<group>"; };
 		4E59FFEBD8020BF5A12489A9 /* Pods-JXBanner_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXBanner_Example.release.xcconfig"; path = "Target Support Files/Pods-JXBanner_Example/Pods-JXBanner_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -112,6 +108,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F97E25E22E5ACC4003A3571 /* BannerBuilder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BannerBuilder;
+			sourceTree = "<group>";
+		};
 		1FAA5AC722A26C7200CC3696 /* Banner */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +126,7 @@
 		1FAA5ACB22A26C7200CC3696 /* Banner */ = {
 			isa = PBXGroup;
 			children = (
+				1F97E25E22E5ACC4003A3571 /* BannerBuilder */,
 				1FAA5AF622A26F8600CC3696 /* Common */,
 				1FAA5ACC22A26C7200CC3696 /* Cell */,
 				1FAA5ACF22A26C7200CC3696 /* PageControl */,
@@ -144,10 +148,8 @@
 		1FAA5ACF22A26C7200CC3696 /* PageControl */ = {
 			isa = PBXGroup;
 			children = (
-				1FAA5AC922A26C7200CC3696 /* JXBannerPageControl.swift */,
 				1FAA5ACA22A26C7200CC3696 /* JXBannerPageControlType.swift */,
 				1FAA5AFD22A2A40D00CC3696 /* JXBannerSystemPageControl.swift */,
-				1FAA5B0122A36F0A00CC3696 /* JXBannerCustomPageControl.swift */,
 			);
 			path = PageControl;
 			sourceTree = "<group>";
@@ -450,7 +452,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FAA5B0222A36F0A00CC3696 /* JXBannerCustomPageControl.swift in Sources */,
 				1FAA5AE922A26C7200CC3696 /* JXBannerParams.swift in Sources */,
 				1F30BDF622A8E751002107EF /* JXBaseBanner.swift in Sources */,
 				1F30BDF822A8E917002107EF /* JXBanner.swift in Sources */,
@@ -462,7 +463,6 @@
 				1FAA5AE122A26C7200CC3696 /* JXBannerCell.swift in Sources */,
 				1FAA5AEC22A26C7200CC3696 /* JXBannerDataSource.swift in Sources */,
 				1FAA5AFE22A2A40D00CC3696 /* JXBannerSystemPageControl.swift in Sources */,
-				1FAA5ADF22A26C7200CC3696 /* JXBannerPageControl.swift in Sources */,
 				1FAA5AF122A26C7C00CC3696 /* ViewController2.swift in Sources */,
 				1FAA5AE422A26C7200CC3696 /* JXBannerTransformCoverflow.swift in Sources */,
 				1F30BDFE22A92122002107EF /* JXBannerTransfrom.swift in Sources */,

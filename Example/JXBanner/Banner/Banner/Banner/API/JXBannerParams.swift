@@ -10,6 +10,30 @@ import UIKit
 
 import JXPageControl
 
+// MARK: - Property list
+public class JXBannerParams {
+
+    var isAutoPlay: Bool = true
+    
+    var isBounces: Bool = true
+    
+    var isShowPageControl: Bool = true
+    
+    var timeInterval: TimeInterval = 5.0
+    
+    var minLaunchInterval: TimeInterval = 3.0
+    
+    var cycleWay: CycleWay = .forward
+    
+    var edgeTransitionType: JXBannerTransitionType? = .fade
+    
+    var edgeTransitionSubtype: CATransitionSubtype = .fromRight
+    
+    internal var pageControl: JXPageControlType?
+    
+    internal var currentRollingDirection: RollingDirection = .right
+}
+
 // MARK: - Public enum
 public extension JXBannerParams {
     
@@ -44,30 +68,6 @@ public extension JXBannerParams {
     }
 }
 
-// MARK: - Property list
-public class JXBannerParams {
-
-    var isAutoPlay: Bool = true
-    
-    var isBounces: Bool = true
-    
-    var timeInterval: TimeInterval = 5.0
-    
-    var minLaunchInterval: TimeInterval = 3.0
-    
-    var cycleWay: CycleWay = .forward
-    
-    var edgeTransitionType: JXBannerTransitionType? = .fade
-    
-    var edgeTransitionSubtype: CATransitionSubtype = .fromRight
-    
-    var showDefaultPageControl: Bool = true
-    
-    internal var pageControl: JXPageControlType?
-    
-    internal var currentRollingDirection: RollingDirection = .right
-}
-
 // MARK: - Set function
 public extension JXBannerParams {
     
@@ -78,6 +78,11 @@ public extension JXBannerParams {
     
     func isBounces(_ isBounces: Bool) -> JXBannerParams {
         self.isBounces = isBounces
+        return self
+    }
+    
+    func isShowPageControl(_ isShowPageControl: Bool) -> JXBannerParams {
+        self.isShowPageControl = isShowPageControl
         return self
     }
     

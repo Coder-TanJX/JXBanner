@@ -8,9 +8,9 @@
 
 import UIKit
 
-@IBDesignable public class JXPageControlScale: JXPageControlBase {
+@IBDesignable open class JXPageControlScale: JXPageControlBase {
     
-    override func setBase() {
+    open override func setBase() {
         super.setBase()
         activeSize = CGSize(width: 15,
                             height: 15)

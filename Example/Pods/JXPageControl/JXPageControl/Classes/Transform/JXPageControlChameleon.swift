@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable public class JXPageControlChameleon: JXPageControlBase {
+@IBDesignable open class JXPageControlChameleon: JXPageControlBase {
     
     
     // MARK: - -------------------------- JXPageControlType --------------------------

@@ -9,7 +9,7 @@
 import UIKit
 import CoreGraphics
 
-@IBDesignable public class JXPageControlFill: JXPageControlBase {
+@IBDesignable open class JXPageControlFill: JXPageControlBase {
 
     
     /// Please use the property "diameter"

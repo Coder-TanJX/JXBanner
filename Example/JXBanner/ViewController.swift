@@ -22,15 +22,6 @@ class ViewController: UIViewController {
         return banner
     }()
     
-//    lazy var pageControl: JXPageControlJump = {
-//        let pageControl = JXPageControlJump()
-//        pageControl.contentMode = .bottom
-//        pageControl.activeSize = CGSize(width: 20, height: 8)
-//        pageControl.inactiveSize = CGSize(width: 8, height: 8)
-//        pageControl.columnSpacing = 0
-//        return pageControl
-//    }()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpSubView()
@@ -38,18 +29,12 @@ class ViewController: UIViewController {
     
     func setUpSubView() {
         view.addSubview(banner)
-//        banner.addSubview(pageControl)
-        
         banner.snp.makeConstraints { (maker) in
             maker.left.right.equalTo(view)
             maker.height.equalTo(200)
             maker.top.equalTo(view.snp_top).offset(100)
         }
-//        pageControl.snp.makeConstraints { (maker) in
-//            maker.left.right.bottom.equalTo(banner)
-//            maker.height.equalTo(20)
-//        }
-        
+
         self.automaticallyAdjustsScrollViewInsets = false
         //TODO:- 未做边界保护, page == 0
     }
@@ -68,26 +53,6 @@ class ViewController: UIViewController {
 //MARK:- JXBannerDataSource
 extension ViewController: JXBannerDataSource {
     
-//    public func jxBanner(pageControl banner: JXBannerType,
-//                         numberOfPages: Int,
-//                         coverView: UIView,
-//                         builder: pageControlBuilder) -> pageControlBuilder {
-//        
-//        let pageControl = JXPageControlJump()
-//        pageControl.contentMode = .bottom
-//        pageControl.activeSize = CGSize(width: 20, height: 8)
-//        pageControl.inactiveSize = CGSize(width: 8, height: 8)
-//        pageControl.columnSpacing = 0
-//        builder.pageControl = pageControl
-//        builder.layout = {
-//            pageControl.snp.makeConstraints { (maker) in
-//                maker.left.right.bottom.equalTo(coverView)
-//                maker.height.equalTo(20)
-//            }
-//        }
-//        return builder
-//    }
-    
     /// Register the bannerCell and reuseIdentifier
     public func jxBanner(_ banner: JXBannerType)
         -> (JXBannerCellRegister) {
@@ -97,10 +62,7 @@ extension ViewController: JXBannerDataSource {
     
     /// How many pages does banner View have?
     public func jxBanner(numberOfItems banner: JXBannerType)
-        -> Int {
-//            pageControl.numberOfPages = pageCount
-            return pageCount
-    }
+        -> Int { return pageCount }
     
     /// Set the closure of the banner item information
     public func jxBanner(_ banner: JXBannerType,
@@ -108,12 +70,10 @@ extension ViewController: JXBannerDataSource {
                              cell: JXBannerBaseCell)
         -> JXBannerBaseCell {
             let tempCell: JXBannerCell = cell as! JXBannerCell
-            tempCell.backgroundColor = UIColor.red
+            tempCell.layer.cornerRadius = 8
             tempCell.layer.masksToBounds = true
-            tempCell.layer.borderColor = UIColor.yellow.cgColor
-            tempCell.layer.borderWidth = 1
             tempCell.imageView.image = UIImage(named: "banner_placeholder")
-            tempCell.descriptionLabel.text = String(index)+"是打发斯蒂芬坚实的金凤凰"
+            tempCell.msgLabel.text = String(index)+"是打发斯蒂芬坚实的金凤凰"
             return tempCell
     }
     
@@ -132,20 +92,35 @@ extension ViewController: JXBannerDataSource {
                              layoutParams: JXBannerLayoutParams)
         -> JXBannerLayoutParams {
             return layoutParams
-                .layoutType(JXBannerTransformLinear())
-                .itemSize(CGSize(width: 250, height: 200))
-                .itemSpacing(5)
+                .layoutType(JXBannerTransformCoverflow())
+                .itemSize(CGSize(width: 300, height: 190))
+                .itemSpacing(10)
     }
     
-    func jxBanner(pageControl banner: JXBannerType,
-                  numberOfPages: Int,
-                  coverView: UIView)
-        -> (UIView & JXBannerPageControlType)? {
-
-            
-            
-            return nil
+    public func jxBanner(pageControl banner: JXBannerType,
+                         numberOfPages: Int,
+                         coverView: UIView,
+                         builder: pageControlBuilder) -> pageControlBuilder {
+        
+        let pageControl = JXPageControlJump()
+        pageControl.contentMode = .bottom
+        pageControl.activeSize = CGSize(width: 15, height: 6)
+        pageControl.inactiveSize = CGSize(width: 6, height: 6)
+        pageControl.activeColor = UIColor.red
+        pageControl.inactiveColor = UIColor.lightGray
+        pageControl.columnSpacing = 0
+        pageControl.isAnimation = true
+        builder.pageControl = pageControl
+        builder.layout = {
+            pageControl.snp.makeConstraints { (maker) in
+                maker.left.right.equalTo(coverView)
+                maker.top.equalTo(coverView.snp_bottom).offset(10)
+                maker.height.equalTo(20)
+            }
+        }
+        return builder
     }
+
 }
 
 //MARK:- JXBannerDelegatez

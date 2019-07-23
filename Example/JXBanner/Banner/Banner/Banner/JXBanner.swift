@@ -298,7 +298,7 @@ extension JXBanner {
     /// Rolling in the
     public func scrollViewDidScroll(
         _ scrollView: UIScrollView) {
-        pause()
+//        pause()
     }
 
 }

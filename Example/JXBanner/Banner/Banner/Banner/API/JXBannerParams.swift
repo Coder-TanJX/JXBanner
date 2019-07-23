@@ -29,8 +29,6 @@ public class JXBannerParams {
     
     var edgeTransitionSubtype: CATransitionSubtype = .fromRight
     
-    internal var pageControl: JXPageControlType?
-    
     internal var currentRollingDirection: RollingDirection = .right
 }
 

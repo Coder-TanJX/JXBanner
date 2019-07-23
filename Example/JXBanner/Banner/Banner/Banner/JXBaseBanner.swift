@@ -8,7 +8,7 @@
 
 import UIKit
 
-let kMultiplier = 4
+let kMultiplier = 1000
 
 public class JXBaseBanner: UIView {
 
@@ -55,6 +55,9 @@ public class JXBaseBanner: UIView {
     //MARK: - override
     override public func layoutSubviews() {
         super.layoutSubviews()
+        if layout.params?.itemSize == nil {
+            layout.params = layout.params
+        }
         if pageCount > 0 {
             scrollToIndexPath(currentIndexPath, animated: false)
         }

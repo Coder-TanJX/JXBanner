@@ -8,9 +8,9 @@
 
 import UIKit
 
-struct JXBannerTransformCoverflow: JXBannerTransformable {
+public struct JXBannerTransformCoverflow: JXBannerTransformable {
     
-    func transformToAttributes(collectionView: UICollectionView,
+    public func transformToAttributes(collectionView: UICollectionView,
                                params: JXBannerLayoutParams,
                                attributes: UICollectionViewLayoutAttributes) {
         

@@ -40,7 +40,7 @@ public class JXBanner: JXBaseBanner, JXBannerType {
                             y: collectionView.contentOffset.y + collectionView.frame.height * 0.5)
         if let indexPath = collectionView.indexPathForItem(at: point) {
             let currentPage = indexOfIndexPath(indexPath)
-            pageControl?.progress = CGFloat(currentPage)
+            pageControl?.currentPage = currentPage
             delegate?.jxBanner(self, center: currentPage)
         }
     }
@@ -68,7 +68,7 @@ extension JXBanner {
     private func refreshDataSource() {
         
         // DataSource
-        if let count = dataSource?.jxBanner(numberOfItems: self),
+        if let _ = dataSource?.jxBanner(numberOfItems: self),
             let tempDataSource = dataSource {
             
             // Register cell
@@ -91,17 +91,25 @@ extension JXBanner {
                                                     layoutParams: layout.params!)
             
             // PageControl
-            self.pageControl?.removeFromSuperview()
-            self.pageControl = nil
+            refreshPageControl()
+        }
+    }
+    
+    
+    private func refreshPageControl() {
+        self.pageControl?.removeFromSuperview()
+        self.pageControl = nil
+        if params.isShowPageControl {
             let pBuilder = dataSource?.jxBanner(pageControl: self,
-                                                numberOfPages: count,
+                                                numberOfPages: pageCount,
                                                 coverView: coverView,
                                                 builder: pageControlBuilder())
-            if let tempPageControl = pBuilder?.pageControl,
-                let layout = pBuilder?.layout{
+            if let tempPageControl = pBuilder?.pageControl{
                 pageControl = tempPageControl
-                pageControl?.numberOfPages = count
+                pageControl?.numberOfPages = pageCount
                 coverView.addSubview(tempPageControl)
+            }
+            if let layout = pBuilder?.layout {
                 layout()
             }
         }
@@ -125,9 +133,7 @@ extension JXBanner {
             params.cycleWay == .forward {
             params.cycleWay = .skipEnd
         }
-        //        placeholderImgView.frame = self.bounds
         placeholderImgView.backgroundColor = UIColor.red
-        //        placeholderImgView.center = collectionView.center
         reinitializeIndexPath()
     }
     

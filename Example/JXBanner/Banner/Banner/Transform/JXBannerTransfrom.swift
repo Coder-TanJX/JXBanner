@@ -8,15 +8,15 @@
 
 import UIKit
 
-struct JXBannerTransfrom {
+public struct JXBannerTransfrom {
 
-    enum JXTransformLocation {
+    public enum JXTransformLocation {
         case left
         case center
         case right
     }
     
-    static func itemLocation(viewCentetX: CGFloat,
+    public static func itemLocation(viewCentetX: CGFloat,
                       itemCenterX: CGFloat) -> JXTransformLocation {
         var location: JXTransformLocation = .right
         if abs(itemCenterX - viewCentetX) < 0.5 {

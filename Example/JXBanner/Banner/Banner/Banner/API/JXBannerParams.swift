@@ -8,8 +8,6 @@
 
 import UIKit
 
-import JXPageControl
-
 // MARK: - Property list
 public class JXBannerParams {
 

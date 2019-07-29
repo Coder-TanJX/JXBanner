@@ -14,6 +14,7 @@ public class JXBaseBanner: UIView {
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        self.autoresizingMask = []
         installNotifications()
         setupSubViews()
     }
@@ -55,7 +56,13 @@ public class JXBaseBanner: UIView {
     //MARK: - override
     override public func layoutSubviews() {
         super.layoutSubviews()
-        if layout.params?.itemSize == nil {
+        if let itemSize = layout.params?.itemSize {
+            var frame = CGRect.zero
+            frame.size = itemSize
+            placeholderImgView.frame = frame
+            placeholderImgView.center = center
+        }else {
+            placeholderImgView.frame = bounds
             layout.params = layout.params
         }
         if pageCount > 0 {
@@ -79,7 +86,6 @@ public class JXBaseBanner: UIView {
     
     public lazy var placeholderImgView: UIImageView = {
         let placeholder = UIImageView()
-        placeholder.frame = self.bounds
         return placeholder
     }()
     

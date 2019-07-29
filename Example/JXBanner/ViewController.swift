@@ -12,7 +12,7 @@ import JXPageControl
 
 class ViewController: UIViewController {
  
-    var pageCount = 5
+    var pageCount = 0
     
     lazy var banner: JXBanner = {
         let banner = JXBanner()
@@ -73,7 +73,7 @@ extension ViewController: JXBannerDataSource {
             tempCell.layer.cornerRadius = 8
             tempCell.layer.masksToBounds = true
             tempCell.imageView.image = UIImage(named: "banner_placeholder")
-            tempCell.msgLabel.text = String(index)+"是打发斯蒂芬坚实的金凤凰"
+            tempCell.msgLabel.text = String(index) + "mm来喽来喽,他真的来喽~"
             return tempCell
     }
     
@@ -82,6 +82,7 @@ extension ViewController: JXBannerDataSource {
                              params: JXBannerParams)
         -> JXBannerParams {
             return params
+                .isShowPageControl(true)
                 .timeInterval(1)
                 .isAutoPlay(true)
                 .cycleWay(.forward)
@@ -101,7 +102,7 @@ extension ViewController: JXBannerDataSource {
                          numberOfPages: Int,
                          coverView: UIView,
                          builder: pageControlBuilder) -> pageControlBuilder {
-        
+
         let pageControl = JXPageControlJump()
         pageControl.contentMode = .bottom
         pageControl.activeSize = CGSize(width: 15, height: 6)
@@ -109,7 +110,7 @@ extension ViewController: JXBannerDataSource {
         pageControl.activeColor = UIColor.red
         pageControl.inactiveColor = UIColor.lightGray
         pageControl.columnSpacing = 0
-        pageControl.isAnimation = true
+        pageControl.isAnimation = false
         builder.pageControl = pageControl
         builder.layout = {
             pageControl.snp.makeConstraints { (maker) in
@@ -123,7 +124,7 @@ extension ViewController: JXBannerDataSource {
 
 }
 
-//MARK:- JXBannerDelegatez
+//MARK:- JXBannerDelegate
 extension ViewController: JXBannerDelegate {
     
     /// This is a call-back to select banner item

@@ -8,18 +8,6 @@
 
 import UIKit
 
-public struct JXBannerCellRegister {
-    
-    var type: JXBannerBaseCell.Type
-    var reuseIdentifier: String
-    
-    init(type: JXBannerBaseCell.Type, reuseIdentifier: String) {
-        self.type = type
-        self.reuseIdentifier = reuseIdentifier
-    }
-}
-
-
 public protocol JXBannerType: UIView {
 
     /// Data source protocol for JXBannerType
@@ -31,4 +19,17 @@ public protocol JXBannerType: UIView {
     /// The refresh UI
     func reloadView()
     
+}
+
+/// A structure that registers cells so that
+/// we can distinguish and retrieve reused cells from the cache pool
+public struct JXBannerCellRegister {
+    
+    var type: JXBannerBaseCell.Type
+    var reuseIdentifier: String
+    
+    init(type: JXBannerBaseCell.Type, reuseIdentifier: String) {
+        self.type = type
+        self.reuseIdentifier = reuseIdentifier
+    }
 }

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import JXPageControl
 
 public protocol JXBannerDataSource {
     
@@ -42,11 +41,6 @@ public protocol JXBannerDataSource {
                   builder: pageControlBuilder) -> pageControlBuilder
 }
 
-public class pageControlBuilder {
-    var pageControl: (UIView & JXPageControlType)?
-    var layout: (() -> ())?
-}
-
 extension JXBannerDataSource {
     
     /// Set the closure of the banner Params
@@ -68,20 +62,17 @@ extension JXBannerDataSource {
                   numberOfPages: Int,
                   coverView: UIView,
                   builder: pageControlBuilder) -> pageControlBuilder {
-        let pageControl = JXPageControlJump()
-        pageControl.contentMode = .bottom
-        pageControl.activeSize = CGSize(width: 15, height: 6)
-        pageControl.inactiveSize = CGSize(width: 6, height: 6)
-        pageControl.columnSpacing = 0
-        pageControl.contentMode = .right
+        let pageControl = JXBannerDefaultPageControl()
+        pageControl.frame = CGRect(x: 0,
+                                   y: coverView.bounds.height - 24,
+                                   width: coverView.bounds.width,
+                                   height: 24)
+        pageControl.autoresizingMask = [
+            .flexibleWidth,
+            .flexibleTopMargin
+        ]
         builder.pageControl = pageControl
-        builder.layout = {
-            pageControl.snp.makeConstraints { (maker) in
-                maker.left.bottom.equalTo(coverView)
-                maker.right.equalTo(coverView).offset(-20)
-                maker.height.equalTo(20)
-            }
-        }
+        
         return builder
     }
     

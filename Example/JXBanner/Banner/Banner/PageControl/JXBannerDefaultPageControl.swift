@@ -1,0 +1,22 @@
+//
+//  JXBannerDefaultPageControl.swift
+//  JXBanner_Example
+//
+//  Created by 谭家祥 on 2019/7/29.
+//  Copyright © 2019 CocoaPods. All rights reserved.
+//
+
+import UIKit
+import JXPageControl
+
+class JXBannerDefaultPageControl: JXPageControlJump {
+    
+    override func setBase() {
+        super.setBase()
+        
+        activeSize = CGSize(width: 15, height: 6)
+        inactiveSize = CGSize(width: 6, height: 6)
+        columnSpacing = 0
+        contentMode = .right
+    }
+}

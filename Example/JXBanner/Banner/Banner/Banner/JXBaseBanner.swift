@@ -57,10 +57,9 @@ public class JXBaseBanner: UIView {
     override public func layoutSubviews() {
         super.layoutSubviews()
         if let itemSize = layout.params?.itemSize {
-            var frame = CGRect.zero
-            frame.size = itemSize
-            placeholderImgView.frame = frame
-            placeholderImgView.center = center
+            let x = (bounds.size.width - itemSize.width) * 0.5
+            let y = (bounds.size.height - itemSize.height) * 0.5
+            placeholderImgView.frame = CGRect(x: x, y: y, width: itemSize.width, height: itemSize.height)
         }else {
             placeholderImgView.frame = bounds
             layout.params = layout.params

@@ -22,6 +22,7 @@ public protocol JXBannerDelegate {
                   coverView: UIView)
 }
 
+/// The default implementation
 extension JXBannerDelegate {
     
     /// This is a call-back to select banner item

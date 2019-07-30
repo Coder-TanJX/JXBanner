@@ -37,9 +37,13 @@ class JXBannerLayout: UICollectionViewFlowLayout {
     override func prepare() {
         super.prepare()
         scrollDirection = .horizontal
-        // 设置内边距
+        
+        // Set the margins
         let inset: CGFloat = (collectionView!.frame.size.width - itemSize.width) * 0.5
-        sectionInset = UIEdgeInsets(top: 0, left: inset, bottom: 0, right: inset)
+        sectionInset = UIEdgeInsets(top: 0,
+                                    left: inset,
+                                    bottom: 0,
+                                    right: inset)
     }
     
     override func layoutAttributesForElements(in rect: CGRect) ->

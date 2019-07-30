@@ -41,6 +41,7 @@ public protocol JXBannerDataSource {
                   builder: pageControlBuilder) -> pageControlBuilder
 }
 
+/// The default implementation
 extension JXBannerDataSource {
     
     /// Set the closure of the banner Params

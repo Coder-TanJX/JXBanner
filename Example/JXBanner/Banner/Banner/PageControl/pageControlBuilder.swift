@@ -10,6 +10,10 @@ import UIKit
 import JXPageControl
 
 public class pageControlBuilder {
+    
+    // The JXPageControlType is the default indicator
     var pageControl: (UIView & JXPageControlType)?
+    
+    /// Layout of the callback
     var layout: (() -> ())?
 }

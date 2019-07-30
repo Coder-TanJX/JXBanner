@@ -108,13 +108,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1F97E25E22E5ACC4003A3571 /* BannerBuilder */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = BannerBuilder;
-			sourceTree = "<group>";
-		};
 		1FAA5AC722A26C7200CC3696 /* Banner */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,11 +119,11 @@
 		1FAA5ACB22A26C7200CC3696 /* Banner */ = {
 			isa = PBXGroup;
 			children = (
-				1F97E25E22E5ACC4003A3571 /* BannerBuilder */,
 				1FAA5AF622A26F8600CC3696 /* Common */,
 				1FAA5ACC22A26C7200CC3696 /* Cell */,
 				1FAA5ACF22A26C7200CC3696 /* PageControl */,
 				1FAA5AD022A26C7200CC3696 /* Transform */,
+				1FAA5ADA22A26C7200CC3696 /* API */,
 				1FAA5AD522A26C7200CC3696 /* Banner */,
 			);
 			path = Banner;
@@ -169,7 +162,6 @@
 		1FAA5AD522A26C7200CC3696 /* Banner */ = {
 			isa = PBXGroup;
 			children = (
-				1FAA5ADA22A26C7200CC3696 /* API */,
 				1F30BDF722A8E917002107EF /* JXBanner.swift */,
 				1F30BDF522A8E751002107EF /* JXBaseBanner.swift */,
 				1FAA5ADD22A26C7200CC3696 /* JXBannerLayout.swift */,

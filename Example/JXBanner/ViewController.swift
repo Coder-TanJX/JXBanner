@@ -36,7 +36,6 @@ class ViewController: UIViewController {
         }
 
         self.automaticallyAdjustsScrollViewInsets = false
-        //TODO:- 未做边界保护, page == 0
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -73,7 +72,7 @@ extension ViewController: JXBannerDataSource {
             tempCell.layer.cornerRadius = 8
             tempCell.layer.masksToBounds = true
             tempCell.imageView.image = UIImage(named: "banner_placeholder")
-            tempCell.msgLabel.text = String(index) + "mm来喽来喽,他真的来喽~"
+            tempCell.msgLabel.text = String(index) + "---来喽来喽,他真的来喽~"
             return tempCell
     }
     

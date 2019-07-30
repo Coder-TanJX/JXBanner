@@ -33,7 +33,7 @@ public class JXBanner: JXBaseBanner, JXBannerType {
     public var delegate: JXBannerDelegate?
     
     /// Outside of pageControl
-    var pageControl: (UIView & JXPageControlType)?
+    internal var pageControl: (UIView & JXPageControlType)?
     
     override func setCurrentIndex() {
         let point = CGPoint(x: collectionView.contentOffset.x + collectionView.frame.width * 0.5,
@@ -133,6 +133,7 @@ extension JXBanner {
             params.cycleWay == .forward {
             params.cycleWay = .skipEnd
         }
+        placeholderImgView.isHidden = pageCount > 0
         placeholderImgView.backgroundColor = UIColor.red
         reinitializeIndexPath()
     }
@@ -218,9 +219,8 @@ extension JXBanner {
         }
     }
     
-    /// cell错位检测和调整
-    private func adjustErrorCell(isScroll: Bool)
-    {
+    /// UICollectionCell rolling error detection
+    private func indexPathErrorDetection() {
         let indexPaths = collectionView.indexPathsForVisibleItems
         var attriArr = [UICollectionViewLayoutAttributes?]()
         for indexPath in indexPaths {
@@ -242,9 +242,7 @@ extension JXBanner {
                 }
             }
         }
-        if isScroll {
-            scrollViewWillBeginDecelerating(collectionView)
-        }
+        scrollViewWillBeginDecelerating(collectionView)
     }
 }
 
@@ -270,16 +268,15 @@ extension JXBanner {
                 currentIndexPath.row == 0 { return }
         }
         
-        // 这里不用考虑越界问题,其他地方做了保护
         if velocity.x > 0 {
-            //左滑,下一张
+            // Slide left. Next slide
             currentIndexPath = currentIndexPath + 1
         }else if velocity.x < 0 {
-            //右滑, 上一张
+            // Slide right. Go ahead
             currentIndexPath = currentIndexPath - 1
         }else {
-            print("未滑动, 不翻页")
-            adjustErrorCell(isScroll: true)
+            // Error detection
+            indexPathErrorDetection()
         }
     }
     
@@ -303,10 +300,7 @@ extension JXBanner {
     
     /// Rolling in the
     public func scrollViewDidScroll(
-        _ scrollView: UIScrollView) {
-//        pause()
-    }
-
+        _ scrollView: UIScrollView) {}
 }
 
 // MARK:- UICollectionViewDataSource, UICollectionViewDelegate
@@ -344,7 +338,7 @@ UICollectionViewDelegate {
                         didSelectItemAt indexPath: IndexPath) {
         delegate?.jxBanner(self,
                            didSelectItemAt: indexOfIndexPath(indexPath))
-        adjustErrorCell(isScroll: true)
+        indexPathErrorDetection()
     }
     
     func indexOfIndexPath(_ indexPath : IndexPath)

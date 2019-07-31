@@ -7,30 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F30BDF622A8E751002107EF /* JXBaseBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30BDF522A8E751002107EF /* JXBaseBanner.swift */; };
-		1F30BDF822A8E917002107EF /* JXBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30BDF722A8E917002107EF /* JXBanner.swift */; };
-		1F30BDFE22A92122002107EF /* JXBannerTransfrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30BDFD22A92122002107EF /* JXBannerTransfrom.swift */; };
-		1FAA5ADE22A26C7200CC3696 /* XMGLineLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AC822A26C7200CC3696 /* XMGLineLayout.swift */; };
-		1FAA5AE122A26C7200CC3696 /* JXBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5ACD22A26C7200CC3696 /* JXBannerCell.swift */; };
-		1FAA5AE222A26C7200CC3696 /* JXBannerBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5ACE22A26C7200CC3696 /* JXBannerBaseCell.swift */; };
-		1FAA5AE322A26C7200CC3696 /* JXBannerTransformLinear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AD122A26C7200CC3696 /* JXBannerTransformLinear.swift */; };
-		1FAA5AE422A26C7200CC3696 /* JXBannerTransformCoverflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AD222A26C7200CC3696 /* JXBannerTransformCoverflow.swift */; };
-		1FAA5AE522A26C7200CC3696 /* JXBannerTransformable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AD322A26C7200CC3696 /* JXBannerTransformable.swift */; };
-		1FAA5AE622A26C7200CC3696 /* JXBannerTransformContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AD422A26C7200CC3696 /* JXBannerTransformContext.swift */; };
-		1FAA5AE722A26C7200CC3696 /* JXBannerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AD622A26C7200CC3696 /* JXBannerType.swift */; };
-		1FAA5AE822A26C7200CC3696 /* JXBannerLayoutParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AD722A26C7200CC3696 /* JXBannerLayoutParams.swift */; };
-		1FAA5AE922A26C7200CC3696 /* JXBannerParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AD822A26C7200CC3696 /* JXBannerParams.swift */; };
-		1FAA5AEB22A26C7200CC3696 /* JXBannerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5ADB22A26C7200CC3696 /* JXBannerDelegate.swift */; };
-		1FAA5AEC22A26C7200CC3696 /* JXBannerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5ADC22A26C7200CC3696 /* JXBannerDataSource.swift */; };
-		1FAA5AED22A26C7200CC3696 /* JXBannerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5ADD22A26C7200CC3696 /* JXBannerLayout.swift */; };
-		1FAA5AF022A26C7C00CC3696 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AEE22A26C7C00CC3696 /* ViewController.swift */; };
-		1FAA5AF122A26C7C00CC3696 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AEF22A26C7C00CC3696 /* ViewController2.swift */; };
+		1F30F28D22EFEF2A007ABBED /* CustomTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30F28C22EFEF2A007ABBED /* CustomTransform.swift */; };
+		1F30F29222F022BA007ABBED /* JXDefaultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30F29122F022BA007ABBED /* JXDefaultVC.swift */; };
+		1F30F29422F022D3007ABBED /* JXCustomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30F29322F022D3007ABBED /* JXCustomVC.swift */; };
 		1FAA5AF322A26CA400CC3696 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FAA5AF222A26CA400CC3696 /* Main.storyboard */; };
-		1FAA5AF822A270A000CC3696 /* IndexPath+Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA5AF722A270A000CC3696 /* IndexPath+Calculate.swift */; };
-		1FAA5B0522A378B000CC3696 /* active.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FAA5B0322A378B000CC3696 /* active.png */; };
-		1FAA5B0622A378B000CC3696 /* inactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FAA5B0422A378B000CC3696 /* inactive.png */; };
-		1FE7FB8722EED95A0065064A /* pageControlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE7FB8622EED95A0065064A /* pageControlBuilder.swift */; };
-		1FE7FB8922EEDA700065064A /* JXBannerDefaultPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE7FB8822EEDA700065064A /* JXBannerDefaultPageControl.swift */; };
+		1FD96C4922F03806003972F1 /* JXTransformCustomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD96C4822F03806003972F1 /* JXTransformCustomVC.swift */; };
 		53088A265BA7D9AC3B26AAA2 /* Pods_JXBanner_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69253EFB2BEA3E4346A791AE /* Pods_JXBanner_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
@@ -49,30 +30,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1F30BDF522A8E751002107EF /* JXBaseBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXBaseBanner.swift; sourceTree = "<group>"; };
-		1F30BDF722A8E917002107EF /* JXBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXBanner.swift; sourceTree = "<group>"; };
-		1F30BDFD22A92122002107EF /* JXBannerTransfrom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXBannerTransfrom.swift; sourceTree = "<group>"; };
-		1FAA5AC822A26C7200CC3696 /* XMGLineLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMGLineLayout.swift; sourceTree = "<group>"; };
-		1FAA5ACD22A26C7200CC3696 /* JXBannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerCell.swift; sourceTree = "<group>"; };
-		1FAA5ACE22A26C7200CC3696 /* JXBannerBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerBaseCell.swift; sourceTree = "<group>"; };
-		1FAA5AD122A26C7200CC3696 /* JXBannerTransformLinear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerTransformLinear.swift; sourceTree = "<group>"; };
-		1FAA5AD222A26C7200CC3696 /* JXBannerTransformCoverflow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerTransformCoverflow.swift; sourceTree = "<group>"; };
-		1FAA5AD322A26C7200CC3696 /* JXBannerTransformable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerTransformable.swift; sourceTree = "<group>"; };
-		1FAA5AD422A26C7200CC3696 /* JXBannerTransformContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerTransformContext.swift; sourceTree = "<group>"; };
-		1FAA5AD622A26C7200CC3696 /* JXBannerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerType.swift; sourceTree = "<group>"; };
-		1FAA5AD722A26C7200CC3696 /* JXBannerLayoutParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerLayoutParams.swift; sourceTree = "<group>"; };
-		1FAA5AD822A26C7200CC3696 /* JXBannerParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerParams.swift; sourceTree = "<group>"; };
-		1FAA5ADB22A26C7200CC3696 /* JXBannerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerDelegate.swift; sourceTree = "<group>"; };
-		1FAA5ADC22A26C7200CC3696 /* JXBannerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerDataSource.swift; sourceTree = "<group>"; };
-		1FAA5ADD22A26C7200CC3696 /* JXBannerLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerLayout.swift; sourceTree = "<group>"; };
-		1FAA5AEE22A26C7C00CC3696 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1FAA5AEF22A26C7C00CC3696 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		1F30F28C22EFEF2A007ABBED /* CustomTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTransform.swift; sourceTree = "<group>"; };
+		1F30F29122F022BA007ABBED /* JXDefaultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXDefaultVC.swift; sourceTree = "<group>"; };
+		1F30F29322F022D3007ABBED /* JXCustomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXCustomVC.swift; sourceTree = "<group>"; };
 		1FAA5AF222A26CA400CC3696 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		1FAA5AF722A270A000CC3696 /* IndexPath+Calculate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IndexPath+Calculate.swift"; sourceTree = "<group>"; };
-		1FAA5B0322A378B000CC3696 /* active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = active.png; sourceTree = "<group>"; };
-		1FAA5B0422A378B000CC3696 /* inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inactive.png; sourceTree = "<group>"; };
-		1FE7FB8622EED95A0065064A /* pageControlBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pageControlBuilder.swift; sourceTree = "<group>"; };
-		1FE7FB8822EEDA700065064A /* JXBannerDefaultPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXBannerDefaultPageControl.swift; sourceTree = "<group>"; };
+		1FD96C4822F03806003972F1 /* JXTransformCustomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXTransformCustomVC.swift; sourceTree = "<group>"; };
 		4E59FFEBD8020BF5A12489A9 /* Pods-JXBanner_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXBanner_Example.release.xcconfig"; path = "Target Support Files/Pods-JXBanner_Example/Pods-JXBanner_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* JXBanner_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXBanner_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -108,85 +70,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1FAA5AC722A26C7200CC3696 /* Banner */ = {
+		1F30F28E22F02272007ABBED /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				1FAA5ACB22A26C7200CC3696 /* Banner */,
+				1F30F29122F022BA007ABBED /* JXDefaultVC.swift */,
+				1F30F29322F022D3007ABBED /* JXCustomVC.swift */,
+				1FD96C4822F03806003972F1 /* JXTransformCustomVC.swift */,
 			);
-			path = Banner;
-			sourceTree = "<group>";
-		};
-		1FAA5ACB22A26C7200CC3696 /* Banner */ = {
-			isa = PBXGroup;
-			children = (
-				1FAA5AF622A26F8600CC3696 /* Common */,
-				1FAA5ACC22A26C7200CC3696 /* Cell */,
-				1FAA5ACF22A26C7200CC3696 /* PageControl */,
-				1FAA5AD022A26C7200CC3696 /* Transform */,
-				1FAA5ADA22A26C7200CC3696 /* API */,
-				1FAA5AD522A26C7200CC3696 /* Banner */,
-			);
-			path = Banner;
-			sourceTree = "<group>";
-		};
-		1FAA5ACC22A26C7200CC3696 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				1FAA5ACD22A26C7200CC3696 /* JXBannerCell.swift */,
-				1FAA5ACE22A26C7200CC3696 /* JXBannerBaseCell.swift */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		1FAA5ACF22A26C7200CC3696 /* PageControl */ = {
-			isa = PBXGroup;
-			children = (
-				1FE7FB8622EED95A0065064A /* pageControlBuilder.swift */,
-				1FE7FB8822EEDA700065064A /* JXBannerDefaultPageControl.swift */,
-			);
-			path = PageControl;
-			sourceTree = "<group>";
-		};
-		1FAA5AD022A26C7200CC3696 /* Transform */ = {
-			isa = PBXGroup;
-			children = (
-				1FAA5AD122A26C7200CC3696 /* JXBannerTransformLinear.swift */,
-				1FAA5AD222A26C7200CC3696 /* JXBannerTransformCoverflow.swift */,
-				1FAA5AD322A26C7200CC3696 /* JXBannerTransformable.swift */,
-				1FAA5AD422A26C7200CC3696 /* JXBannerTransformContext.swift */,
-				1F30BDFD22A92122002107EF /* JXBannerTransfrom.swift */,
-			);
-			path = Transform;
-			sourceTree = "<group>";
-		};
-		1FAA5AD522A26C7200CC3696 /* Banner */ = {
-			isa = PBXGroup;
-			children = (
-				1F30BDF722A8E917002107EF /* JXBanner.swift */,
-				1F30BDF522A8E751002107EF /* JXBaseBanner.swift */,
-				1FAA5ADD22A26C7200CC3696 /* JXBannerLayout.swift */,
-			);
-			path = Banner;
-			sourceTree = "<group>";
-		};
-		1FAA5ADA22A26C7200CC3696 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				1FAA5AD622A26C7200CC3696 /* JXBannerType.swift */,
-				1FAA5ADB22A26C7200CC3696 /* JXBannerDelegate.swift */,
-				1FAA5ADC22A26C7200CC3696 /* JXBannerDataSource.swift */,
-				1FAA5AD822A26C7200CC3696 /* JXBannerParams.swift */,
-				1FAA5AD722A26C7200CC3696 /* JXBannerLayoutParams.swift */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		1FAA5AF622A26F8600CC3696 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				1FAA5AF722A270A000CC3696 /* IndexPath+Calculate.swift */,
-			);
-			path = Common;
+			name = Demo;
 			sourceTree = "<group>";
 		};
 		4FC073646F1C0DF9E1D9E731 /* Frameworks */ = {
@@ -230,13 +121,9 @@
 		607FACD21AFB9204008FA782 /* Example for JXBanner */ = {
 			isa = PBXGroup;
 			children = (
-				1FAA5AC822A26C7200CC3696 /* XMGLineLayout.swift */,
-				1FAA5AC722A26C7200CC3696 /* Banner */,
+				1F30F28E22F02272007ABBED /* Demo */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				1FAA5AEE22A26C7C00CC3696 /* ViewController.swift */,
-				1FAA5AEF22A26C7C00CC3696 /* ViewController2.swift */,
-				1FAA5B0322A378B000CC3696 /* active.png */,
-				1FAA5B0422A378B000CC3696 /* inactive.png */,
+				1F30F28C22EFEF2A007ABBED /* CustomTransform.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				1FAA5AF222A26CA400CC3696 /* Main.storyboard */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -370,9 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FAA5AF322A26CA400CC3696 /* Main.storyboard in Resources */,
-				1FAA5B0522A378B000CC3696 /* active.png in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
-				1FAA5B0622A378B000CC3696 /* inactive.png in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,7 +303,6 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-JXBanner_Example/Pods-JXBanner_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/JXBanner/JXBanner.framework",
 				"${BUILT_PRODUCTS_DIR}/JXPageControl/JXPageControl.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
@@ -427,7 +311,6 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXBanner.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXPageControl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
@@ -444,27 +327,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FAA5AE922A26C7200CC3696 /* JXBannerParams.swift in Sources */,
-				1F30BDF622A8E751002107EF /* JXBaseBanner.swift in Sources */,
-				1F30BDF822A8E917002107EF /* JXBanner.swift in Sources */,
-				1FAA5AE622A26C7200CC3696 /* JXBannerTransformContext.swift in Sources */,
-				1FAA5ADE22A26C7200CC3696 /* XMGLineLayout.swift in Sources */,
-				1FAA5AED22A26C7200CC3696 /* JXBannerLayout.swift in Sources */,
-				1FAA5AE822A26C7200CC3696 /* JXBannerLayoutParams.swift in Sources */,
-				1FAA5AE122A26C7200CC3696 /* JXBannerCell.swift in Sources */,
-				1FE7FB8722EED95A0065064A /* pageControlBuilder.swift in Sources */,
-				1FAA5AEC22A26C7200CC3696 /* JXBannerDataSource.swift in Sources */,
-				1FE7FB8922EEDA700065064A /* JXBannerDefaultPageControl.swift in Sources */,
-				1FAA5AF122A26C7C00CC3696 /* ViewController2.swift in Sources */,
-				1FAA5AE422A26C7200CC3696 /* JXBannerTransformCoverflow.swift in Sources */,
-				1F30BDFE22A92122002107EF /* JXBannerTransfrom.swift in Sources */,
-				1FAA5AE722A26C7200CC3696 /* JXBannerType.swift in Sources */,
-				1FAA5AF022A26C7C00CC3696 /* ViewController.swift in Sources */,
-				1FAA5AEB22A26C7200CC3696 /* JXBannerDelegate.swift in Sources */,
-				1FAA5AE222A26C7200CC3696 /* JXBannerBaseCell.swift in Sources */,
-				1FAA5AF822A270A000CC3696 /* IndexPath+Calculate.swift in Sources */,
-				1FAA5AE322A26C7200CC3696 /* JXBannerTransformLinear.swift in Sources */,
-				1FAA5AE522A26C7200CC3696 /* JXBannerTransformable.swift in Sources */,
+				1FD96C4922F03806003972F1 /* JXTransformCustomVC.swift in Sources */,
+				1F30F29222F022BA007ABBED /* JXDefaultVC.swift in Sources */,
+				1F30F28D22EFEF2A007ABBED /* CustomTransform.swift in Sources */,
+				1F30F29422F022D3007ABBED /* JXCustomVC.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

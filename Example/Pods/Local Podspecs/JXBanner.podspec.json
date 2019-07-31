@@ -18,5 +18,10 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "JXBanner/Classes/**/*"
+  "source_files": "JXBanner/Classes/**/*",
+  "dependencies": {
+    "JXPageControl": [
+
+    ]
+  }
 }

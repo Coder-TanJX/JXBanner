@@ -21,12 +21,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1U-mp-zdF">
-                                <rect key="frame" x="157" y="186" width="60" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gM-Eh-0YE">
+                                <rect key="frame" x="137" y="135" width="87" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="jxBanner"/>
+                                <state key="normal" title="JXDefaultVC"/>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="push" id="IBI-an-y3W"/>
+                                    <segue destination="mqW-87-fvQ" kind="push" id="zdm-wa-4eg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4M-Lh-Yko">
+                                <rect key="frame" x="137" y="197" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="JXCustomVC"/>
+                                <connections>
+                                    <segue destination="x1l-6j-oSl" kind="push" id="l61-iE-tfq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLq-DB-kiK">
+                                <rect key="frame" x="128" y="257" width="108" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="JXAllCustomVC"/>
+                                <connections>
+                                    <segue destination="Lgi-rs-2FX" kind="push" id="1ki-n2-m7p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4QA-Wk-PDr">
+                                <rect key="frame" x="119" y="311" width="137" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="JXLayoutCustomVC"/>
+                                <connections>
+                                    <segue destination="QIk-uN-nRW" kind="push" id="mgy-cD-XEq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -38,84 +62,43 @@
             </objects>
             <point key="canvasLocation" x="777" y="-1064"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--All CustomVC-->
+        <scene sceneID="Kdj-Bg-Rap">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="JXBanner_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Lgi-rs-2FX" customClass="JXAllCustomVC" customModule="JXBanner_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="vFp-DZ-RLW"/>
+                        <viewControllerLayoutGuide type="bottom" id="piv-qp-cSs"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="3NL-UJ-YU9">
-                        <barButtonItem key="rightBarButtonItem" title="next" id="IwB-jM-YeO">
-                            <connections>
-                                <segue destination="JWF-9y-3rD" kind="push" id="AGi-CL-HgC"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1560.8" y="-564.46776611694156"/>
-        </scene>
-        <!--View Controller2-->
-        <scene sceneID="ywL-cN-B1Z">
-            <objects>
-                <viewController id="JWF-9y-3rD" customClass="ViewController2" customModule="JXBanner_Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="9en-da-gid"/>
-                        <viewControllerLayoutGuide type="bottom" id="aQP-En-blD"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="bZK-ua-O5Z">
+                    <view key="view" contentMode="scaleToFill" id="OL9-eA-7iz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WfV-eF-wia" customClass="JXBanner" customModule="JXBanner_Example" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="164" width="375" height="200"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="wjA-k4-MFA"/>
-                                </constraints>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="WfV-eF-wia" secondAttribute="trailing" id="POw-b9-kwV"/>
-                            <constraint firstItem="WfV-eF-wia" firstAttribute="leading" secondItem="bZK-ua-O5Z" secondAttribute="leading" id="nfS-ZR-WTW"/>
-                            <constraint firstItem="WfV-eF-wia" firstAttribute="top" secondItem="9en-da-gid" secondAttribute="bottom" constant="100" id="zcl-ae-k7L"/>
-                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="TGP-2W-6Oz"/>
-                    <connections>
-                        <outlet property="banner" destination="WfV-eF-wia" id="FAa-qg-6Mf"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="UhF-At-lp7"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="T7G-5D-bLT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EoA-76-x7K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2287.1999999999998" y="-565.36731634182911"/>
+            <point key="canvasLocation" x="1617" y="-724"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Tuf-5P-ZZn">
+        <!--DefaultVC-->
+        <scene sceneID="9Kb-nV-3YA">
             <objects>
-                <viewController id="LYg-6i-rdP" sceneMemberID="viewController">
+                <viewController id="mqW-87-fvQ" customClass="JXDefaultVC" customModule="JXBanner_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="vYI-YB-aTM"/>
-                        <viewControllerLayoutGuide type="bottom" id="BoU-8B-kqi"/>
+                        <viewControllerLayoutGuide type="top" id="1mm-MI-9a2"/>
+                        <viewControllerLayoutGuide type="bottom" id="cdT-tT-dWm"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="MtJ-6S-KuG">
+                    <view key="view" contentMode="scaleToFill" id="gn7-kb-yEx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.99215686270000003" green="0.65490196079999996" blue="0.2470588235" alpha="0.1638752140410959" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <navigationItem key="navigationItem" id="cV4-EG-mzg"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0Wv-h6-GNr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sSd-zI-3oe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3093.5999999999999" y="-662.51874062968523"/>
+            <point key="canvasLocation" x="809" y="-1808"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7IZ-Bh-X5B">
@@ -134,6 +117,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dwD-mA-bSv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="48.799999999999997" y="-1045.7271364317842"/>
+        </scene>
+        <!--CustomVC-->
+        <scene sceneID="QUF-Ih-xoO">
+            <objects>
+                <viewController id="x1l-6j-oSl" customClass="JXCustomVC" customModule="JXBanner_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="etQ-To-Kas"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mzi-5q-bid"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qzJ-it-fSa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bUZ-ab-pdE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j3K-ay-1eZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1617" y="-1396"/>
+        </scene>
+        <!--Layout CustomVC-->
+        <scene sceneID="7Yg-PF-t6T">
+            <objects>
+                <viewController id="QIk-uN-nRW" customClass="JXLayoutCustomVC" customModule="JXBanner_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Em4-L0-rGs"/>
+                        <viewControllerLayoutGuide type="bottom" id="LZ0-qY-Ia1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="edk-h2-JLH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vm6-Ii-qqh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Za4-fQ-vAY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="809" y="-340"/>
         </scene>
     </scenes>
 </document>

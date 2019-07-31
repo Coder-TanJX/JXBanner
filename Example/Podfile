@@ -2,8 +2,7 @@ use_frameworks!
 
 target 'JXBanner_Example' do
   pod 'JXBanner', :path => '../'
-  pod 'Alamofire'
   pod 'SnapKit'
-  pod 'JXPageControl', '0.1.3'
+#  pod 'JXPageControl', '0.1.3'
 
 end

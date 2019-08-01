@@ -19,8 +19,6 @@ public class JXBannerParams {
     
     var timeInterval: TimeInterval = 5.0
     
-    var minLaunchInterval: TimeInterval = 3.0
-    
     var cycleWay: CycleWay = .forward
     
     var edgeTransitionType: JXBannerTransitionType? = .fade
@@ -84,11 +82,6 @@ public extension JXBannerParams {
     
     func timeInterval(_ timeInterval: TimeInterval) -> JXBannerParams {
         self.timeInterval = timeInterval
-        return self
-    }
-    
-    func minLaunchInterval(_ minLaunchInterval: TimeInterval) -> JXBannerParams {
-        self.minLaunchInterval = minLaunchInterval
         return self
     }
     

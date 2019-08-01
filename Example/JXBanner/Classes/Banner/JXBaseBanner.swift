@@ -144,30 +144,16 @@ extension JXBaseBanner {
         if params.timeInterval > 0,
             params.isAutoPlay,
             pageCount > 1 {
-            if self.timer == nil {
-                if #available(iOS 10.0, *) {
-                    self.timer = Timer.scheduledTimer(
-                        withTimeInterval: params.timeInterval,
-                        repeats: true,
-                        block: {[weak self] (timer) in
-                            self?.autoScroll()
-                    })
-                } else {
-                    self.timer = Timer.scheduledTimer(
-                        timeInterval: params.timeInterval,
-                        target: self, selector:
-                        #selector(autoScroll),
-                        userInfo: nil,
-                        repeats: true)
-                }
-                RunLoop.current.add(self.timer!, forMode: .common)
+            if timer == nil {
+                timer = Timer.jx_scheduledTimer(
+                    withTimeInterval: params.timeInterval,
+                    repeats: true,
+                    block: {[weak self] (timer) in
+                        self?.autoScroll()
+                })
+                RunLoop.current.add(timer!, forMode: .common)
             }
-            let interval =  (params.timeInterval < params.minLaunchInterval)
-                ? params.minLaunchInterval : params.timeInterval
-            if self.timer == nil {
-                print("----------------")
-            }
-            self.timer?.fireDate = Date(timeIntervalSinceNow: interval)
+            resume()
         }
     }
     

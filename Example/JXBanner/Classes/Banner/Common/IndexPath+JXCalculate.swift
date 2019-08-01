@@ -1,5 +1,5 @@
 //
-//  IndexPath+Calculate.swift
+//  IndexPath+JXCalculate.swift
 //  JXBanner_Example
 //
 //  Created by Code_JX on 2019/6/1.

@@ -12,7 +12,7 @@
 		1F0787C922F2B6B200479E52 /* JXBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787B322F2B6B200479E52 /* JXBanner.swift */; };
 		1F0787CA22F2B6B200479E52 /* JXBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787B522F2B6B200479E52 /* JXBannerCell.swift */; };
 		1F0787CB22F2B6B200479E52 /* JXBannerBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787B622F2B6B200479E52 /* JXBannerBaseCell.swift */; };
-		1F0787CC22F2B6B200479E52 /* IndexPath+Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787B822F2B6B200479E52 /* IndexPath+Calculate.swift */; };
+		1F0787CC22F2B6B200479E52 /* IndexPath+JXCalculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787B822F2B6B200479E52 /* IndexPath+JXCalculate.swift */; };
 		1F0787CD22F2B6B200479E52 /* JXBannerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787BA22F2B6B200479E52 /* JXBannerDelegate.swift */; };
 		1F0787CE22F2B6B200479E52 /* JXBannerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787BB22F2B6B200479E52 /* JXBannerType.swift */; };
 		1F0787CF22F2B6B200479E52 /* JXBannerLayoutParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787BC22F2B6B200479E52 /* JXBannerLayoutParams.swift */; };
@@ -25,6 +25,7 @@
 		1F0787D622F2B6B200479E52 /* JXBannerTransformable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787C422F2B6B200479E52 /* JXBannerTransformable.swift */; };
 		1F0787D722F2B6B200479E52 /* JXBannerTransformContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787C522F2B6B200479E52 /* JXBannerTransformContext.swift */; };
 		1F0787D822F2B6B200479E52 /* JXBannerTransfrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787C622F2B6B200479E52 /* JXBannerTransfrom.swift */; };
+		1F0787DA22F2ED8800479E52 /* Timer+JXBExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787D922F2ED8800479E52 /* Timer+JXBExtension.swift */; };
 		1F30F28D22EFEF2A007ABBED /* CustomTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30F28C22EFEF2A007ABBED /* CustomTransform.swift */; };
 		1F30F29222F022BA007ABBED /* JXDefaultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30F29122F022BA007ABBED /* JXDefaultVC.swift */; };
 		1F30F29422F022D3007ABBED /* JXCustomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30F29322F022D3007ABBED /* JXCustomVC.swift */; };
@@ -53,7 +54,7 @@
 		1F0787B322F2B6B200479E52 /* JXBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBanner.swift; sourceTree = "<group>"; };
 		1F0787B522F2B6B200479E52 /* JXBannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerCell.swift; sourceTree = "<group>"; };
 		1F0787B622F2B6B200479E52 /* JXBannerBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerBaseCell.swift; sourceTree = "<group>"; };
-		1F0787B822F2B6B200479E52 /* IndexPath+Calculate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IndexPath+Calculate.swift"; sourceTree = "<group>"; };
+		1F0787B822F2B6B200479E52 /* IndexPath+JXCalculate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IndexPath+JXCalculate.swift"; sourceTree = "<group>"; };
 		1F0787BA22F2B6B200479E52 /* JXBannerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerDelegate.swift; sourceTree = "<group>"; };
 		1F0787BB22F2B6B200479E52 /* JXBannerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerType.swift; sourceTree = "<group>"; };
 		1F0787BC22F2B6B200479E52 /* JXBannerLayoutParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerLayoutParams.swift; sourceTree = "<group>"; };
@@ -66,6 +67,7 @@
 		1F0787C422F2B6B200479E52 /* JXBannerTransformable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerTransformable.swift; sourceTree = "<group>"; };
 		1F0787C522F2B6B200479E52 /* JXBannerTransformContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerTransformContext.swift; sourceTree = "<group>"; };
 		1F0787C622F2B6B200479E52 /* JXBannerTransfrom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerTransfrom.swift; sourceTree = "<group>"; };
+		1F0787D922F2ED8800479E52 /* Timer+JXBExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timer+JXBExtension.swift"; sourceTree = "<group>"; };
 		1F30F28C22EFEF2A007ABBED /* CustomTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTransform.swift; sourceTree = "<group>"; };
 		1F30F29122F022BA007ABBED /* JXDefaultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXDefaultVC.swift; sourceTree = "<group>"; };
 		1F30F29322F022D3007ABBED /* JXCustomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXCustomVC.swift; sourceTree = "<group>"; };
@@ -150,7 +152,8 @@
 		1F0787B722F2B6B200479E52 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				1F0787B822F2B6B200479E52 /* IndexPath+Calculate.swift */,
+				1F0787B822F2B6B200479E52 /* IndexPath+JXCalculate.swift */,
+				1F0787D922F2ED8800479E52 /* Timer+JXBExtension.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -437,7 +440,7 @@
 			files = (
 				1F0787D522F2B6B200479E52 /* JXBannerTransformCoverflow.swift in Sources */,
 				1F0787C722F2B6B200479E52 /* JXBannerPageControlDefault.swift in Sources */,
-				1F0787CC22F2B6B200479E52 /* IndexPath+Calculate.swift in Sources */,
+				1F0787CC22F2B6B200479E52 /* IndexPath+JXCalculate.swift in Sources */,
 				1F0787C922F2B6B200479E52 /* JXBanner.swift in Sources */,
 				1F0787D622F2B6B200479E52 /* JXBannerTransformable.swift in Sources */,
 				1F0787C822F2B6B200479E52 /* JXBannerPageControlBuilder.swift in Sources */,
@@ -456,6 +459,7 @@
 				1F0787D422F2B6B200479E52 /* JXBannerTransformLinear.swift in Sources */,
 				1F0787CF22F2B6B200479E52 /* JXBannerLayoutParams.swift in Sources */,
 				1F0787CB22F2B6B200479E52 /* JXBannerBaseCell.swift in Sources */,
+				1F0787DA22F2ED8800479E52 /* Timer+JXBExtension.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				1F0787D022F2B6B200479E52 /* JXBannerParams.swift in Sources */,
 			);

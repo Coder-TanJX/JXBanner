@@ -25,7 +25,7 @@ class JXCustomVC: UIViewController {
         return banner
     }()
     
-    lazy var converflowBanner: JXBanner = {[weak self] in
+    lazy var converflowBanner: JXBanner = {
         let banner = JXBanner()
         banner.placeholderImgView.image = UIImage(named: "banner_placeholder")
         banner.backgroundColor = UIColor.black
@@ -47,7 +47,7 @@ class JXCustomVC: UIViewController {
             }
         }
         
-        (converflowBanner).snp.makeConstraints {[weak self] (maker) in
+        converflowBanner.snp.makeConstraints {[weak self] (maker) in
             if let weakSelf = self {
                 maker.left.right.height.equalTo(weakSelf.linearBanner)
                 maker.top.equalTo(weakSelf.linearBanner.snp_bottom).offset(50)
@@ -67,8 +67,14 @@ extension JXCustomVC: JXBannerDataSource {
     
     func jxBanner(_ banner: JXBannerType)
         -> (JXBannerCellRegister) {
-            return JXBannerCellRegister(type: JXBannerCell.self,
-                                        reuseIdentifier: "JXBannerCell")
+
+            if banner.indentify == "linearBanner" {
+                return JXBannerCellRegister(type: JXBannerCell.self,
+                                            reuseIdentifier: "LinearBannerCell")
+            }else {
+                return JXBannerCellRegister(type: JXBannerCell.self,
+                                            reuseIdentifier: "ConverflowBannerCell")
+            }
     }
     
     func jxBanner(numberOfItems banner: JXBannerType)
@@ -89,16 +95,15 @@ extension JXCustomVC: JXBannerDataSource {
     func jxBanner(_ banner: JXBannerType,
                   params: JXBannerParams)
         -> JXBannerParams {
-            
-            
+        
             if banner.indentify == "linearBanner" {
                 return params
                     .timeInterval(1)
+                    .isAutoPlay(false)
                     .cycleWay(.forward)
             }else {
                 return params
                     .timeInterval(3)
-                    .isAutoPlay(true)
                     .cycleWay(.forward)
             }
     }
@@ -120,48 +125,50 @@ extension JXCustomVC: JXBannerDataSource {
             }
     }
     
-    func jxBanner(pageControl banner: JXBannerType,
-                  numberOfPages: Int,
-                  coverView: UIView,
-                  builder: JXBannerPageControlBuilder) -> JXBannerPageControlBuilder {
-        
-        if banner.indentify == "linearBanner" {
-            let pageControl = JXPageControlScale()
-            pageControl.contentMode = .bottom
-            pageControl.activeSize = CGSize(width: 15, height: 6)
-            pageControl.inactiveSize = CGSize(width: 6, height: 6)
-            pageControl.activeColor = UIColor.red
-            pageControl.inactiveColor = UIColor.lightGray
-            pageControl.columnSpacing = 0
-            pageControl.isAnimation = true
-            builder.pageControl = pageControl
-            builder.layout = {
-                pageControl.snp.makeConstraints { (maker) in
-                    maker.left.right.equalTo(coverView)
-                    maker.top.equalTo(coverView.snp_bottom).offset(10)
-                    maker.height.equalTo(20)
-                }
-            }
-            return builder
-            
-        }else {
-            let pageControl = JXPageControlExchange()
-            pageControl.contentMode = .bottom
-            pageControl.activeSize = CGSize(width: 15, height: 6)
-            pageControl.inactiveSize = CGSize(width: 6, height: 6)
-            pageControl.activeColor = UIColor.red
-            pageControl.inactiveColor = UIColor.lightGray
-            pageControl.columnSpacing = 0
-            builder.pageControl = pageControl
-            builder.layout = {
-                pageControl.snp.makeConstraints { (maker) in
-                    maker.left.right.equalTo(coverView)
-                    maker.bottom.equalTo(coverView.snp_bottom).offset(10)
-                    maker.height.equalTo(20)
-                }
-            }
-            return builder
-        }    }
+//    func jxBanner(pageControl banner: JXBannerType,
+//                  numberOfPages: Int,
+//                  coverView: UIView,
+//                  builder: JXBannerPageControlBuilder) -> JXBannerPageControlBuilder {
+//
+//        if banner.indentify == "linearBanner" {
+//            let pageControl = JXPageControlScale()
+//            pageControl.contentMode = .bottom
+//            pageControl.activeSize = CGSize(width: 15, height: 6)
+//            pageControl.inactiveSize = CGSize(width: 6, height: 6)
+//            pageControl.activeColor = UIColor.red
+//            pageControl.inactiveColor = UIColor.lightGray
+//            pageControl.columnSpacing = 0
+//            pageControl.isAnimation = true
+//            builder.pageControl = pageControl
+//            builder.layout = {
+//                pageControl.snp.makeConstraints { (maker) in
+//                    maker.left.right.equalTo(coverView)
+//                    maker.top.equalTo(coverView.snp_bottom).offset(10)
+//                    maker.height.equalTo(20)
+//                }
+//            }
+//            return builder
+//
+//        }else {
+//            let pageControl = JXPageControlExchange()
+//            pageControl.contentMode = .bottom
+//            pageControl.activeSize = CGSize(width: 15, height: 6)
+//            pageControl.inactiveSize = CGSize(width: 6, height: 6)
+//            pageControl.activeColor = UIColor.red
+//            pageControl.inactiveColor = UIColor.lightGray
+//            pageControl.columnSpacing = 0
+//            builder.pageControl = pageControl
+//            builder.layout = {
+//                pageControl.snp.makeConstraints { (maker) in
+//                    maker.left.right.equalTo(coverView)
+//                    maker.bottom.equalTo(coverView.snp_bottom).offset(10)
+//                    maker.height.equalTo(20)
+//                }
+//            }
+//            return builder
+//        }
+//
+//    }
     
 }
 

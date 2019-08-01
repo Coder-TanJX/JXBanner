@@ -8,7 +8,7 @@
 
 import UIKit
 import SnapKit
-import JXBanner
+//import JXBanner
 
 class JXDefaultVC: UIViewController {
     

@@ -8,14 +8,14 @@
 
 import UIKit
 import SnapKit
-import JXBanner
+//import JXBanner
 import JXPageControl
 
 class JXCustomVC: UIViewController {
     
     var pageCount = 5
     
-    lazy var linearBanner: JXBanner = {
+    lazy var linearBanner: JXBanner = {[weak self] in
         let banner = JXBanner()
         banner.placeholderImgView.image = UIImage(named: "banner_placeholder")
         banner.backgroundColor = UIColor.black
@@ -25,7 +25,7 @@ class JXCustomVC: UIViewController {
         return banner
     }()
     
-    lazy var converflowBanner: JXBanner = {
+    lazy var converflowBanner: JXBanner = {[weak self] in
         let banner = JXBanner()
         banner.placeholderImgView.image = UIImage(named: "banner_placeholder")
         banner.backgroundColor = UIColor.black
@@ -90,11 +90,11 @@ extension JXCustomVC: JXBannerDataSource {
             if banner.indentify == "linearBanner" {
                 return params
                     .timeInterval(1)
-                    .isAutoPlay(false)
+                    .isAutoPlay(true)
                     .cycleWay(.forward)
             }else {
                 return params
-                    .timeInterval(2)
+                    .timeInterval(3)
                     .isAutoPlay(true)
                     .cycleWay(.forward)
             }
@@ -116,30 +116,6 @@ extension JXCustomVC: JXBannerDataSource {
                     .itemSpacing(0)
             }
     }
-    
-//    func jxBanner(pageControl banner: JXBannerType,
-//                  numberOfPages: Int,
-//                  coverView: UIView,
-//                  builder: JXBannerPageControlBuilder) -> JXBannerPageControlBuilder {
-//
-//        let pageControl = JXPageControlScale()
-//        pageControl.contentMode = .bottom
-//        pageControl.activeSize = CGSize(width: 15, height: 6)
-//        pageControl.inactiveSize = CGSize(width: 6, height: 6)
-//        pageControl.activeColor = UIColor.red
-//        pageControl.inactiveColor = UIColor.lightGray
-//        pageControl.columnSpacing = 0
-//        pageControl.isAnimation = true
-//        builder.pageControl = pageControl
-//        builder.layout = {
-//            pageControl.snp.makeConstraints { (maker) in
-//                maker.left.right.equalTo(coverView)
-//                maker.top.equalTo(coverView.snp_bottom).offset(10)
-//                maker.height.equalTo(20)
-//            }
-//        }
-//        return builder
-//    }
     
     func jxBanner(pageControl banner: JXBannerType,
                   numberOfPages: Int,

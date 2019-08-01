@@ -21,7 +21,7 @@ class JXBannerLayout: UICollectionViewFlowLayout {
     var params: JXBannerLayoutParams? {
         didSet {
             if let params = params {
-                itemSize = params.itemSize ?? collectionView?.bounds.size ?? CGSize.zero
+                itemSize = params.itemSize ?? collectionView?.bounds.size ?? CGSize(width: 2, height: 2)
                 minimumLineSpacing = params.itemSpacing
                 minimumInteritemSpacing = params.itemSpacing
             }

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import JXBanner
+//import JXBanner
 
 struct CustomTransform: JXBannerTransformable {
     

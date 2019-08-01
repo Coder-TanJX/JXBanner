@@ -164,6 +164,9 @@ extension JXBaseBanner {
             }
             let interval =  (params.timeInterval < params.minLaunchInterval)
                 ? params.minLaunchInterval : params.timeInterval
+            if self.timer == nil {
+                print("----------------")
+            }
             self.timer?.fireDate = Date(timeIntervalSinceNow: interval)
         }
     }

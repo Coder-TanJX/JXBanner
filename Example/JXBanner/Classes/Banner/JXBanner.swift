@@ -60,6 +60,10 @@ public class JXBanner: JXBaseBanner, JXBannerType {
         // Start Animation
         start()
     }
+    
+    deinit {
+        debugPrint("\(self)---------->" + #function)
+    }
 
 }
 

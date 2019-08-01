@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F0787C722F2B6B200479E52 /* JXBannerPageControlDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787B022F2B6B200479E52 /* JXBannerPageControlDefault.swift */; };
+		1F0787C822F2B6B200479E52 /* JXBannerPageControlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787B122F2B6B200479E52 /* JXBannerPageControlBuilder.swift */; };
+		1F0787C922F2B6B200479E52 /* JXBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787B322F2B6B200479E52 /* JXBanner.swift */; };
+		1F0787CA22F2B6B200479E52 /* JXBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787B522F2B6B200479E52 /* JXBannerCell.swift */; };
+		1F0787CB22F2B6B200479E52 /* JXBannerBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787B622F2B6B200479E52 /* JXBannerBaseCell.swift */; };
+		1F0787CC22F2B6B200479E52 /* IndexPath+Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787B822F2B6B200479E52 /* IndexPath+Calculate.swift */; };
+		1F0787CD22F2B6B200479E52 /* JXBannerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787BA22F2B6B200479E52 /* JXBannerDelegate.swift */; };
+		1F0787CE22F2B6B200479E52 /* JXBannerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787BB22F2B6B200479E52 /* JXBannerType.swift */; };
+		1F0787CF22F2B6B200479E52 /* JXBannerLayoutParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787BC22F2B6B200479E52 /* JXBannerLayoutParams.swift */; };
+		1F0787D022F2B6B200479E52 /* JXBannerParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787BD22F2B6B200479E52 /* JXBannerParams.swift */; };
+		1F0787D122F2B6B200479E52 /* JXBannerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787BE22F2B6B200479E52 /* JXBannerDataSource.swift */; };
+		1F0787D222F2B6B200479E52 /* JXBaseBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787BF22F2B6B200479E52 /* JXBaseBanner.swift */; };
+		1F0787D322F2B6B200479E52 /* JXBannerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787C022F2B6B200479E52 /* JXBannerLayout.swift */; };
+		1F0787D422F2B6B200479E52 /* JXBannerTransformLinear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787C222F2B6B200479E52 /* JXBannerTransformLinear.swift */; };
+		1F0787D522F2B6B200479E52 /* JXBannerTransformCoverflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787C322F2B6B200479E52 /* JXBannerTransformCoverflow.swift */; };
+		1F0787D622F2B6B200479E52 /* JXBannerTransformable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787C422F2B6B200479E52 /* JXBannerTransformable.swift */; };
+		1F0787D722F2B6B200479E52 /* JXBannerTransformContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787C522F2B6B200479E52 /* JXBannerTransformContext.swift */; };
+		1F0787D822F2B6B200479E52 /* JXBannerTransfrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787C622F2B6B200479E52 /* JXBannerTransfrom.swift */; };
 		1F30F28D22EFEF2A007ABBED /* CustomTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30F28C22EFEF2A007ABBED /* CustomTransform.swift */; };
 		1F30F29222F022BA007ABBED /* JXDefaultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30F29122F022BA007ABBED /* JXDefaultVC.swift */; };
 		1F30F29422F022D3007ABBED /* JXCustomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30F29322F022D3007ABBED /* JXCustomVC.swift */; };
@@ -30,6 +48,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F0787B022F2B6B200479E52 /* JXBannerPageControlDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerPageControlDefault.swift; sourceTree = "<group>"; };
+		1F0787B122F2B6B200479E52 /* JXBannerPageControlBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerPageControlBuilder.swift; sourceTree = "<group>"; };
+		1F0787B322F2B6B200479E52 /* JXBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBanner.swift; sourceTree = "<group>"; };
+		1F0787B522F2B6B200479E52 /* JXBannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerCell.swift; sourceTree = "<group>"; };
+		1F0787B622F2B6B200479E52 /* JXBannerBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerBaseCell.swift; sourceTree = "<group>"; };
+		1F0787B822F2B6B200479E52 /* IndexPath+Calculate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IndexPath+Calculate.swift"; sourceTree = "<group>"; };
+		1F0787BA22F2B6B200479E52 /* JXBannerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerDelegate.swift; sourceTree = "<group>"; };
+		1F0787BB22F2B6B200479E52 /* JXBannerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerType.swift; sourceTree = "<group>"; };
+		1F0787BC22F2B6B200479E52 /* JXBannerLayoutParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerLayoutParams.swift; sourceTree = "<group>"; };
+		1F0787BD22F2B6B200479E52 /* JXBannerParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerParams.swift; sourceTree = "<group>"; };
+		1F0787BE22F2B6B200479E52 /* JXBannerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerDataSource.swift; sourceTree = "<group>"; };
+		1F0787BF22F2B6B200479E52 /* JXBaseBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBaseBanner.swift; sourceTree = "<group>"; };
+		1F0787C022F2B6B200479E52 /* JXBannerLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerLayout.swift; sourceTree = "<group>"; };
+		1F0787C222F2B6B200479E52 /* JXBannerTransformLinear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerTransformLinear.swift; sourceTree = "<group>"; };
+		1F0787C322F2B6B200479E52 /* JXBannerTransformCoverflow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerTransformCoverflow.swift; sourceTree = "<group>"; };
+		1F0787C422F2B6B200479E52 /* JXBannerTransformable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerTransformable.swift; sourceTree = "<group>"; };
+		1F0787C522F2B6B200479E52 /* JXBannerTransformContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerTransformContext.swift; sourceTree = "<group>"; };
+		1F0787C622F2B6B200479E52 /* JXBannerTransfrom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerTransfrom.swift; sourceTree = "<group>"; };
 		1F30F28C22EFEF2A007ABBED /* CustomTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTransform.swift; sourceTree = "<group>"; };
 		1F30F29122F022BA007ABBED /* JXDefaultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXDefaultVC.swift; sourceTree = "<group>"; };
 		1F30F29322F022D3007ABBED /* JXCustomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXCustomVC.swift; sourceTree = "<group>"; };
@@ -70,6 +106,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F0787AE22F2B6B200479E52 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1F0787AF22F2B6B200479E52 /* PageControl */,
+				1F0787B222F2B6B200479E52 /* Banner */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1F0787AF22F2B6B200479E52 /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				1F0787B022F2B6B200479E52 /* JXBannerPageControlDefault.swift */,
+				1F0787B122F2B6B200479E52 /* JXBannerPageControlBuilder.swift */,
+			);
+			path = PageControl;
+			sourceTree = "<group>";
+		};
+		1F0787B222F2B6B200479E52 /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				1F0787B322F2B6B200479E52 /* JXBanner.swift */,
+				1F0787B422F2B6B200479E52 /* Cell */,
+				1F0787B722F2B6B200479E52 /* Common */,
+				1F0787B922F2B6B200479E52 /* API */,
+				1F0787BF22F2B6B200479E52 /* JXBaseBanner.swift */,
+				1F0787C022F2B6B200479E52 /* JXBannerLayout.swift */,
+				1F0787C122F2B6B200479E52 /* Transform */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		1F0787B422F2B6B200479E52 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1F0787B522F2B6B200479E52 /* JXBannerCell.swift */,
+				1F0787B622F2B6B200479E52 /* JXBannerBaseCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1F0787B722F2B6B200479E52 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1F0787B822F2B6B200479E52 /* IndexPath+Calculate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1F0787B922F2B6B200479E52 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				1F0787BA22F2B6B200479E52 /* JXBannerDelegate.swift */,
+				1F0787BB22F2B6B200479E52 /* JXBannerType.swift */,
+				1F0787BC22F2B6B200479E52 /* JXBannerLayoutParams.swift */,
+				1F0787BD22F2B6B200479E52 /* JXBannerParams.swift */,
+				1F0787BE22F2B6B200479E52 /* JXBannerDataSource.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		1F0787C122F2B6B200479E52 /* Transform */ = {
+			isa = PBXGroup;
+			children = (
+				1F0787C222F2B6B200479E52 /* JXBannerTransformLinear.swift */,
+				1F0787C322F2B6B200479E52 /* JXBannerTransformCoverflow.swift */,
+				1F0787C422F2B6B200479E52 /* JXBannerTransformable.swift */,
+				1F0787C522F2B6B200479E52 /* JXBannerTransformContext.swift */,
+				1F0787C622F2B6B200479E52 /* JXBannerTransfrom.swift */,
+			);
+			path = Transform;
+			sourceTree = "<group>";
+		};
 		1F30F28E22F02272007ABBED /* Demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +230,7 @@
 		607FACD21AFB9204008FA782 /* Example for JXBanner */ = {
 			isa = PBXGroup;
 			children = (
+				1F0787AE22F2B6B200479E52 /* Classes */,
 				1F30F28E22F02272007ABBED /* Demo */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				1F30F28C22EFEF2A007ABBED /* CustomTransform.swift */,
@@ -303,7 +413,6 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-JXBanner_Example/Pods-JXBanner_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JXBanner/JXBanner.framework",
 				"${BUILT_PRODUCTS_DIR}/JXPageControl/JXPageControl.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
@@ -311,7 +420,6 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXBanner.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXPageControl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
@@ -327,11 +435,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F0787D522F2B6B200479E52 /* JXBannerTransformCoverflow.swift in Sources */,
+				1F0787C722F2B6B200479E52 /* JXBannerPageControlDefault.swift in Sources */,
+				1F0787CC22F2B6B200479E52 /* IndexPath+Calculate.swift in Sources */,
+				1F0787C922F2B6B200479E52 /* JXBanner.swift in Sources */,
+				1F0787D622F2B6B200479E52 /* JXBannerTransformable.swift in Sources */,
+				1F0787C822F2B6B200479E52 /* JXBannerPageControlBuilder.swift in Sources */,
+				1F0787CD22F2B6B200479E52 /* JXBannerDelegate.swift in Sources */,
+				1F0787D822F2B6B200479E52 /* JXBannerTransfrom.swift in Sources */,
 				1FD96C4922F03806003972F1 /* JXTransformCustomVC.swift in Sources */,
+				1F0787D122F2B6B200479E52 /* JXBannerDataSource.swift in Sources */,
 				1F30F29222F022BA007ABBED /* JXDefaultVC.swift in Sources */,
+				1F0787D222F2B6B200479E52 /* JXBaseBanner.swift in Sources */,
+				1F0787CA22F2B6B200479E52 /* JXBannerCell.swift in Sources */,
 				1F30F28D22EFEF2A007ABBED /* CustomTransform.swift in Sources */,
+				1F0787CE22F2B6B200479E52 /* JXBannerType.swift in Sources */,
 				1F30F29422F022D3007ABBED /* JXCustomVC.swift in Sources */,
+				1F0787D322F2B6B200479E52 /* JXBannerLayout.swift in Sources */,
+				1F0787D722F2B6B200479E52 /* JXBannerTransformContext.swift in Sources */,
+				1F0787D422F2B6B200479E52 /* JXBannerTransformLinear.swift in Sources */,
+				1F0787CF22F2B6B200479E52 /* JXBannerLayoutParams.swift in Sources */,
+				1F0787CB22F2B6B200479E52 /* JXBannerBaseCell.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				1F0787D022F2B6B200479E52 /* JXBannerParams.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

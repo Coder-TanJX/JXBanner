@@ -34,4 +34,5 @@ open class JXBannerBaseCell: UICollectionViewCell {
         ]
         return imageView
     }()
+    
 }

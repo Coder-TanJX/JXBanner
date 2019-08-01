@@ -29,9 +29,9 @@ public class JXBanner: JXBaseBanner, JXBannerType {
         collectionView.delegate = self
     }
     
-    public var dataSource: JXBannerDataSource? { didSet { reloadView() }}
+    public weak var dataSource: JXBannerDataSource? { didSet { reloadView() }}
     
-    public var delegate: JXBannerDelegate?
+    public weak var delegate: JXBannerDelegate?
     
     /// Outside of pageControl
     internal var pageControl: (UIView & JXPageControlType)?
@@ -60,11 +60,6 @@ public class JXBanner: JXBaseBanner, JXBannerType {
         // Start Animation
         start()
     }
-    
-    deinit {
-        debugPrint("\(self)---------->" + #function)
-    }
-
 }
 
 // MARK: - Private mothod

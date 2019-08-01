@@ -48,5 +48,4 @@ open class JXBannerCell: JXBannerBaseCell {
         ]
         return view
     }()
-    
 }

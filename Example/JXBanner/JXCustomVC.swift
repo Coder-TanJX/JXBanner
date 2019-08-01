@@ -56,6 +56,10 @@ class JXCustomVC: UIViewController {
         
         self.automaticallyAdjustsScrollViewInsets = false
     }
+    
+    deinit {
+        print("\(#function) ----------> \(#file.components(separatedBy: "/").last?.components(separatedBy: ".").first ?? #file)")
+    }
 }
 
 //MARK:- JXBannerDataSource
@@ -90,7 +94,6 @@ extension JXCustomVC: JXBannerDataSource {
             if banner.indentify == "linearBanner" {
                 return params
                     .timeInterval(1)
-                    .isAutoPlay(true)
                     .cycleWay(.forward)
             }else {
                 return params

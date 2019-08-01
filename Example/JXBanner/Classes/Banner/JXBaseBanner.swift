@@ -50,7 +50,7 @@ public class JXBaseBanner: UIView {
     deinit {
         stop()
         NotificationCenter.default.removeObserver(self)
-        print("jxBanner: \(self) is being deinitialized")
+        print("\(#function) ----------> \(self)")
     }
     
     //MARK: - override

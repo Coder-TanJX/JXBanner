@@ -8,7 +8,7 @@
 
 import UIKit
 
-public protocol JXBannerDataSource {
+public protocol JXBannerDataSource: class {
     
     /**
      Use reuseIdentifier to register bannerCell for reuse.

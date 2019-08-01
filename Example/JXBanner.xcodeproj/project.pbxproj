@@ -128,11 +128,11 @@
 			isa = PBXGroup;
 			children = (
 				1F0787B322F2B6B200479E52 /* JXBanner.swift */,
+				1F0787BF22F2B6B200479E52 /* JXBaseBanner.swift */,
+				1F0787C022F2B6B200479E52 /* JXBannerLayout.swift */,
 				1F0787B422F2B6B200479E52 /* Cell */,
 				1F0787B722F2B6B200479E52 /* Common */,
 				1F0787B922F2B6B200479E52 /* API */,
-				1F0787BF22F2B6B200479E52 /* JXBaseBanner.swift */,
-				1F0787C022F2B6B200479E52 /* JXBannerLayout.swift */,
 				1F0787C122F2B6B200479E52 /* Transform */,
 			);
 			path = Banner;

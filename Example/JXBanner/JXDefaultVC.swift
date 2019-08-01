@@ -34,6 +34,10 @@ class JXDefaultVC: UIViewController {
         
         self.automaticallyAdjustsScrollViewInsets = false
     }
+    
+    deinit {
+        print("\(#function) ----------> \(#file.components(separatedBy: "/").last?.components(separatedBy: ".").first ?? #file)")
+    }
 }
 
 //MARK:- JXBannerDataSource

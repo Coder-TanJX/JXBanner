@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol JXBannerDelegate {
+public protocol JXBannerDelegate: class {
     
     /**
      Called when the cell is clicked

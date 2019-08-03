@@ -26,11 +26,13 @@
 		1F0787D722F2B6B200479E52 /* JXBannerTransformContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787C522F2B6B200479E52 /* JXBannerTransformContext.swift */; };
 		1F0787D822F2B6B200479E52 /* JXBannerTransfrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787C622F2B6B200479E52 /* JXBannerTransfrom.swift */; };
 		1F0787DA22F2ED8800479E52 /* Timer+JXBExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0787D922F2ED8800479E52 /* Timer+JXBExtension.swift */; };
-		1F30F28D22EFEF2A007ABBED /* CustomTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30F28C22EFEF2A007ABBED /* CustomTransform.swift */; };
+		1F30F28D22EFEF2A007ABBED /* JXCustomTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30F28C22EFEF2A007ABBED /* JXCustomTransform.swift */; };
 		1F30F29222F022BA007ABBED /* JXDefaultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30F29122F022BA007ABBED /* JXDefaultVC.swift */; };
 		1F30F29422F022D3007ABBED /* JXCustomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30F29322F022D3007ABBED /* JXCustomVC.swift */; };
+		1FA87EE422F5CB2200B2FBCB /* View+JXExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA87EE322F5CB2200B2FBCB /* View+JXExtension.swift */; };
 		1FAA5AF322A26CA400CC3696 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FAA5AF222A26CA400CC3696 /* Main.storyboard */; };
 		1FD96C4922F03806003972F1 /* JXTransformCustomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD96C4822F03806003972F1 /* JXTransformCustomVC.swift */; };
+		1FEE2D0522F5DE170002BAE5 /* JXCycleWayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEE2D0422F5DE170002BAE5 /* JXCycleWayVC.swift */; };
 		53088A265BA7D9AC3B26AAA2 /* Pods_JXBanner_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69253EFB2BEA3E4346A791AE /* Pods_JXBanner_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
@@ -68,11 +70,13 @@
 		1F0787C522F2B6B200479E52 /* JXBannerTransformContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerTransformContext.swift; sourceTree = "<group>"; };
 		1F0787C622F2B6B200479E52 /* JXBannerTransfrom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBannerTransfrom.swift; sourceTree = "<group>"; };
 		1F0787D922F2ED8800479E52 /* Timer+JXBExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timer+JXBExtension.swift"; sourceTree = "<group>"; };
-		1F30F28C22EFEF2A007ABBED /* CustomTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTransform.swift; sourceTree = "<group>"; };
+		1F30F28C22EFEF2A007ABBED /* JXCustomTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXCustomTransform.swift; sourceTree = "<group>"; };
 		1F30F29122F022BA007ABBED /* JXDefaultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXDefaultVC.swift; sourceTree = "<group>"; };
 		1F30F29322F022D3007ABBED /* JXCustomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXCustomVC.swift; sourceTree = "<group>"; };
+		1FA87EE322F5CB2200B2FBCB /* View+JXExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+JXExtension.swift"; sourceTree = "<group>"; };
 		1FAA5AF222A26CA400CC3696 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1FD96C4822F03806003972F1 /* JXTransformCustomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXTransformCustomVC.swift; sourceTree = "<group>"; };
+		1FEE2D0422F5DE170002BAE5 /* JXCycleWayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXCycleWayVC.swift; sourceTree = "<group>"; };
 		4E59FFEBD8020BF5A12489A9 /* Pods-JXBanner_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXBanner_Example.release.xcconfig"; path = "Target Support Files/Pods-JXBanner_Example/Pods-JXBanner_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* JXBanner_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXBanner_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -154,6 +158,7 @@
 			children = (
 				1F0787B822F2B6B200479E52 /* IndexPath+JXCalculate.swift */,
 				1F0787D922F2ED8800479E52 /* Timer+JXBExtension.swift */,
+				1FA87EE322F5CB2200B2FBCB /* View+JXExtension.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -187,9 +192,19 @@
 			children = (
 				1F30F29122F022BA007ABBED /* JXDefaultVC.swift */,
 				1F30F29322F022D3007ABBED /* JXCustomVC.swift */,
-				1FD96C4822F03806003972F1 /* JXTransformCustomVC.swift */,
+				1FEE2D0422F5DE170002BAE5 /* JXCycleWayVC.swift */,
+				1FEE2D0622F5E0E00002BAE5 /* JXTransformCustomVC */,
 			);
 			name = Demo;
+			sourceTree = "<group>";
+		};
+		1FEE2D0622F5E0E00002BAE5 /* JXTransformCustomVC */ = {
+			isa = PBXGroup;
+			children = (
+				1FD96C4822F03806003972F1 /* JXTransformCustomVC.swift */,
+				1F30F28C22EFEF2A007ABBED /* JXCustomTransform.swift */,
+			);
+			name = JXTransformCustomVC;
 			sourceTree = "<group>";
 		};
 		4FC073646F1C0DF9E1D9E731 /* Frameworks */ = {
@@ -236,7 +251,6 @@
 				1F0787AE22F2B6B200479E52 /* Classes */,
 				1F30F28E22F02272007ABBED /* Demo */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				1F30F28C22EFEF2A007ABBED /* CustomTransform.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				1FAA5AF222A26CA400CC3696 /* Main.storyboard */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -449,9 +463,10 @@
 				1FD96C4922F03806003972F1 /* JXTransformCustomVC.swift in Sources */,
 				1F0787D122F2B6B200479E52 /* JXBannerDataSource.swift in Sources */,
 				1F30F29222F022BA007ABBED /* JXDefaultVC.swift in Sources */,
+				1FEE2D0522F5DE170002BAE5 /* JXCycleWayVC.swift in Sources */,
 				1F0787D222F2B6B200479E52 /* JXBaseBanner.swift in Sources */,
 				1F0787CA22F2B6B200479E52 /* JXBannerCell.swift in Sources */,
-				1F30F28D22EFEF2A007ABBED /* CustomTransform.swift in Sources */,
+				1F30F28D22EFEF2A007ABBED /* JXCustomTransform.swift in Sources */,
 				1F0787CE22F2B6B200479E52 /* JXBannerType.swift in Sources */,
 				1F30F29422F022D3007ABBED /* JXCustomVC.swift in Sources */,
 				1F0787D322F2B6B200479E52 /* JXBannerLayout.swift in Sources */,
@@ -462,6 +477,7 @@
 				1F0787DA22F2ED8800479E52 /* Timer+JXBExtension.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				1F0787D022F2B6B200479E52 /* JXBannerParams.swift in Sources */,
+				1FA87EE422F5CB2200B2FBCB /* View+JXExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

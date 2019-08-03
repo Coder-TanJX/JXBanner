@@ -26,12 +26,14 @@ public struct JXBannerTransformCoverflow: JXBannerTransformable {
         
         applyCoverflowTransformToAttributes(viewCentetX: centetX,
                                             attributes: attributes,
+                                            params: params,
                                             angle: angle,
                                             alpha: alpha)
     }
     
     func applyCoverflowTransformToAttributes(viewCentetX: CGFloat,
                                              attributes: UICollectionViewLayoutAttributes,
+                                             params: JXBannerLayoutParams,
                                              angle: CGFloat,
                                              alpha: CGFloat) -> Void {
         var transform3D: CATransform3D = CATransform3DIdentity
@@ -45,10 +47,10 @@ public struct JXBannerTransformCoverflow: JXBannerTransformable {
         switch location {
         case .left:
             _angle = angle
-            translate = (1.0 - cos(_angle * 1.15 * CGFloat.pi)) * attributes.size.width
+            translate = (1.0 - cos(_angle * (1 + params.rateHorisonMargin) * CGFloat.pi)) * attributes.size.width
         case .right:
             _angle = -angle
-            translate = -(1.0 - cos(_angle * 1.15 * CGFloat.pi)) * attributes.size.width
+            translate = -(1.0 - cos(_angle * (1 + params.rateHorisonMargin) * CGFloat.pi)) * attributes.size.width
         case .center:
             _angle = 0
             _alpha = 1

@@ -38,9 +38,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLq-DB-kiK">
-                                <rect key="frame" x="128" y="257" width="108" height="30"/>
+                                <rect key="frame" x="130" y="257" width="104" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="JXAllCustomVC"/>
+                                <state key="normal" title="JXCycleWayVC"/>
                                 <connections>
                                     <segue destination="Lgi-rs-2FX" kind="push" id="1ki-n2-m7p"/>
                                 </connections>
@@ -62,10 +62,10 @@
             </objects>
             <point key="canvasLocation" x="777" y="-1064"/>
         </scene>
-        <!--All CustomVC-->
+        <!--Cycle WayVC-->
         <scene sceneID="Kdj-Bg-Rap">
             <objects>
-                <viewController id="Lgi-rs-2FX" customClass="JXAllCustomVC" customModule="JXBanner_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Lgi-rs-2FX" customClass="JXCycleWayVC" customModule="JXBanner_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vFp-DZ-RLW"/>
                         <viewControllerLayoutGuide type="bottom" id="piv-qp-cSs"/>
@@ -137,10 +137,10 @@
             </objects>
             <point key="canvasLocation" x="1617" y="-1396"/>
         </scene>
-        <!--Layout CustomVC-->
+        <!--Transform CustomVC-->
         <scene sceneID="7Yg-PF-t6T">
             <objects>
-                <viewController id="QIk-uN-nRW" customClass="JXLayoutCustomVC" customModule="JXBanner_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QIk-uN-nRW" customClass="JXTransformCustomVC" customModule="JXBanner_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Em4-L0-rGs"/>
                         <viewControllerLayoutGuide type="bottom" id="LZ0-qY-Ia1"/>

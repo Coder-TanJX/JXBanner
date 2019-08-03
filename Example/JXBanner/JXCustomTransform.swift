@@ -1,5 +1,5 @@
 //
-//  CustomTransform.swift
+//  JXCustomTransform.swift
 //  JXBanner_Example
 //
 //  Created by 谭家祥 on 2019/7/30.
@@ -9,7 +9,7 @@
 import UIKit
 //import JXBanner
 
-struct CustomTransform: JXBannerTransformable {
+struct JXCustomTransform: JXBannerTransformable {
     
     func transformToAttributes(collectionView: UICollectionView,
                                params: JXBannerLayoutParams,

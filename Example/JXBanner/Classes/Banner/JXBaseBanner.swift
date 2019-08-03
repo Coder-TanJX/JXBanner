@@ -148,8 +148,8 @@ extension JXBaseBanner {
                 timer = Timer.jx_scheduledTimer(
                     withTimeInterval: params.timeInterval,
                     repeats: true,
-                    block: {[weak self] (timer) in
-                        self?.autoScroll()
+                    block: {(timer) in
+                        self.autoScroll()
                 })
                 RunLoop.current.add(timer!, forMode: .common)
             }
@@ -212,11 +212,10 @@ extension JXBaseBanner {
     
     @objc func applicationDidBecomeActive(
         _ notification: Notification) {
-        guard self.window != nil else { return }
-        let rectInWindow = convert(frame,
-                                   to: UIApplication.shared.keyWindow)
-        guard (UIApplication.shared.keyWindow?.bounds.intersects(rectInWindow) ?? false)
-            else { return }
+        // Determine if it's on screen
+        guard isShowingOnWindow() != false,
+            pageCount > 1 else { return }
         resume()
     }
+    
 }

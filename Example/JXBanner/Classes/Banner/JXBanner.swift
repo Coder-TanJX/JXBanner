@@ -152,16 +152,12 @@ extension JXBanner {
             scrollToIndexPath(currentIndexPath, animated: false)
         }
     }
-    
+
     @objc internal override func autoScroll() {
-        guard pageCount > 1 else { return }
-        
-        // 判断是否在屏幕中
-        guard self.window != nil else { return }
-        let rectInWindow = convert(frame, to: UIApplication.shared.keyWindow)
-        guard (UIApplication.shared.keyWindow?.bounds.intersects(rectInWindow) ?? false)
-            else { return }
-        
+
+        // Determine if it's on screen
+        guard isShowingOnWindow() != false,
+            pageCount > 1 else { return }
         
         switch params.cycleWay {
             

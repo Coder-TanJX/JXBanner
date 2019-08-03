@@ -29,12 +29,13 @@ public struct JXBannerTransformLinear: JXBannerTransformable {
         // Adjust spacing When Scroling
         let location = JXBannerTransfrom.itemLocation(viewCentetX: centetX,
                                                       itemCenterX: attributes.center.x)
+        let rate = 1.05 + params.rateHorisonMargin
         var translate: CGFloat = 0
         switch location {
         case .left:
-            translate = 1.24 * attributes.size.width * (1 - scale) / 2
+            translate = rate * attributes.size.width * (1 - scale) / 2
         case .right:
-            translate = -1.24 * attributes.size.width * (1 - scale) / 2
+            translate = -rate * attributes.size.width * (1 - scale) / 2
         case .center:
             _alpha = 1.0
         }

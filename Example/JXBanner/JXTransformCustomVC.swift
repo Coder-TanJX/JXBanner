@@ -8,23 +8,114 @@
 
 import UIKit
 
+import SnapKit
+//import JXBanner
+import JXPageControl
+
 class JXTransformCustomVC: UIViewController {
+    
+    var pageCount = 5
+    
+    lazy var banner: JXBanner = {
+        let banner = JXBanner()
+        banner.placeholderImgView.image = UIImage(named: "banner_placeholder")
+        banner.backgroundColor = UIColor.black
+        banner.delegate = self
+        banner.dataSource = self
+        return banner
+        }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addSubview(banner)
+        banner.snp.makeConstraints {(maker) in
+            maker.left.right.equalTo(view)
+            maker.height.equalTo(200)
+            maker.top.equalTo(view.snp_top).offset(100)
+        }
 
-        // Do any additional setup after loading the view.
+        self.automaticallyAdjustsScrollViewInsets = false
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    deinit {
+        print("\(#function) ----------> \(#file.components(separatedBy: "/").last?.components(separatedBy: ".").first ?? #file)")
     }
-    */
-
 }
+
+//MARK:- JXBannerDataSource
+extension JXTransformCustomVC: JXBannerDataSource {
+    
+    func jxBanner(_ banner: JXBannerType)
+        -> (JXBannerCellRegister) {
+            
+            return JXBannerCellRegister(type: JXBannerCell.self,
+                                        reuseIdentifier: "JXTransformCustomVCCell")
+    }
+    
+    func jxBanner(numberOfItems banner: JXBannerType)
+        -> Int { return pageCount }
+    
+    func jxBanner(_ banner: JXBannerType,
+                  cellForItemAt index: Int,
+                  cell: JXBannerBaseCell)
+        -> JXBannerBaseCell {
+            let tempCell: JXBannerCell = cell as! JXBannerCell
+            tempCell.layer.cornerRadius = 8
+            tempCell.layer.masksToBounds = true
+            tempCell.imageView.image = UIImage(named: "banner_placeholder")
+            tempCell.msgLabel.text = String(index) + "---来喽来喽,他真的来喽~"
+            return tempCell
+    }
+    
+    func jxBanner(_ banner: JXBannerType,
+                  params: JXBannerParams)
+        -> JXBannerParams {
+            
+            return params
+                .timeInterval(3)
+                .cycleWay(.forward)
+    }
+    
+    func jxBanner(_ banner: JXBannerType,
+                  layoutParams: JXBannerLayoutParams)
+        -> JXBannerLayoutParams {
+            
+            return layoutParams
+                .layoutType(JXCustomTransform())
+                .itemSize(CGSize(width: 300, height: 190))
+                .itemSpacing(10)
+    }
+    
+    func jxBanner(pageControl banner: JXBannerType,
+                  numberOfPages: Int,
+                  coverView: UIView,
+                  builder: JXBannerPageControlBuilder) -> JXBannerPageControlBuilder {
+        
+        let pageControl = JXPageControlFill()
+        pageControl.contentMode = .bottom
+        pageControl.activeColor = UIColor.red
+        pageControl.columnSpacing = 8
+        builder.pageControl = pageControl
+        builder.layout = {
+            pageControl.snp.makeConstraints { (maker) in
+                maker.left.right.equalTo(coverView)
+                maker.top.equalTo(coverView.snp_bottom).offset(10)
+                maker.height.equalTo(20)
+            }
+        }
+        return builder
+        
+    }
+    
+}
+
+//MARK:- JXBannerDelegate
+extension JXTransformCustomVC: JXBannerDelegate {
+    
+    public func jxBanner(_ banner: JXBannerType,
+                         didSelectItemAt index: Int) {
+        print(index)
+    }
+}
+
+

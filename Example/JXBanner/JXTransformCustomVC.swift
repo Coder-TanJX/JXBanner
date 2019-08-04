@@ -9,7 +9,7 @@
 import UIKit
 
 import SnapKit
-//import JXBanner
+import JXBanner
 import JXPageControl
 
 class JXTransformCustomVC: UIViewController {

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-//import JXBanner
+import JXBanner
 
 struct JXCustomTransform: JXBannerTransformable {
     
@@ -50,8 +50,6 @@ struct JXCustomTransform: JXBannerTransformable {
         var _translateX: CGFloat = 0
         var _translateY: CGFloat = 0
         attributes.zIndex = 0
-        
-        print(calculateRate)
         
         switch location {
         case .left:

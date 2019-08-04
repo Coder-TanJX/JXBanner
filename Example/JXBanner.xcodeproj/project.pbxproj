@@ -10,6 +10,10 @@
 		1F30F28D22EFEF2A007ABBED /* JXCustomTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30F28C22EFEF2A007ABBED /* JXCustomTransform.swift */; };
 		1F30F29222F022BA007ABBED /* JXDefaultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30F29122F022BA007ABBED /* JXDefaultVC.swift */; };
 		1F30F29422F022D3007ABBED /* JXCustomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30F29322F022D3007ABBED /* JXCustomVC.swift */; };
+		1FA4809F22F72B880079C131 /* coverflow.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1FA4809B22F72B870079C131 /* coverflow.gif */; };
+		1FA480A022F72B880079C131 /* linear.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1FA4809C22F72B870079C131 /* linear.gif */; };
+		1FA480A122F72B880079C131 /* default.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1FA4809D22F72B870079C131 /* default.gif */; };
+		1FA480A222F72B880079C131 /* custom.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1FA4809E22F72B870079C131 /* custom.gif */; };
 		1FAA5AF322A26CA400CC3696 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FAA5AF222A26CA400CC3696 /* Main.storyboard */; };
 		1FD96C4922F03806003972F1 /* JXTransformCustomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD96C4822F03806003972F1 /* JXTransformCustomVC.swift */; };
 		1FEE2D0522F5DE170002BAE5 /* JXCycleWayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEE2D0422F5DE170002BAE5 /* JXCycleWayVC.swift */; };
@@ -34,6 +38,10 @@
 		1F30F28C22EFEF2A007ABBED /* JXCustomTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXCustomTransform.swift; sourceTree = "<group>"; };
 		1F30F29122F022BA007ABBED /* JXDefaultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXDefaultVC.swift; sourceTree = "<group>"; };
 		1F30F29322F022D3007ABBED /* JXCustomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXCustomVC.swift; sourceTree = "<group>"; };
+		1FA4809B22F72B870079C131 /* coverflow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = coverflow.gif; sourceTree = "<group>"; };
+		1FA4809C22F72B870079C131 /* linear.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = linear.gif; sourceTree = "<group>"; };
+		1FA4809D22F72B870079C131 /* default.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = default.gif; sourceTree = "<group>"; };
+		1FA4809E22F72B870079C131 /* custom.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = custom.gif; sourceTree = "<group>"; };
 		1FAA5AF222A26CA400CC3696 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1FD96C4822F03806003972F1 /* JXTransformCustomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXTransformCustomVC.swift; sourceTree = "<group>"; };
 		1FEE2D0422F5DE170002BAE5 /* JXCycleWayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXCycleWayVC.swift; sourceTree = "<group>"; };
@@ -81,6 +89,17 @@
 				1FEE2D0622F5E0E00002BAE5 /* JXTransformCustomVC */,
 			);
 			name = Demo;
+			sourceTree = "<group>";
+		};
+		1FA4809A22F72B870079C131 /* gif */ = {
+			isa = PBXGroup;
+			children = (
+				1FA4809B22F72B870079C131 /* coverflow.gif */,
+				1FA4809C22F72B870079C131 /* linear.gif */,
+				1FA4809D22F72B870079C131 /* default.gif */,
+				1FA4809E22F72B870079C131 /* custom.gif */,
+			);
+			path = gif;
 			sourceTree = "<group>";
 		};
 		1FEE2D0622F5E0E00002BAE5 /* JXTransformCustomVC */ = {
@@ -133,6 +152,7 @@
 		607FACD21AFB9204008FA782 /* Example for JXBanner */ = {
 			isa = PBXGroup;
 			children = (
+				1FA4809A22F72B870079C131 /* gif */,
 				1F30F28E22F02272007ABBED /* Demo */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
@@ -267,8 +287,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FA480A022F72B880079C131 /* linear.gif in Resources */,
+				1FA4809F22F72B880079C131 /* coverflow.gif in Resources */,
+				1FA480A122F72B880079C131 /* default.gif in Resources */,
 				1FAA5AF322A26CA400CC3696 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				1FA480A222F72B880079C131 /* custom.gif in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

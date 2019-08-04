@@ -8,7 +8,7 @@
 
 import UIKit
 import SnapKit
-//import JXBanner
+import JXBanner
 
 class JXDefaultVC: UIViewController {
     
@@ -16,8 +16,8 @@ class JXDefaultVC: UIViewController {
     
     lazy var banner: JXBanner = {
         let banner = JXBanner()
-        banner.placeholderImgView.image = UIImage(named: "banner_placeholder")
         banner.backgroundColor = UIColor.black
+        banner.placeholderImgView.image = UIImage(named: "banner_placeholder")
         banner.delegate = self
         banner.dataSource = self
         return banner
@@ -28,10 +28,9 @@ class JXDefaultVC: UIViewController {
         view.addSubview(banner)
         banner.snp.makeConstraints { (maker) in
             maker.left.right.equalTo(view)
-            maker.height.equalTo(200)
+            maker.height.equalTo(250)
             maker.top.equalTo(view.snp_top).offset(100)
         }
-        
         self.automaticallyAdjustsScrollViewInsets = false
     }
     
@@ -46,7 +45,7 @@ extension JXDefaultVC: JXBannerDataSource {
     func jxBanner(_ banner: JXBannerType)
         -> (JXBannerCellRegister) {
             return JXBannerCellRegister(type: JXBannerCell.self,
-                                        reuseIdentifier: "JXBannerCell")
+                                        reuseIdentifier: "JXDefaultVCCell")
     }
     
     func jxBanner(numberOfItems banner: JXBannerType)
@@ -62,6 +61,14 @@ extension JXDefaultVC: JXBannerDataSource {
             tempCell.imageView.image = UIImage(named: "banner_placeholder")
             tempCell.msgLabel.text = String(index) + "---来喽来喽,他真的来喽~"
             return tempCell
+    }
+    
+    func jxBanner(_ banner: JXBannerType,
+                  layoutParams: JXBannerLayoutParams)
+        -> JXBannerLayoutParams {
+        return layoutParams
+            .itemSize(CGSize(width: UIScreen.main.bounds.width - 40, height: 200))
+            .itemSpacing(20)
     }
 }
 

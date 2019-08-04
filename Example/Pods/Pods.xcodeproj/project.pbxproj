@@ -6,70 +6,81 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		2B078B19E504709C7260C74FB8FEBA33 /* JXBanner */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 477273AAE09A9165E4216C43656716CD /* Build configuration list for PBXAggregateTarget "JXBanner" */;
-			buildPhases = (
-			);
-			dependencies = (
-				A6A6972099F975209452143C9B33BD1E /* PBXTargetDependency */,
-			);
-			name = JXBanner;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
+		09BF5E79E6E0B417AF23A30A9DE7285D /* JXPageControlChameleon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C66033A28AD66DEE2C1B2463961310 /* JXPageControlChameleon.swift */; };
 		09D280B6799C96D915ED9C1E32434F78 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B525D0AD5E0A11D5E730B4993B21C606 /* ConstraintRelation.swift */; };
-		0CFE89A6D1670007F8E2B38BDAF355BF /* JXPageControlLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9D0BD258AB49A6465CD2F7F6F6A5E4 /* JXPageControlLine.swift */; };
+		14112D7E171D2BC28004C931AD1FE892 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CDE57BD9056C6F5333F4871F868BAC /* Foundation.framework */; };
 		199C7528DD3BE6C9418027F18455593F /* Pods-JXBanner_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CDF0DE76F8D0837F6F87E8320A404E79 /* Pods-JXBanner_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1CB76B8BC80AD8E4A5DBCEC0756A267F /* JXPageControlBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DF5B4FB133A3148E670FE7B5D4850B /* JXPageControlBase.swift */; };
 		1DF3C35149A9333EAA1876B5F44C733E /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89310BFA4A147286010D8682210EDC7 /* Typealiases.swift */; };
+		1FF8E96FB2C52DFCA59BF48E87044228 /* JXBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52CAC0BF8D7EFF7DA8C442AD3600366 /* JXBannerCell.swift */; };
+		229D9CA5449E9187ECF8E9311491EC6D /* JXPageControlFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = A163B7B09ACB7927E5FE0E5F0DAD9171 /* JXPageControlFill.swift */; };
 		28A3D88D851733FBF5F338EA80F10B36 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A535391FFD9F4B88B7E6B2DA5D408E /* ConstraintMultiplierTarget.swift */; };
 		2A9489A70D33CF8C2F82657C9D1680DC /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDA28F2558F55237D210F6F70A4458C /* ConstraintDescription.swift */; };
 		2BE440DF45BF9EF7F0ADAF6293EE5E0D /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4BE666BA5D0BDDD3416C2BC040C8BA /* ConstraintInsets.swift */; };
+		2C0823FE5D13F3FA0C8D2BA1254309CE /* JXBannerTransformCoverflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FC616DFAA4C89868A12C1C74BCC23E /* JXBannerTransformCoverflow.swift */; };
+		2C7F9FD26D9EDBE4DE2976E549F409F7 /* JXPageControlBoldLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D704B93D7D8745AA39BF1ADD1DA33408 /* JXPageControlBoldLine.swift */; };
+		2E023F40548CEFDDC5D4352718E4FC03 /* JXBannerParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7684190FFE7B6E1D64B9435E3665D98F /* JXBannerParams.swift */; };
 		2FAD114D993C85A4A1CEF16003A47EB9 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B6BC6E7D6A5B5E972FDDA73B7DC21F /* ConstraintPriorityTarget.swift */; };
-		3008023089D1418B0D832D45BF376792 /* JXPageControlTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999EDE29E6EDB2FE1131095FE212EDFE /* JXPageControlTool.swift */; };
+		300D72FB4A2E7476E081A52F1D3AAD01 /* JXPageControlLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9D0BD258AB49A6465CD2F7F6F6A5E4 /* JXPageControlLine.swift */; };
 		3157C05C80CA1E0495A8DFC2C0AF176A /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C490943A9F54848FC49E77B7B9869DA /* ConstraintConfig.swift */; };
-		3959FD6AD1E87105F3DFC75FDBDE84A1 /* JXPageControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7210D6DD1F2688E4E3F9556F7F12AA /* JXPageControl-dummy.m */; };
-		41FA37F8345C728500A822B28A8AA570 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		44FDA4C0A9BF14ED83622548F74823DD /* JXPageControlEllipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E86F6A42D6D7D8638F1550664BC240 /* JXPageControlEllipse.swift */; };
+		35851375601385EF5A70B35D1FB1F636 /* JXBannerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE708A2BCCAB98409375C722A9B646D /* JXBannerType.swift */; };
+		469D9A4166DFDC102761318EE1522ECF /* JXPageControlType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1459064CE8AFF9B084951BA454F352 /* JXPageControlType.swift */; };
+		49B546FE034888802D3524F237258283 /* JXPageControlScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B87C7D080FC051E35676D2594816DF /* JXPageControlScale.swift */; };
 		4B8E5BDB256C5E79C297309866D66514 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F78D3307348642F2B3E10E26F6E6F54 /* ConstraintItem.swift */; };
 		4E50667549D89F8D67664473D962E3D2 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA308DAF804300E4C7E1615804CF0015 /* LayoutConstraintItem.swift */; };
 		50C47D79F7946DDC4EC41700EED9C427 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D38A02E38545DC909CDED794A5975C /* ConstraintMakerEditable.swift */; };
-		51609D0B6CCE35116FFF479D9EDD276B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		51609D0B6CCE35116FFF479D9EDD276B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CDE57BD9056C6F5333F4871F868BAC /* Foundation.framework */; };
 		5328D123D745AD459AEFDB0FA206E143 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984CD215F46C594A5FB3F3A3E50FF41 /* ConstraintMaker.swift */; };
+		57EAB0FFBE3721D9D31C082C72C1DFE5 /* View+JXExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD60C9CBEF8EDF9E4BCA61DFDFEABD6B /* View+JXExtension.swift */; };
 		587849B7FA37493C95685E1C6635FDCD /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBD668FE304474E75C643B1F41C2918 /* ConstraintLayoutSupport.swift */; };
 		5A52E0646AA6E485C3C99E7BA58FFA28 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E5A0D7E8D4117E685BD79621CA583 /* LayoutConstraint.swift */; };
-		5E0EC8B131DAE4BA894A2BC16EDADF17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		5E0EC8B131DAE4BA894A2BC16EDADF17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CDE57BD9056C6F5333F4871F868BAC /* Foundation.framework */; };
+		61D0647CA34C2A47C1322AB632A0A336 /* JXBannerPageControlDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CCD9CB46B9E420020B662B8C603AC4 /* JXBannerPageControlDefault.swift */; };
+		620E802500A89237038764D86E3FD3F2 /* JXBanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB23A74B0661D6E5D2C32990C15BE385 /* JXBanner-dummy.m */; };
 		625AE9EF9B8630E9D9C7A1BDF30215D7 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BC51A9B8A281B522EB0F7C1CC396C3 /* ConstraintMakerExtendable.swift */; };
+		68103E792F599C242FBA8571FC1553EF /* JXBannerTransfrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3418F1AD10998CA904D19DEE8ED64C /* JXBannerTransfrom.swift */; };
 		690C04241AAEB967053667A6A49D045D /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD01E1FD9541B7A7B5B35781DDD85259 /* ConstraintInsetTarget.swift */; };
 		69D1F1A9FFA5FEE777383145AC47EBE3 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E354CCC94B948026081A7FE62AE3002 /* ConstraintPriority.swift */; };
+		7086375420B09A830A19087FE052ED80 /* JXPageControlJump.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E95A72538D27EDE6CD5FCD0FD925BA /* JXPageControlJump.swift */; };
+		7613ED040A13FA0586DB10F73C4191F7 /* JXBannerPageControlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46DB4A97B3FDEAFD22A70851117F68B /* JXBannerPageControlBuilder.swift */; };
+		76FF2AE1D1923066C7B2DCBEA92F8BE5 /* JXBannerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1A165BBD2E9B17660F4FB45457E124 /* JXBannerDataSource.swift */; };
 		81730D9CC5D029A053C7983A8A250A52 /* Pods-JXBanner_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A17A6C348D594FFDDAD7DAA85E3FD42 /* Pods-JXBanner_Example-dummy.m */; };
 		83E8865D0E34C7C7ED919105F79C6EB4 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309B90D1E114BD5D8BFBA680054E6004 /* UILayoutSupport+Extensions.swift */; };
+		851E73740D08F71CC6A87AFF52786892 /* JXPageControlEllipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E86F6A42D6D7D8638F1550664BC240 /* JXPageControlEllipse.swift */; };
 		8806156A2395C0F21585B792AA09EB68 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0287752C5A6BFAD69522F171FE67C69D /* ConstraintMakerPriortizable.swift */; };
-		8906242B05F7222397D254F430FBEDEB /* JXPageControlFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = A163B7B09ACB7927E5FE0E5F0DAD9171 /* JXPageControlFill.swift */; };
-		8C0715F9C8D5503DD286EF8D2BDCB941 /* JXPageControlJump.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E95A72538D27EDE6CD5FCD0FD925BA /* JXPageControlJump.swift */; };
 		8D9D4BC4C7FF25596EF9BDE09CFDB9FA /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152C60343BC81B25BC46C5F24B9C3BE4 /* ConstraintView+Extensions.swift */; };
 		8E50A6844E2C75DBD065F964C933C7EC /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BC1BAB8FE642334D5ABD1D0C68CADC /* ConstraintMakerRelatable.swift */; };
-		93A2FEB979D5B6F9DC96B9C6036CFC38 /* JXPageControlType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1459064CE8AFF9B084951BA454F352 /* JXPageControlType.swift */; };
-		9AC6E83235F5305AD76F59B5E8E6D9B2 /* JXPageControlBoldLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D704B93D7D8745AA39BF1ADD1DA33408 /* JXPageControlBoldLine.swift */; };
-		9C7322C3EA7B91BC1C431375284E18EA /* JXPageControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CD48D889814F9782AA32A9BC417DD6A1 /* JXPageControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A5BDEF0A918B4522E21368C690852781 /* JXPageControlChameleon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C66033A28AD66DEE2C1B2463961310 /* JXPageControlChameleon.swift */; };
+		90755E3C58257356D024B5B2A52F3378 /* JXPageControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7210D6DD1F2688E4E3F9556F7F12AA /* JXPageControl-dummy.m */; };
+		920BCB5542188F25AD1B43A17910E82C /* JXBannerTransformable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9490EB0D0CBB29BEE8E1C51316EC2C0 /* JXBannerTransformable.swift */; };
+		964B6BD9E635FDE058F96B5AA87DC144 /* JXBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98984D45DF35F80A338F9E8FA173312 /* JXBanner.swift */; };
+		990E4D72F4B5C1CBBB0D0A44927278C4 /* JXPageControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30201FAB63FDFBE4E201FD584D4CB24 /* JXPageControl.framework */; };
+		A1E36448EA29231EA11C86287FE987A3 /* JXBannerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CDACD277E42F07ED4607B9545491DC /* JXBannerDelegate.swift */; };
+		A376DE74AF8965C21D34B83263D86230 /* JXPageControlTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999EDE29E6EDB2FE1131095FE212EDFE /* JXPageControlTool.swift */; };
 		A6EABDAAF52FAE2483E939070E5F7FE6 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80EA48F1E6E30C692EBBEC76F3AC0C8 /* ConstraintDSL.swift */; };
 		A6F1076888D56C52595F2CECFD685C02 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69096F3C559A85930AD38F7A794F0E4 /* ConstraintMakerFinalizable.swift */; };
+		A855369F366159A8EAAABAF8B92B7D1E /* JXPageControlExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7361C5355D618E0D2D15907DBEAD06A4 /* JXPageControlExchange.swift */; };
 		ABE7730D474B51F04BFD597D26F68EE6 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F606B1E42B3F9313A16D7BD6CFF4C3E3 /* ConstraintLayoutGuide.swift */; };
+		AC7A2A4C5E2C1C68D944B815DDB8ABEF /* IndexPath+JXCalculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AB751D905E2EEDDA679003FFB084DF /* IndexPath+JXCalculate.swift */; };
+		AE41B4F00AE774E3234AA641308DEDF2 /* JXPageControlBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DF5B4FB133A3148E670FE7B5D4850B /* JXPageControlBase.swift */; };
+		AF70109D53DE0E16B4FA4566780F8D12 /* JXBannerTransformContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9850FFBC31AC433B6F2A2D1C054A2DCF /* JXBannerTransformContext.swift */; };
 		B04BB738F8AC272A6944E9687BC9594D /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A168D3E04A13893B8345CE52046E3C2 /* ConstraintViewDSL.swift */; };
+		BB30E99B77484835ACD31E48577D712C /* JXBannerTransformLinear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE6037430764AA008BECB5B1184EC2 /* JXBannerTransformLinear.swift */; };
 		BB5B52EA52AE8CB85487A55EC4A78637 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC761311EA28A0E21DCBE1585C33694D /* ConstraintLayoutGuideDSL.swift */; };
 		BC9AE8C4AFEFD53B8B38FF9A3EB5C339 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD18365173DA9FBE9D2D7C015179DED7 /* ConstraintAttributes.swift */; };
 		BE2EC27F8469222B418A1051E60851B7 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86243779885A89BFD40AA25D537E2ACD /* ConstraintLayoutSupportDSL.swift */; };
+		C0D4E4E7531D9767E28BA9B4603F6E4C /* JXBannerBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2C336D4BAB02FDC6D55042BF61E57 /* JXBannerBaseCell.swift */; };
+		C2B42F219EBB6441A1EA4FEE7E610529 /* JXBannerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9EE97647E4A9B251D067970FD2A876 /* JXBannerLayout.swift */; };
+		C5A99B9A10ED143987A3EF776A72C8C7 /* JXBannerLayoutParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97E292A15B6C18C518F6C714F97E4DE /* JXBannerLayoutParams.swift */; };
 		C6E7B6E11E9E4C5AF0EADB5A3ECD6646 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741B22239EB57D90C2042071E62595F7 /* ConstraintConstantTarget.swift */; };
 		CD320E30FB58B2FCD4590515801EE120 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846F4E45A51AB41AD1FBD541911C21DA /* ConstraintOffsetTarget.swift */; };
 		CF080F219CA4528D20C7DEE73F672DB1 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA9F1D04E853CB3749E79E60BB79BBE /* ConstraintRelatableTarget.swift */; };
-		D2DA47FB9F9E0491B8A55CB427B1C72B /* JXPageControlExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7361C5355D618E0D2D15907DBEAD06A4 /* JXPageControlExchange.swift */; };
 		D459AC8F6662F74B0AEFCC1757AEA42E /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB93D09741969D8559CBA4A7FA5E818 /* ConstraintView.swift */; };
 		D5A25B2657F533B5F7DC6E83AA25DB06 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4431CB2674E24E47A4FA4CB2C46CA48 /* Debugging.swift */; };
-		E6A374D6076F8A44D22ECD17B018F811 /* JXPageControlScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B87C7D080FC051E35676D2594816DF /* JXPageControlScale.swift */; };
+		D8F7A8863E70D4221DE1C25830DE407C /* JXBanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA7DECE16FC3837C5C2C48990FBABFD9 /* JXBanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE0ABD68B3E64CDD68E522528F15EC2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CDE57BD9056C6F5333F4871F868BAC /* Foundation.framework */; };
+		E59B4124B25662FFB0B982807251A51A /* JXBaseBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EABE07D24AED6C3121E67CEA458DC1 /* JXBaseBanner.swift */; };
+		E8725FE41F05DDDEC08B0147563F97AB /* Timer+JXBExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8698E7144050FBC8F451F5A7EC4BB41 /* Timer+JXBExtension.swift */; };
+		F406A0954FCD89B286C20D730E3DD2D4 /* JXPageControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CD48D889814F9782AA32A9BC417DD6A1 /* JXPageControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F53CFA2630D904C300DC897E625C5C91 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52654F3308568CF99DFECF17A113D193 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9A3FBC8693749210C1E840056C627F9 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EA23B4B003D4796B6D65E9023ED6AE /* SnapKit-dummy.m */; };
 		FA7CC934920A83166D96F6A426C072D3 /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371F32E23ADFD0ECBFE89C4DEB3D126C /* ConstraintLayoutGuide+Extensions.swift */; };
@@ -81,8 +92,15 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2B078B19E504709C7260C74FB8FEBA33;
+			remoteGlobalIDString = BB4ABD45CEDC5804660DD457EADCEF6A;
 			remoteInfo = JXBanner;
+		};
+		5487595344D218BED55091CD0AF4FA6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6C19D6EA38F9B8766CE0488AB708FAA;
+			remoteInfo = JXPageControl;
 		};
 		B7B97C68BB833556479EE770CC9DACDE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -91,24 +109,19 @@
 			remoteGlobalIDString = A4D36C3E69B908E2EF3590393A3FC303;
 			remoteInfo = SnapKit;
 		};
-		B9DE0466B503A371F838AC427992F5E2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9BDADAB183DC724F76980C1842190672;
-			remoteInfo = JXPageControl;
-		};
 		DD33E4CE4787702FD3B3895DA95933D5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9BDADAB183DC724F76980C1842190672;
+			remoteGlobalIDString = C6C19D6EA38F9B8766CE0488AB708FAA;
 			remoteInfo = JXPageControl;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0287752C5A6BFAD69522F171FE67C69D /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		0909C73C5F9793C5958F609BFD074259 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AE708A2BCCAB98409375C722A9B646D /* JXBannerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JXBannerType.swift; sourceTree = "<group>"; };
 		0B9D0BD258AB49A6465CD2F7F6F6A5E4 /* JXPageControlLine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPageControlLine.swift; path = JXPageControl/Classes/Jump/JXPageControlLine.swift; sourceTree = "<group>"; };
 		0C490943A9F54848FC49E77B7B9869DA /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
 		0EB93D09741969D8559CBA4A7FA5E818 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
@@ -118,10 +131,12 @@
 		1A168D3E04A13893B8345CE52046E3C2 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
 		23EA23B4B003D4796B6D65E9023ED6AE /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
 		25A19409959A78FC7B2069D8CB716F1F /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
-		2A01E0A64AB2C82EB89B5ABA630B73F8 /* JXBanner.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JXBanner.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2945FF58256AFAEC6790BD8CDC71E10B /* JXBanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JXBanner.modulemap; sourceTree = "<group>"; };
 		2A17A6C348D594FFDDAD7DAA85E3FD42 /* Pods-JXBanner_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JXBanner_Example-dummy.m"; sourceTree = "<group>"; };
 		2C8903E9B27AD9C2DEC4DCE7F743F784 /* Pods-JXBanner_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JXBanner_Example.release.xcconfig"; sourceTree = "<group>"; };
+		2FCE6037430764AA008BECB5B1184EC2 /* JXBannerTransformLinear.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JXBannerTransformLinear.swift; sourceTree = "<group>"; };
 		309B90D1E114BD5D8BFBA680054E6004 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		30FC616DFAA4C89868A12C1C74BCC23E /* JXBannerTransformCoverflow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JXBannerTransformCoverflow.swift; sourceTree = "<group>"; };
 		371F32E23ADFD0ECBFE89C4DEB3D126C /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
 		38C6B1E254BCA50988CC7D7FDE01E499 /* Pods-JXBanner_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JXBanner_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		3FE91428EF05EC25C2EB43053261D721 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
@@ -129,60 +144,83 @@
 		46C66033A28AD66DEE2C1B2463961310 /* JXPageControlChameleon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPageControlChameleon.swift; path = JXPageControl/Classes/Transform/JXPageControlChameleon.swift; sourceTree = "<group>"; };
 		4984CD215F46C594A5FB3F3A3E50FF41 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
 		4C1459064CE8AFF9B084951BA454F352 /* JXPageControlType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPageControlType.swift; path = JXPageControl/Classes/Common/JXPageControlType.swift; sourceTree = "<group>"; };
-		50472F1AAA3A83A427AE9E5DA94EB7FF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		521E2FF2EC90F92F543231D6C99792BB /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E4775E696C36E3387A7959A334C4E53 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		52654F3308568CF99DFECF17A113D193 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		54821C32833C00267B282702B6A0B6EE /* JXBanner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JXBanner-prefix.pch"; sourceTree = "<group>"; };
+		56203A51C7A8E1A6708247A1444B3F0E /* JXBanner.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JXBanner.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5F71E4F8CD555F69DC6CCC0550055E2D /* JXBanner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JXBanner.xcconfig; sourceTree = "<group>"; };
 		6D0E5A0D7E8D4117E685BD79621CA583 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
 		6E354CCC94B948026081A7FE62AE3002 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
 		6E524F6DBDE960D9CA58C84A973B16CA /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
 		7361C5355D618E0D2D15907DBEAD06A4 /* JXPageControlExchange.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPageControlExchange.swift; path = JXPageControl/Classes/Transform/JXPageControlExchange.swift; sourceTree = "<group>"; };
 		741B22239EB57D90C2042071E62595F7 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		7684190FFE7B6E1D64B9435E3665D98F /* JXBannerParams.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JXBannerParams.swift; sourceTree = "<group>"; };
+		7BD90135AFFC300C79BED5A8E446E5D0 /* Pods_JXBanner_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JXBanner_Example.framework; path = "Pods-JXBanner_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DE4A20C66B8739C0B173987392A7608 /* JXPageControl-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JXPageControl-Info.plist"; sourceTree = "<group>"; };
 		7EBD668FE304474E75C643B1F41C2918 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
 		7F78D3307348642F2B3E10E26F6E6F54 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		82785579B4BB73691B4571A788CA5B83 /* JXBanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JXBanner.framework; path = JXBanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		842193070C12A72ECB4F1CDEE1A27038 /* Pods-JXBanner_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JXBanner_Example-Info.plist"; sourceTree = "<group>"; };
 		846F4E45A51AB41AD1FBD541911C21DA /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
 		86243779885A89BFD40AA25D537E2ACD /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
 		8E7210D6DD1F2688E4E3F9556F7F12AA /* JXPageControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JXPageControl-dummy.m"; sourceTree = "<group>"; };
+		92455058314ECD243A7FA40FE8A14081 /* JXBanner-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JXBanner-Info.plist"; sourceTree = "<group>"; };
 		94E95A72538D27EDE6CD5FCD0FD925BA /* JXPageControlJump.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPageControlJump.swift; path = JXPageControl/Classes/Jump/JXPageControlJump.swift; sourceTree = "<group>"; };
-		987599446F81753CF46958063420DD40 /* JXBanner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JXBanner.xcconfig; sourceTree = "<group>"; };
+		9850FFBC31AC433B6F2A2D1C054A2DCF /* JXBannerTransformContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JXBannerTransformContext.swift; sourceTree = "<group>"; };
+		98EABE07D24AED6C3121E67CEA458DC1 /* JXBaseBanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JXBaseBanner.swift; sourceTree = "<group>"; };
 		98F0DE1DD9F743281DBFA82BA8CE37EB /* JXPageControl.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JXPageControl.xcconfig; sourceTree = "<group>"; };
 		999EDE29E6EDB2FE1131095FE212EDFE /* JXPageControlTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPageControlTool.swift; path = JXPageControl/Classes/Common/JXPageControlTool.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A11FB038514379D3755EC971672CD3E0 /* Pods-JXBanner_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JXBanner_Example-frameworks.sh"; sourceTree = "<group>"; };
 		A163B7B09ACB7927E5FE0E5F0DAD9171 /* JXPageControlFill.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPageControlFill.swift; path = JXPageControl/Classes/Transform/JXPageControlFill.swift; sourceTree = "<group>"; };
+		A1CCD9CB46B9E420020B662B8C603AC4 /* JXBannerPageControlDefault.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JXBannerPageControlDefault.swift; sourceTree = "<group>"; };
 		A8A535391FFD9F4B88B7E6B2DA5D408E /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
-		A8B0212E3371B86A5E4F277DA9AB03A8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		A8D38A02E38545DC909CDED794A5975C /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		A9490EB0D0CBB29BEE8E1C51316EC2C0 /* JXBannerTransformable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JXBannerTransformable.swift; sourceTree = "<group>"; };
 		AAA9F1D04E853CB3749E79E60BB79BBE /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
 		ABC53F9467A78D23A845945CFF479DC5 /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
 		AD01E1FD9541B7A7B5B35781DDD85259 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
 		AD18365173DA9FBE9D2D7C015179DED7 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		AF3418F1AD10998CA904D19DEE8ED64C /* JXBannerTransfrom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JXBannerTransfrom.swift; sourceTree = "<group>"; };
 		B13637BEE75FC0DA7C0C49179D237A89 /* JXPageControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JXPageControl.modulemap; sourceTree = "<group>"; };
+		B46DB4A97B3FDEAFD22A70851117F68B /* JXBannerPageControlBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JXBannerPageControlBuilder.swift; sourceTree = "<group>"; };
 		B4BC51A9B8A281B522EB0F7C1CC396C3 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
 		B525D0AD5E0A11D5E730B4993B21C606 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
-		B5C9693ED0F2CC807BCE5FE5E6AB8F69 /* Pods_JXBanner_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JXBanner_Example.framework; path = "Pods-JXBanner_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B89310BFA4A147286010D8682210EDC7 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
+		B8CDE57BD9056C6F5333F4871F868BAC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		BA2ECEEB308B97543E5B0786E3F4AF48 /* Pods-JXBanner_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JXBanner_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BC761311EA28A0E21DCBE1585C33694D /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		BD60C9CBEF8EDF9E4BCA61DFDFEABD6B /* View+JXExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "View+JXExtension.swift"; sourceTree = "<group>"; };
 		C6DF5B4FB133A3148E670FE7B5D4850B /* JXPageControlBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPageControlBase.swift; path = JXPageControl/Classes/Common/JXPageControlBase.swift; sourceTree = "<group>"; };
 		C80EA48F1E6E30C692EBBEC76F3AC0C8 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
-		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C8AB751D905E2EEDDA679003FFB084DF /* IndexPath+JXCalculate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "IndexPath+JXCalculate.swift"; sourceTree = "<group>"; };
 		CD48D889814F9782AA32A9BC417DD6A1 /* JXPageControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JXPageControl-umbrella.h"; sourceTree = "<group>"; };
 		CDF0DE76F8D0837F6F87E8320A404E79 /* Pods-JXBanner_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JXBanner_Example-umbrella.h"; sourceTree = "<group>"; };
+		D30201FAB63FDFBE4E201FD584D4CB24 /* JXPageControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JXPageControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D52CAC0BF8D7EFF7DA8C442AD3600366 /* JXBannerCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JXBannerCell.swift; sourceTree = "<group>"; };
 		D6B6BC6E7D6A5B5E972FDDA73B7DC21F /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		D6CDACD277E42F07ED4607B9545491DC /* JXBannerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JXBannerDelegate.swift; sourceTree = "<group>"; };
 		D704B93D7D8745AA39BF1ADD1DA33408 /* JXPageControlBoldLine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPageControlBoldLine.swift; path = JXPageControl/Classes/Jump/JXPageControlBoldLine.swift; sourceTree = "<group>"; };
+		D98984D45DF35F80A338F9E8FA173312 /* JXBanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JXBanner.swift; sourceTree = "<group>"; };
 		D9E86F6A42D6D7D8638F1550664BC240 /* JXPageControlEllipse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPageControlEllipse.swift; path = JXPageControl/Classes/Jump/JXPageControlEllipse.swift; sourceTree = "<group>"; };
 		DDA9AD68A17495E608E125A7284C3226 /* Pods-JXBanner_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JXBanner_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DF822E196B18D87C887AD70DB1BE97FF /* JXPageControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JXPageControl.framework; path = JXPageControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0B87C7D080FC051E35676D2594816DF /* JXPageControlScale.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPageControlScale.swift; path = JXPageControl/Classes/Transform/JXPageControlScale.swift; sourceTree = "<group>"; };
 		E4D9C02D201B60CE41146DEC090F7172 /* Pods-JXBanner_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JXBanner_Example.modulemap"; sourceTree = "<group>"; };
+		E8698E7144050FBC8F451F5A7EC4BB41 /* Timer+JXBExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Timer+JXBExtension.swift"; sourceTree = "<group>"; };
+		EB23A74B0661D6E5D2C32990C15BE385 /* JXBanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JXBanner-dummy.m"; sourceTree = "<group>"; };
+		ECFD669127D6B63D9D9FBC452D0E9BD8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		EE1A165BBD2E9B17660F4FB45457E124 /* JXBannerDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JXBannerDataSource.swift; sourceTree = "<group>"; };
+		EEBDCB8705FF08A6696F40EDE2B29852 /* JXPageControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JXPageControl.framework; path = JXPageControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0BC1BAB8FE642334D5ABD1D0C68CADC /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
 		F4431CB2674E24E47A4FA4CB2C46CA48 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
 		F606B1E42B3F9313A16D7BD6CFF4C3E3 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
 		F69096F3C559A85930AD38F7A794F0E4 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		F97E292A15B6C18C518F6C714F97E4DE /* JXBannerLayoutParams.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JXBannerLayoutParams.swift; sourceTree = "<group>"; };
 		FA308DAF804300E4C7E1615804CF0015 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		FA7DECE16FC3837C5C2C48990FBABFD9 /* JXBanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JXBanner-umbrella.h"; sourceTree = "<group>"; };
 		FD4BE666BA5D0BDDD3416C2BC040C8BA /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		FF9EE97647E4A9B251D067970FD2A876 /* JXBannerLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JXBannerLayout.swift; sourceTree = "<group>"; };
+		FFF2C336D4BAB02FDC6D55042BF61E57 /* JXBannerBaseCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JXBannerBaseCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,11 +232,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7A0A4F21CFD6C004DEEF7E38AF033E33 /* Frameworks */ = {
+		86046BA7BB88F53FBDDBCF529839B1C7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41FA37F8345C728500A822B28A8AA570 /* Foundation.framework in Frameworks */,
+				14112D7E171D2BC28004C931AD1FE892 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C878C8C39E5F61DC788543550D3E089B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE0ABD68B3E64CDD68E522528F15EC2C /* Foundation.framework in Frameworks */,
+				990E4D72F4B5C1CBBB0D0A44927278C4 /* JXPageControl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,13 +260,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		386883E193CEEB90DB15906D4D574923 /* Support Files */ = {
+		1F9E2B2FA8F0F23781A361032F798574 /* JXBanner */ = {
 			isa = PBXGroup;
 			children = (
-				987599446F81753CF46958063420DD40 /* JXBanner.xcconfig */,
+				57AD192E9877B2121A07190FF862AACB /* Banner */,
+				5979DCA734A4301B7F25951D0BA37218 /* PageControl */,
+				AACFFBB81A83249D16F8EF8F8552022C /* Pod */,
+				B6FD3ED1BEAF61A7C82A17CE84A93C28 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/JXBanner";
+			name = JXBanner;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		57AD192E9877B2121A07190FF862AACB /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				D98984D45DF35F80A338F9E8FA173312 /* JXBanner.swift */,
+				FF9EE97647E4A9B251D067970FD2A876 /* JXBannerLayout.swift */,
+				98EABE07D24AED6C3121E67CEA458DC1 /* JXBaseBanner.swift */,
+				C9FCDC95558C90B7412B10F3C5945652 /* API */,
+				AA4259EF4763447631E193E4C3E3627F /* Cell */,
+				E249350FFB465C88E0A610CF1E4BB7F2 /* Common */,
+				96DA835803AEF19BC153FC0EBE57C4FE /* Transform */,
+			);
+			name = Banner;
+			path = JXBanner/Classes/Banner;
+			sourceTree = "<group>";
+		};
+		5979DCA734A4301B7F25951D0BA37218 /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				B46DB4A97B3FDEAFD22A70851117F68B /* JXBannerPageControlBuilder.swift */,
+				A1CCD9CB46B9E420020B662B8C603AC4 /* JXBannerPageControlDefault.swift */,
+			);
+			name = PageControl;
+			path = JXBanner/Classes/PageControl;
+			sourceTree = "<group>";
+		};
+		598E19441CDC2885DF82EA21CEA8812B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82785579B4BB73691B4571A788CA5B83 /* JXBanner.framework */,
+				EEBDCB8705FF08A6696F40EDE2B29852 /* JXPageControl.framework */,
+				7BD90135AFFC300C79BED5A8E446E5D0 /* Pods_JXBanner_Example.framework */,
+				0909C73C5F9793C5958F609BFD074259 /* SnapKit.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		67A63544AB5AEE97318189B557525537 /* Pods-JXBanner_Example */ = {
@@ -237,16 +323,6 @@
 			);
 			name = "Pods-JXBanner_Example";
 			path = "Target Support Files/Pods-JXBanner_Example";
-			sourceTree = "<group>";
-		};
-		828A1238B65DB37AFEA0CE1B3911F6F6 /* JXBanner */ = {
-			isa = PBXGroup;
-			children = (
-				CC7CDFDE15E8459F6B6138CB01F4ED28 /* Pod */,
-				386883E193CEEB90DB15906D4D574923 /* Support Files */,
-			);
-			name = JXBanner;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		850AF63BF7A4FDBFE2822918BEF58EA0 /* Support Files */ = {
@@ -274,12 +350,34 @@
 			name = Jump;
 			sourceTree = "<group>";
 		};
-		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+		9572F924CFC7AE1C969AC9071E3C2D0A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+				D30201FAB63FDFBE4E201FD584D4CB24 /* JXPageControl.framework */,
+				C7F2799C2BAE1737212BE2AA3299D31F /* iOS */,
 			);
-			name = iOS;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96DA835803AEF19BC153FC0EBE57C4FE /* Transform */ = {
+			isa = PBXGroup;
+			children = (
+				A9490EB0D0CBB29BEE8E1C51316EC2C0 /* JXBannerTransformable.swift */,
+				9850FFBC31AC433B6F2A2D1C054A2DCF /* JXBannerTransformContext.swift */,
+				30FC616DFAA4C89868A12C1C74BCC23E /* JXBannerTransformCoverflow.swift */,
+				2FCE6037430764AA008BECB5B1184EC2 /* JXBannerTransformLinear.swift */,
+				AF3418F1AD10998CA904D19DEE8ED64C /* JXBannerTransfrom.swift */,
+			);
+			name = Transform;
+			path = Transform;
+			sourceTree = "<group>";
+		};
+		A0DEF954CA5A6FC3DC8216156F56CC59 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F9E2B2FA8F0F23781A361032F798574 /* JXBanner */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		A92FEE2E01CC739C706127143A270F70 /* JXPageControl */ = {
@@ -294,6 +392,26 @@
 			path = JXPageControl;
 			sourceTree = "<group>";
 		};
+		AA4259EF4763447631E193E4C3E3627F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FFF2C336D4BAB02FDC6D55042BF61E57 /* JXBannerBaseCell.swift */,
+				D52CAC0BF8D7EFF7DA8C442AD3600366 /* JXBannerCell.swift */,
+			);
+			name = Cell;
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AACFFBB81A83249D16F8EF8F8552022C /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				56203A51C7A8E1A6708247A1444B3F0E /* JXBanner.podspec */,
+				ECFD669127D6B63D9D9FBC452D0E9BD8 /* LICENSE */,
+				4E4775E696C36E3387A7959A334C4E53 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		ACA1C7ED618412D18C3D580941FCBC68 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,42 +421,62 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		CC7CDFDE15E8459F6B6138CB01F4ED28 /* Pod */ = {
+		B6FD3ED1BEAF61A7C82A17CE84A93C28 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2A01E0A64AB2C82EB89B5ABA630B73F8 /* JXBanner.podspec */,
-				50472F1AAA3A83A427AE9E5DA94EB7FF /* LICENSE */,
-				A8B0212E3371B86A5E4F277DA9AB03A8 /* README.md */,
+				2945FF58256AFAEC6790BD8CDC71E10B /* JXBanner.modulemap */,
+				5F71E4F8CD555F69DC6CCC0550055E2D /* JXBanner.xcconfig */,
+				EB23A74B0661D6E5D2C32990C15BE385 /* JXBanner-dummy.m */,
+				92455058314ECD243A7FA40FE8A14081 /* JXBanner-Info.plist */,
+				54821C32833C00267B282702B6A0B6EE /* JXBanner-prefix.pch */,
+				FA7DECE16FC3837C5C2C48990FBABFD9 /* JXBanner-umbrella.h */,
 			);
-			name = Pod;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JXBanner";
 			sourceTree = "<group>";
 		};
-		CD2964010093C23157AFA7FAD5ED60E5 /* Development Pods */ = {
+		C7F2799C2BAE1737212BE2AA3299D31F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				828A1238B65DB37AFEA0CE1B3911F6F6 /* JXBanner */,
+				B8CDE57BD9056C6F5333F4871F868BAC /* Foundation.framework */,
 			);
-			name = "Development Pods";
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C9FCDC95558C90B7412B10F3C5945652 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				EE1A165BBD2E9B17660F4FB45457E124 /* JXBannerDataSource.swift */,
+				D6CDACD277E42F07ED4607B9545491DC /* JXBannerDelegate.swift */,
+				F97E292A15B6C18C518F6C714F97E4DE /* JXBannerLayoutParams.swift */,
+				7684190FFE7B6E1D64B9435E3665D98F /* JXBannerParams.swift */,
+				0AE708A2BCCAB98409375C722A9B646D /* JXBannerType.swift */,
+			);
+			name = API;
+			path = API;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				CD2964010093C23157AFA7FAD5ED60E5 /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				A0DEF954CA5A6FC3DC8216156F56CC59 /* Development Pods */,
+				9572F924CFC7AE1C969AC9071E3C2D0A /* Frameworks */,
 				ACA1C7ED618412D18C3D580941FCBC68 /* Pods */,
-				E48A41C6CB6958B26B4F7CB94C902F19 /* Products */,
+				598E19441CDC2885DF82EA21CEA8812B /* Products */,
 				E3CD491FF3B1DF4862913A8F8B0E5900 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		E249350FFB465C88E0A610CF1E4BB7F2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+				C8AB751D905E2EEDDA679003FFB084DF /* IndexPath+JXCalculate.swift */,
+				E8698E7144050FBC8F451F5A7EC4BB41 /* Timer+JXBExtension.swift */,
+				BD60C9CBEF8EDF9E4BCA61DFDFEABD6B /* View+JXExtension.swift */,
 			);
-			name = Frameworks;
+			name = Common;
+			path = Common;
 			sourceTree = "<group>";
 		};
 		E3CD491FF3B1DF4862913A8F8B0E5900 /* Targets Support Files */ = {
@@ -347,16 +485,6 @@
 				67A63544AB5AEE97318189B557525537 /* Pods-JXBanner_Example */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		E48A41C6CB6958B26B4F7CB94C902F19 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DF822E196B18D87C887AD70DB1BE97FF /* JXPageControl.framework */,
-				B5C9693ED0F2CC807BCE5FE5E6AB8F69 /* Pods_JXBanner_Example.framework */,
-				521E2FF2EC90F92F543231D6C99792BB /* SnapKit.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		E573613D61B37394A5688844DE85C6AF /* SnapKit */ = {
@@ -448,11 +576,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64670A861AE5E84AAECED26A3CC56A21 /* Headers */ = {
+		5DF26DE489B57B3CE97B3AADCB963044 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C7322C3EA7B91BC1C431375284E18EA /* JXPageControl-umbrella.h in Headers */,
+				D8F7A8863E70D4221DE1C25830DE407C /* JXBanner-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EA2621002F7B4FDD24A0A32934E2105 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F406A0954FCD89B286C20D730E3DD2D4 /* JXPageControl-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,24 +603,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		9BDADAB183DC724F76980C1842190672 /* JXPageControl */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0C9E56A967FC3FD69A2AFECCDA92968F /* Build configuration list for PBXNativeTarget "JXPageControl" */;
-			buildPhases = (
-				64670A861AE5E84AAECED26A3CC56A21 /* Headers */,
-				DBAE574C64D00814DEB7CDC37E537337 /* Sources */,
-				7A0A4F21CFD6C004DEEF7E38AF033E33 /* Frameworks */,
-				F7D5241D3E3CAF1924B3BAABA35913CD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = JXPageControl;
-			productName = JXPageControl;
-			productReference = DF822E196B18D87C887AD70DB1BE97FF /* JXPageControl.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		A4D36C3E69B908E2EF3590393A3FC303 /* SnapKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82ECE472FF8B8990EE4E08BB2C08E5A4 /* Build configuration list for PBXNativeTarget "SnapKit" */;
@@ -500,7 +618,7 @@
 			);
 			name = SnapKit;
 			productName = SnapKit;
-			productReference = 521E2FF2EC90F92F543231D6C99792BB /* SnapKit.framework */;
+			productReference = 0909C73C5F9793C5958F609BFD074259 /* SnapKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A6418C147D88DA49C8EF19524590D3FA /* Pods-JXBanner_Example */ = {
@@ -521,7 +639,44 @@
 			);
 			name = "Pods-JXBanner_Example";
 			productName = "Pods-JXBanner_Example";
-			productReference = B5C9693ED0F2CC807BCE5FE5E6AB8F69 /* Pods_JXBanner_Example.framework */;
+			productReference = 7BD90135AFFC300C79BED5A8E446E5D0 /* Pods_JXBanner_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BB4ABD45CEDC5804660DD457EADCEF6A /* JXBanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B784132433F4673CB6A7BAF20CC76076 /* Build configuration list for PBXNativeTarget "JXBanner" */;
+			buildPhases = (
+				5DF26DE489B57B3CE97B3AADCB963044 /* Headers */,
+				1756414D696F32B4AC9F305442A6E886 /* Sources */,
+				C878C8C39E5F61DC788543550D3E089B /* Frameworks */,
+				85C85F47459C0BA96B10E9C1038C1849 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				502A820F220F4E6E8C09BE302919FA1A /* PBXTargetDependency */,
+			);
+			name = JXBanner;
+			productName = JXBanner;
+			productReference = 82785579B4BB73691B4571A788CA5B83 /* JXBanner.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C6C19D6EA38F9B8766CE0488AB708FAA /* JXPageControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 089F57A761A380337E8B12397014EBD9 /* Build configuration list for PBXNativeTarget "JXPageControl" */;
+			buildPhases = (
+				7EA2621002F7B4FDD24A0A32934E2105 /* Headers */,
+				3B96E23380BE3E4B16772054FDB140DB /* Sources */,
+				86046BA7BB88F53FBDDBCF529839B1C7 /* Frameworks */,
+				E6B04E4220D91FB28B1BB38BE160FD92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JXPageControl;
+			productName = JXPageControl;
+			productReference = EEBDCB8705FF08A6696F40EDE2B29852 /* JXPageControl.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -541,12 +696,12 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = E48A41C6CB6958B26B4F7CB94C902F19 /* Products */;
+			productRefGroup = 598E19441CDC2885DF82EA21CEA8812B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2B078B19E504709C7260C74FB8FEBA33 /* JXBanner */,
-				9BDADAB183DC724F76980C1842190672 /* JXPageControl */,
+				BB4ABD45CEDC5804660DD457EADCEF6A /* JXBanner */,
+				C6C19D6EA38F9B8766CE0488AB708FAA /* JXPageControl */,
 				A6418C147D88DA49C8EF19524590D3FA /* Pods-JXBanner_Example */,
 				A4D36C3E69B908E2EF3590393A3FC303 /* SnapKit */,
 			);
@@ -561,6 +716,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		85C85F47459C0BA96B10E9C1038C1849 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D07D2658139C11B87585014E00A19596 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -568,7 +730,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7D5241D3E3CAF1924B3BAABA35913CD /* Resources */ = {
+		E6B04E4220D91FB28B1BB38BE160FD92 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -578,6 +740,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1756414D696F32B4AC9F305442A6E886 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC7A2A4C5E2C1C68D944B815DDB8ABEF /* IndexPath+JXCalculate.swift in Sources */,
+				620E802500A89237038764D86E3FD3F2 /* JXBanner-dummy.m in Sources */,
+				964B6BD9E635FDE058F96B5AA87DC144 /* JXBanner.swift in Sources */,
+				C0D4E4E7531D9767E28BA9B4603F6E4C /* JXBannerBaseCell.swift in Sources */,
+				1FF8E96FB2C52DFCA59BF48E87044228 /* JXBannerCell.swift in Sources */,
+				76FF2AE1D1923066C7B2DCBEA92F8BE5 /* JXBannerDataSource.swift in Sources */,
+				A1E36448EA29231EA11C86287FE987A3 /* JXBannerDelegate.swift in Sources */,
+				C2B42F219EBB6441A1EA4FEE7E610529 /* JXBannerLayout.swift in Sources */,
+				C5A99B9A10ED143987A3EF776A72C8C7 /* JXBannerLayoutParams.swift in Sources */,
+				7613ED040A13FA0586DB10F73C4191F7 /* JXBannerPageControlBuilder.swift in Sources */,
+				61D0647CA34C2A47C1322AB632A0A336 /* JXBannerPageControlDefault.swift in Sources */,
+				2E023F40548CEFDDC5D4352718E4FC03 /* JXBannerParams.swift in Sources */,
+				920BCB5542188F25AD1B43A17910E82C /* JXBannerTransformable.swift in Sources */,
+				AF70109D53DE0E16B4FA4566780F8D12 /* JXBannerTransformContext.swift in Sources */,
+				2C0823FE5D13F3FA0C8D2BA1254309CE /* JXBannerTransformCoverflow.swift in Sources */,
+				BB30E99B77484835ACD31E48577D712C /* JXBannerTransformLinear.swift in Sources */,
+				68103E792F599C242FBA8571FC1553EF /* JXBannerTransfrom.swift in Sources */,
+				35851375601385EF5A70B35D1FB1F636 /* JXBannerType.swift in Sources */,
+				E59B4124B25662FFB0B982807251A51A /* JXBaseBanner.swift in Sources */,
+				E8725FE41F05DDDEC08B0147563F97AB /* Timer+JXBExtension.swift in Sources */,
+				57EAB0FFBE3721D9D31C082C72C1DFE5 /* View+JXExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		203B5494E8EF5E14B0786F4714D95AC5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -620,6 +810,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3B96E23380BE3E4B16772054FDB140DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90755E3C58257356D024B5B2A52F3378 /* JXPageControl-dummy.m in Sources */,
+				AE41B4F00AE774E3234AA641308DEDF2 /* JXPageControlBase.swift in Sources */,
+				2C7F9FD26D9EDBE4DE2976E549F409F7 /* JXPageControlBoldLine.swift in Sources */,
+				09BF5E79E6E0B417AF23A30A9DE7285D /* JXPageControlChameleon.swift in Sources */,
+				851E73740D08F71CC6A87AFF52786892 /* JXPageControlEllipse.swift in Sources */,
+				A855369F366159A8EAAABAF8B92B7D1E /* JXPageControlExchange.swift in Sources */,
+				229D9CA5449E9187ECF8E9311491EC6D /* JXPageControlFill.swift in Sources */,
+				7086375420B09A830A19087FE052ED80 /* JXPageControlJump.swift in Sources */,
+				300D72FB4A2E7476E081A52F1D3AAD01 /* JXPageControlLine.swift in Sources */,
+				49B546FE034888802D3524F237258283 /* JXPageControlScale.swift in Sources */,
+				A376DE74AF8965C21D34B83263D86230 /* JXPageControlTool.swift in Sources */,
+				469D9A4166DFDC102761318EE1522ECF /* JXPageControlType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		98DD026888D956F0EFB3E56D8EDBACA0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -628,28 +837,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DBAE574C64D00814DEB7CDC37E537337 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3959FD6AD1E87105F3DFC75FDBDE84A1 /* JXPageControl-dummy.m in Sources */,
-				1CB76B8BC80AD8E4A5DBCEC0756A267F /* JXPageControlBase.swift in Sources */,
-				9AC6E83235F5305AD76F59B5E8E6D9B2 /* JXPageControlBoldLine.swift in Sources */,
-				A5BDEF0A918B4522E21368C690852781 /* JXPageControlChameleon.swift in Sources */,
-				44FDA4C0A9BF14ED83622548F74823DD /* JXPageControlEllipse.swift in Sources */,
-				D2DA47FB9F9E0491B8A55CB427B1C72B /* JXPageControlExchange.swift in Sources */,
-				8906242B05F7222397D254F430FBEDEB /* JXPageControlFill.swift in Sources */,
-				8C0715F9C8D5503DD286EF8D2BDCB941 /* JXPageControlJump.swift in Sources */,
-				0CFE89A6D1670007F8E2B38BDAF355BF /* JXPageControlLine.swift in Sources */,
-				E6A374D6076F8A44D22ECD17B018F811 /* JXPageControlScale.swift in Sources */,
-				3008023089D1418B0D832D45BF376792 /* JXPageControlTool.swift in Sources */,
-				93A2FEB979D5B6F9DC96B9C6036CFC38 /* JXPageControlType.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		502A820F220F4E6E8C09BE302919FA1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JXPageControl;
+			target = C6C19D6EA38F9B8766CE0488AB708FAA /* JXPageControl */;
+			targetProxy = 5487595344D218BED55091CD0AF4FA6D /* PBXContainerItemProxy */;
+		};
 		5FFF01566618F32F6DE6487266007C10 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SnapKit;
@@ -659,19 +855,13 @@
 		920B06E3CCE5F0ADB38B11E8FB7ED29E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JXPageControl;
-			target = 9BDADAB183DC724F76980C1842190672 /* JXPageControl */;
+			target = C6C19D6EA38F9B8766CE0488AB708FAA /* JXPageControl */;
 			targetProxy = DD33E4CE4787702FD3B3895DA95933D5 /* PBXContainerItemProxy */;
-		};
-		A6A6972099F975209452143C9B33BD1E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = JXPageControl;
-			target = 9BDADAB183DC724F76980C1842190672 /* JXPageControl */;
-			targetProxy = B9DE0466B503A371F838AC427992F5E2 /* PBXContainerItemProxy */;
 		};
 		E9DDCD2C9204675609CAA5BA5C3F4240 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JXBanner;
-			target = 2B078B19E504709C7260C74FB8FEBA33 /* JXBanner */;
+			target = BB4ABD45CEDC5804660DD457EADCEF6A /* JXBanner */;
 			targetProxy = 4F205F022182F4341055661B5F98F180 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -734,65 +924,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		07C7C22DFF15DD6BD66EA7132E1A9D48 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98F0DE1DD9F743281DBFA82BA8CE37EB /* JXPageControl.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/JXPageControl/JXPageControl-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JXPageControl/JXPageControl-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/JXPageControl/JXPageControl.modulemap";
-				PRODUCT_MODULE_NAME = JXPageControl;
-				PRODUCT_NAME = JXPageControl;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		13D7FE8CAB17AC6BEF5206CF976D8AAD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 987599446F81753CF46958063420DD40 /* JXBanner.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		1ECBF14DC157FE045B63A41DBB1F646F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 987599446F81753CF46958063420DD40 /* JXBanner.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -957,6 +1088,100 @@
 			};
 			name = Debug;
 		};
+		9A645EFC491DC5633E5A4C34182DB939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98F0DE1DD9F743281DBFA82BA8CE37EB /* JXPageControl.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JXPageControl/JXPageControl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JXPageControl/JXPageControl-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JXPageControl/JXPageControl.modulemap";
+				PRODUCT_MODULE_NAME = JXPageControl;
+				PRODUCT_NAME = JXPageControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A0C77CB6BC5A07E6B2542E73B88FBCF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98F0DE1DD9F743281DBFA82BA8CE37EB /* JXPageControl.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JXPageControl/JXPageControl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JXPageControl/JXPageControl-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JXPageControl/JXPageControl.modulemap";
+				PRODUCT_MODULE_NAME = JXPageControl;
+				PRODUCT_NAME = JXPageControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A3BD6E7D46CCCDE60EC1DC71C2620E9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F71E4F8CD555F69DC6CCC0550055E2D /* JXBanner.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JXBanner/JXBanner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JXBanner/JXBanner-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JXBanner/JXBanner.modulemap";
+				PRODUCT_MODULE_NAME = JXBanner;
+				PRODUCT_NAME = JXBanner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		A913FB6A8FB0C1C581043D23BFACE192 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BA2ECEEB308B97543E5B0786E3F4AF48 /* Pods-JXBanner_Example.debug.xcconfig */;
@@ -990,9 +1215,9 @@
 			};
 			name = Debug;
 		};
-		EB0B48C387EB7D406B72A2F6F8FA9AD1 /* Debug */ = {
+		EED0D08FFE8D5229B1A9C81EEB5D166C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98F0DE1DD9F743281DBFA82BA8CE37EB /* JXPageControl.xcconfig */;
+			baseConfigurationReference = 5F71E4F8CD555F69DC6CCC0550055E2D /* JXBanner.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1003,32 +1228,33 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/JXPageControl/JXPageControl-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JXPageControl/JXPageControl-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/JXBanner/JXBanner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JXBanner/JXBanner-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/JXPageControl/JXPageControl.modulemap";
-				PRODUCT_MODULE_NAME = JXPageControl;
-				PRODUCT_NAME = JXPageControl;
+				MODULEMAP_FILE = "Target Support Files/JXBanner/JXBanner.modulemap";
+				PRODUCT_MODULE_NAME = JXBanner;
+				PRODUCT_NAME = JXBanner;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0C9E56A967FC3FD69A2AFECCDA92968F /* Build configuration list for PBXNativeTarget "JXPageControl" */ = {
+		089F57A761A380337E8B12397014EBD9 /* Build configuration list for PBXNativeTarget "JXPageControl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EB0B48C387EB7D406B72A2F6F8FA9AD1 /* Debug */,
-				07C7C22DFF15DD6BD66EA7132E1A9D48 /* Release */,
+				A0C77CB6BC5A07E6B2542E73B88FBCF4 /* Debug */,
+				9A645EFC491DC5633E5A4C34182DB939 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1038,15 +1264,6 @@
 			buildConfigurations = (
 				A913FB6A8FB0C1C581043D23BFACE192 /* Debug */,
 				40D1BFD09A30B7C00180A2C17F05EF6A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		477273AAE09A9165E4216C43656716CD /* Build configuration list for PBXAggregateTarget "JXBanner" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				13D7FE8CAB17AC6BEF5206CF976D8AAD /* Debug */,
-				1ECBF14DC157FE045B63A41DBB1F646F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1065,6 +1282,15 @@
 			buildConfigurations = (
 				326E75754C7EAA2E42B456F3FE6DF050 /* Debug */,
 				3A90F161DAA41B355275CDB2DFB098EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B784132433F4673CB6A7BAF20CC76076 /* Build configuration list for PBXNativeTarget "JXBanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3BD6E7D46CCCDE60EC1DC71C2620E9D /* Debug */,
+				EED0D08FFE8D5229B1A9C81EEB5D166C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

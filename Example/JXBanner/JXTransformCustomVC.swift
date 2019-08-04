@@ -83,6 +83,7 @@ extension JXTransformCustomVC: JXBannerDataSource {
             return layoutParams
                 .layoutType(JXCustomTransform())
                 .itemSize(CGSize(width: 300, height: 190))
+                .maximumAngle(0.1)
                 .itemSpacing(10)
     }
     

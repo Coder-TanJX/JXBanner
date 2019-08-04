@@ -1,8 +1,8 @@
 {
   "name": "JXBanner",
   "version": "0.1.0",
-  "summary": "A short description of JXBanner.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "A multifunctional framework for banner unlimited rollover diagrams",
+  "description": "The framework relies on JXPageConytrol and contains many custom interfaces, such as transition animation, view structure, and Settings",
   "homepage": "https://github.com/Code_TanJX/JXBanner",
   "license": {
     "type": "MIT",

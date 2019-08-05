@@ -31,11 +31,11 @@ Pod::Spec.new do |s|
   
   
   if s.respond_to? 'swift_version'
-      s.swift_version = "4.0"
+      s.swift_version = "5.0"
   end
   
   if s.respond_to? 'swift_versions'
-      s.swift_versions = ['4.0', '4.2', '5.0']
+      s.swift_versions = ['4.2', '5.0']
   end
   
   s.subspec 'PageControl' do |ss|

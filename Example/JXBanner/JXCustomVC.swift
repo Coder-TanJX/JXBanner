@@ -193,7 +193,7 @@ extension JXCustomVC: JXBannerDelegate {
     }
     
     func jxBanner(_ banner: JXBannerType, center index: Int) {
-        print(index)
+//        print(index)
     }
 }
 

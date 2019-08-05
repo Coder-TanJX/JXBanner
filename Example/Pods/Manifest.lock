@@ -45,7 +45,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JXBanner: eeab6aafc3e05b493191ce73322299806a6d9f70
+  JXBanner: a177a7bf995a7f0f796dd4501182f819afb0b0ca
   JXPageControl: eea52838699a4949063e600b25eb9e8b6e20ae3f
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 

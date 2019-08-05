@@ -1090,38 +1090,6 @@
 			};
 			name = Debug;
 		};
-		86724FA413839E8E700CC33C3A6B7DDB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4097A912DE6E9AF433798DFB98526C6E /* JXBanner.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/JXBanner/JXBanner-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JXBanner/JXBanner-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/JXBanner/JXBanner.modulemap";
-				PRODUCT_MODULE_NAME = JXBanner;
-				PRODUCT_NAME = JXBanner;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		9A645EFC491DC5633E5A4C34182DB939 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 98F0DE1DD9F743281DBFA82BA8CE37EB /* JXPageControl.xcconfig */;
@@ -1185,6 +1153,37 @@
 			};
 			name = Debug;
 		};
+		A3BD6E7D46CCCDE60EC1DC71C2620E9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4097A912DE6E9AF433798DFB98526C6E /* JXBanner.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JXBanner/JXBanner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JXBanner/JXBanner-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JXBanner/JXBanner.modulemap";
+				PRODUCT_MODULE_NAME = JXBanner;
+				PRODUCT_NAME = JXBanner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		A913FB6A8FB0C1C581043D23BFACE192 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BA2ECEEB308B97543E5B0786E3F4AF48 /* Pods-JXBanner_Example.debug.xcconfig */;
@@ -1218,7 +1217,7 @@
 			};
 			name = Debug;
 		};
-		EDD67CA31A7A75AB3FD80AE38D6864BC /* Debug */ = {
+		EED0D08FFE8D5229B1A9C81EEB5D166C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4097A912DE6E9AF433798DFB98526C6E /* JXBanner.xcconfig */;
 			buildSettings = {
@@ -1242,12 +1241,13 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -1291,8 +1291,8 @@
 		B784132433F4673CB6A7BAF20CC76076 /* Build configuration list for PBXNativeTarget "JXBanner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EDD67CA31A7A75AB3FD80AE38D6864BC /* Debug */,
-				86724FA413839E8E700CC33C3A6B7DDB /* Release */,
+				A3BD6E7D46CCCDE60EC1DC71C2620E9D /* Debug */,
+				EED0D08FFE8D5229B1A9C81EEB5D166C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,5 +1,24 @@
 PODS:
   - JXBanner (0.1.0):
+    - JXBanner/Banner (= 0.1.0)
+    - JXBanner/PageControl (= 0.1.0)
+  - JXBanner/Banner (0.1.0):
+    - JXBanner/Banner/API (= 0.1.0)
+    - JXBanner/Banner/Banner (= 0.1.0)
+    - JXBanner/Banner/Cell (= 0.1.0)
+    - JXBanner/Banner/Common (= 0.1.0)
+    - JXBanner/Banner/Transform (= 0.1.0)
+  - JXBanner/Banner/API (0.1.0):
+    - JXBanner/PageControl
+  - JXBanner/Banner/Banner (0.1.0):
+    - JXBanner/Banner/API
+    - JXBanner/Banner/Common
+    - JXBanner/Banner/Transform
+  - JXBanner/Banner/Cell (0.1.0)
+  - JXBanner/Banner/Common (0.1.0)
+  - JXBanner/Banner/Transform (0.1.0):
+    - JXBanner/Banner/API
+  - JXBanner/PageControl (0.1.0):
     - JXPageControl
   - JXPageControl (0.1.3):
     - JXPageControl/Common (= 0.1.3)
@@ -26,7 +45,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JXBanner: 8a16116365be06ad814f959ced5cad71f52bfd12
+  JXBanner: eeab6aafc3e05b493191ce73322299806a6d9f70
   JXPageControl: eea52838699a4949063e600b25eb9e8b6e20ae3f
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 

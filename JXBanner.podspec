@@ -26,10 +26,50 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/Coder-TanJX/JXBanner.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'JXBanner/Classes/**/*'
   
-  s.dependency 'JXPageControl'
+  s.ios.deployment_target = '8.0'
+  
+  
+  if s.respond_to? 'swift_version'
+      s.swift_version = "4.0"
+  end
+  
+  if s.respond_to? 'swift_versions'
+      s.swift_versions = ['4.0', '4.2', '5.0']
+  end
+  
+  s.subspec 'PageControl' do |ss|
+      ss.source_files = 'JXBanner/Classes/PageControl/**/*'
+      ss.dependency 'JXPageControl'
+  end
+  
+  s.subspec 'Banner' do |ss|
+      
+      ss.subspec 'Cell' do |sss|
+          sss.source_files = 'JXBanner/Classes/Banner/Cell/**/*'
+      end
+      
+      ss.subspec 'Common' do |sss|
+          sss.source_files = 'JXBanner/Classes/Banner/Common/**/*'
+      end
+      
+      ss.subspec 'API' do |sss|
+          sss.source_files = 'JXBanner/Classes/Banner/API/**/*'
+          sss.dependency 'JXBanner/PageControl'
+      end
+      
+      ss.subspec 'Transform' do |sss|
+          sss.source_files = 'JXBanner/Classes/Banner/Transform/**/*'
+          sss.dependency 'JXBanner/Banner/API'
+      end
+      
+      ss.subspec 'Banner' do |sss|
+          sss.source_files = 'JXBanner/Classes/Banner/Banner/**/*'
+          sss.dependency 'JXBanner/Banner/API'
+          sss.dependency 'JXBanner/Banner/Common'
+          sss.dependency 'JXBanner/Banner/Transform'
+      end
+      
+  end
   
 end

@@ -5,24 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/JXBanner.svg?style=flat)](https://cocoapods.org/pods/JXBanner)
 [![Platform](https://img.shields.io/cocoapods/p/JXBanner.svg?style=flat)](https://cocoapods.org/pods/JXBanner)
 
-## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+##### (JXBanner supports a variety of animation transformations, including pure code layout and Xib layout)
 
-## Requirements
-
-## Installation
-
-JXBanner is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'JXBanner'
-```
-
-
-
-##### (JXBanner supports multiple animation transformations, content layout transformations, and Xib layouts, The framework relies on JXPageConytrol and contains many custom interfaces, such as transition animation, view structure, and Settings ) 
+JXBanner relies on JXPageConytrol and includes many custom interfaces, such as transformation animation, view structure, and Settings
 
 ---
 
@@ -30,8 +16,8 @@ pod 'JXBanner'
 
 * Development environment: Xcode 7 
 * Running condition: iOS(8.0+) 
-* Open source framework ：[github地址](https://github.com/Code-TanJX/JXPageControl)
-* [ Chinese is introduced [ 中文介绍 ]](https://blog.csdn.net/TanJiaXiang/article/details/95796616)
+* Open source framework ：[github地址](https://github.com/Coder-TanJX/JXBanner)
+* [ Chinese is introduced [ 中文介绍 ]](https://blog.csdn.net/TanJiaXiang/article/details/98484390)
 
 &nbsp;
 
@@ -47,39 +33,6 @@ To install, simply add the following code to your Podfile   :
 platform :ios, '8.0'
 
 target 'TargetName' do
-pod 'JXPageControl'
-end
-
-```
-
----
-
-
-##### (JXBanner 支持多种动画变换, 支持纯代码布局和Xib布局)
-
-JXBanner依赖于JXPageConytrol，并包含许多自定义接口，如转换动画、视图结构和设置
-
----
-
-##### 
-
-* 1.    开发环境: Xcode 7
-* 2.    运行条件: iOS(8.0+)
-* 开源框架：[github地址](https://github.com/Coder-TanJX/JXBanner)
-
-&nbsp;
-
-（如果使用有什么问题，可以留言，欢迎一起学习，欢迎star）
-
---- 
-### Installation  [安装]
-安装，只需将以下面代码添加到您的Podfile:
-
-```ruby
-
-platform :ios, '8.0'
-
-target 'TargetName' do
 pod 'JXBanner'
 end
 
@@ -87,97 +40,94 @@ end
 
 ---
 
-### UI效果
+
+### The UI effect
 
 * default
 
-不需要设置JXBanner -> JXBannerLayoutParams
+You don't need to set JXBanner -> JXBannerLayoutParams
 
-![default.gif](https://upload-images.jianshu.io/upload_images/17645677-9616d01a4b270429.gif?imageMogr2/auto-orient/strip)
+<img src="gif/default.gif">
 
 ---
 
 * JXBannerTransformLinear
 
-![linear.gif](https://upload-images.jianshu.io/upload_images/17645677-3b932a5a58762e8d.gif?imageMogr2/auto-orient/strip)
-
+<img src="gif/linear.gif">
 --- 
 
 * JXBannerTransformCoverflow
 
-![coverflow.gif](https://upload-images.jianshu.io/upload_images/17645677-bf3f25be2c12439a.gif?imageMogr2/auto-orient/strip)
-
+<img src="gif/coverflow.gif">
 ---
 
 * custom
 
-需要实现JXBannerTransformable协议, 修改 UICollectionViewLayoutAttributes -> transform3D 或 transform 属性
+Need to implement JXBannerTransformable agreement, modify UICollectionViewLayoutAttributes - > the "transform3D" or "transform" properties
 
-![custom.gif](https://upload-images.jianshu.io/upload_images/17645677-c8cb75cf07c4a719.gif?imageMogr2/auto-orient/strip)
-
+<img src="gif/custom.gif">
 ---
 
-### Frame set [框架集合]
+### Frame set 
 
 &nbsp;
 
-###### Banner 轮播图框架公用类文件
-* API  ---> 开发者可以调用的所有接口
-* Cell  ---> 框架提供cell基类 （如果想自定义cell内容, 可以新建cell继承于JXBannerBaseCell）
-* Common ---> 框架公用类文件
-* Transform ---> 动画效果类文件 ( 如果框架提供的动画效果不能满足开发者需求, 可以新建实现[JXBannerTransformable]()协议的struct/class, 修改 UICollectionViewLayoutAttributes -> transform3D 或 transform 属性）
+###### Banner 【Public class file of the graph framework in rotation】
+* API  ---> All interfaces that developers can call
+* Cell  ---> The framework provides cell base class (if you want to customize cell content, create a new cell that inherits from JXBannerBaseCell)
+* Common ---> Framework common class files
+* Transform ---> Animation class files (if the framework provided by the animation effect can't meet the demand of the developer, can achieve new [JXBannerTransformable]() agreement struct/class , modified UICollectionViewLayoutAttributes - > the transform3D or transform properties)
 
-###### PageControl    指示器类文件
-* JXBannerPageControlBuilder ---> pageControl的构建者类
-* JXBannerPageControlDefault --->  框架默认的pageControl样式 (可以通过实现JXBannerDataSource -> 【jxBanner(pageControl banner: numberOfPages: coverView: builder:) -> JXBannerPageControlBuilder】协议方法修改样式)
-
+###### PageControl -- Indicator class file
+* JXBannerPageControlBuilder ---> Builder class for pageControl
+* JXBannerPageControlDefault --->  Framework of the default pageControl style (can be implemented through JXBannerDataSource - > 【 jxBanner (pageControl banner: numberOfPages: coverView: builder:) - > JXBannerPageControlBuilder 】 protocol method modify the style)
 ---
 
-### JXBanner 重要文件介绍
+### JXBanner : Introduction to important documents
 
 &nbsp;
 
-##### JXBannerParams 【banner 属性】
+##### JXBannerParams 【Banner basic properties】
 
-* isAutoPlay ---> 自动播放
-* isBounces ---> 边界能否越界滑动
-* timeInterval ---> 播放调度间隔
-* isShowPageControl ---> 是否加载内部指示器（[JXPageControl（框架特色）](https://github.com/Coder-TanJX/JXPageControl)）
-* cycleWay ---> [轮播方式（框架特色）]() （forward：无线向右播放， skipEnd：首尾自定义动画跳转， rollingBack：左右回滚模式）
-* edgeTransitionType ---> cycleWay 使用 skipEnd 中 可以选取动画方式
-* edgeTransitionSubtype ---> cycleWay 使用 skipEnd 中 可以选取动画方式
-
----
-
-##### JXBannerLayoutParams 【banner布局、动画属性】
-
-* itemSize ---> cell大小。
-* itemSpacing --->cell左右边距。
-* layoutType ---> 动画效果[JXBannerTransformable（框架特色）]()
-* minimumScale ---> cell 缩放系数。
-* minimumAlpha ---> cell 透明度系数。
-* maximumAngle ---> cell 旋转系数。
-* rateOfChange ---> cell 变化系数。
-* rateHorisonMargin ---> cell 水平间距调整系数。
+* isAutoPlay ---> Automatically play
+* isBounces ---> Whether the boundary can slip beyond the boundary
+* timeInterval ---> Play scheduling interval
+* isShowPageControl ---> Whether internal load indicator  ( [JXPageControl（Framework features）](https://github.com/Coder-TanJX/JXPageControl)  ) 
+* cycleWay ---> [Loop mode（Framework features）]() （Forward: wireless right play, skipEnd: end-to-end custom animation jump, rollingBack: left-right rollback mode）
+* edgeTransitionType ---> CycleWay uses skipEnd to choose how to animate
+* edgeTransitionSubtype ---> CycleWay uses skipEnd to choose how to animate
 
 ---
 
-##### JXBannerCellRegister 【cell注册构建者】
+##### JXBannerLayoutParams 【Banner layout, animation properties】
 
-* type ---> 注册cell的类型，必须是JXBannerBaseCell的子类
-* reuseIdentifier ---> cell重用标识
+* itemSize ---> The cell size。
+* itemSpacing ---> Cell margins left and right。
+* layoutType ---> Animation effects[JXBannerTransformable（Framework features）]()
+* minimumScale ---> Cell scaling factor。
+* minimumAlpha ---> Cell transparency coefficient。
+* maximumAngle ---> Cell rotation coefficient。
+* rateOfChange ---> Cell variation coefficient。
+* rateHorisonMargin ---> Cell horizontal spacing adjustment factor。
+
+---
+
+##### JXBannerCellRegister 【Cell registers builders】
+
+* type ---> To register the cell type, you must be a subclass of JXBannerBaseCell
+* reuseIdentifier ---> Cell reuse identity
 
 var type: JXBannerBaseCell.Type
 var reuseIdentifier: String
 
 ---
-###  JXBanner 使用 
+###  JXBanner use 
 
 &nbsp;
 
 ##### Example 1
 
-* 默认实现示例
+* Default implementation example
 
 &nbsp;
 
@@ -272,7 +222,7 @@ extension JXDefaultVC: JXBannerDelegate {
 
 &nbsp;
 
-* 个性化设置
+* personalization
 
 ```
 
@@ -479,9 +429,9 @@ extension JXCustomVC: JXBannerDelegate {
 
 ##### Example 3 
 
-如果框架提供的动画效果不能满足开发者需求：
+If the animation provided by the framework does not meet the developer's requirements：
 
-* 1. 轮播图动画样式开发者可以自定义实现， 只要是新建实现[JXBannerTransformable]()协议的struct/class, 修改 UICollectionViewLayoutAttributes -> transform3D 或 transform 属性）
+* 1.Rotation diagram animation style developers can customize the implementation, As long as it is a new implementation [JXBannerTransformable]() agreement struct/class, modify UICollectionViewLayoutAttributes - > the transform3D or transform properties
 
 ```
 
@@ -568,13 +518,9 @@ struct JXCustomTransform: JXBannerTransformable {
 
 ```
 
-* 2. 设置自定义实现动画 
+* 2. Set up custom implementation animation
 
 JXBannerDataSource -> 【jxBanner(_ banner: layoutParams: ) -> JXBannerLayoutParams】
-
-
-
-
 
 ```
 
@@ -590,7 +536,7 @@ JXBannerDataSource -> 【jxBanner(_ banner: layoutParams: ) -> JXBannerLayoutPar
 
 ```
 
-### 更多设置可以参考示例 [Demo地址](https://github.com/Code-TanJX/JXPageControl)
+### See examples for more Settings [Demo address](https://github.com/Code-TanJX/JXPageControl)
 
 
 

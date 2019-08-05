@@ -56,6 +56,7 @@ Pod::Spec.new do |s|
       ss.subspec 'API' do |sss|
           sss.source_files = 'JXBanner/Classes/Banner/API/**/*'
           sss.dependency 'JXBanner/PageControl'
+          sss.dependency 'JXBanner/Banner/Cell'
       end
       
       ss.subspec 'Transform' do |sss|

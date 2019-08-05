@@ -11,19 +11,19 @@ import UIKit
 // MARK: - Property list
 public class JXBannerParams {
 
-    var isAutoPlay: Bool = true
+    public var isAutoPlay: Bool = true
     
-    var isBounces: Bool = true
+    public var isBounces: Bool = true
     
-    var isShowPageControl: Bool = true
+    public var isShowPageControl: Bool = true
     
-    var timeInterval: TimeInterval = 5.0
+    public var timeInterval: TimeInterval = 5.0
     
-    var cycleWay: CycleWay = .forward
+    public var cycleWay: CycleWay = .forward
     
-    var edgeTransitionType: JXBannerTransitionType? = .fade
+    public var edgeTransitionType: JXBannerTransitionType? = .fade
     
-    var edgeTransitionSubtype: CATransitionSubtype = .fromRight
+    public var edgeTransitionSubtype: CATransitionSubtype = .fromRight
     
     internal var currentRollingDirection: RollingDirection = .right
 }

@@ -19,11 +19,11 @@ Pod::Spec.new do |s|
 
   s.description      = 'The framework relies on JXPageConytrol and contains many custom interfaces, such as transition animation, view structure, and Settings'
 
-  s.homepage         = 'https://github.com/Code_TanJX/JXBanner'
+  s.homepage         = 'https://github.com/Coder-TanJX'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Code_TanJX' => 'code_tanjx@163.com' }
-  s.source           = { :git => 'https://github.com/Code_TanJX/JXBanner.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Coder-TanJX/JXBanner.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'

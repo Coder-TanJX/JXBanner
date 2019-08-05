@@ -2,7 +2,7 @@
 //  Timer+JXBExtension.swift
 //  JXBanner_Example
 //
-//  Created by 谭家祥 on 2019/8/1.
+//  Created by Coder_TanJX on 2019/8/1.
 //  Copyright © 2019 CocoaPods. All rights reserved.
 //
 

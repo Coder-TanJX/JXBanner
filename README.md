@@ -81,6 +81,7 @@ Need to implement JXBannerTransformable agreement, modify UICollectionViewLayout
 ###### PageControl -- Indicator class file
 * JXBannerPageControlBuilder ---> Builder class for pageControl
 * JXBannerPageControlDefault --->  Framework of the default pageControl style (can be implemented through JXBannerDataSource - > 【 jxBanner (pageControl banner: numberOfPages: coverView: builder:) - > JXBannerPageControlBuilder 】 protocol method modify the style)
+
 ---
 
 ### JXBanner : Introduction to important documents
@@ -439,7 +440,7 @@ If the animation provided by the framework does not meet the developer's require
 //  JXCustomTransform.swift
 //  JXBanner_Example
 //
-//  Created by 谭家祥 on 2019/7/30.
+//  Created by Coder_TanJX on 2019/7/30.
 //  Copyright © 2019 CocoaPods. All rights reserved.
 //
 
@@ -545,7 +546,7 @@ JXBannerDataSource -> 【jxBanner(_ banner: layoutParams: ) -> JXBannerLayoutPar
 
 ## Author
 
-Code_TanJX, code_tanjx@163.com
+Coder_TanJX, code_tanjx@163.com
 
 ## License
 

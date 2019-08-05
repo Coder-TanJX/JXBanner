@@ -2,7 +2,7 @@
 //  JXPageControlBase.swift
 //  JXPageControl_Example
 //
-//  Created by 谭家祥 on 2019/7/10.
+//  Created by Coder_TanJX on 2019/7/10.
 //  Copyright © 2019 CocoaPods. All rights reserved.
 //
 

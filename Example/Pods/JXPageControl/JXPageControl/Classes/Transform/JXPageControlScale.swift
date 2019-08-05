@@ -2,7 +2,7 @@
 //  JXPageControlScale.swift
 //  JXPageControl_Example
 //
-//  Created by 谭家祥 on 2019/6/12.
+//  Created by Coder_TanJX on 2019/6/12.
 //  Copyright © 2019 CocoaPods. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  JXPageControlBoldLine.swift
 //  JXPageControl_Example
 //
-//  Created by 谭家祥 on 2019/6/9.
+//  Created by Coder_TanJX on 2019/6/9.
 //  Copyright © 2019 CocoaPods. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  JXTransformCustomVC.swift
 //  JXBanner_Example
 //
-//  Created by 谭家祥 on 2019/7/30.
+//  Created by Coder_TanJX on 2019/7/30.
 //  Copyright © 2019 CocoaPods. All rights reserved.
 //
 

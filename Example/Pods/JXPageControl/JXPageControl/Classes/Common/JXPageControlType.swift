@@ -2,7 +2,7 @@
 //  JXPageControlType.swift
 //  JXPageControl
 //
-//  Created by 谭家祥 on 2019/6/7.
+//  Created by Coder_TanJX on 2019/6/7.
 //
 
 import UIKit

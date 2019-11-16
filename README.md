@@ -110,26 +110,6 @@ Need to implement JXBannerTransformable agreement, modify UICollectionViewLayout
 
 ---
 
-public var isAutoPlay: Bool = true
-
-public var isBounces: Bool = true
-
-public var isShowPageControl: Bool = true
-
-public var isPagingEnabled: Bool = true
-
-public var contentInset = UIEdgeInsets.zero
-
-public var timeInterval: TimeInterval = 5.0
-
-public var cycleWay: CycleWay = .forward
-
-public var edgeTransitionType: JXBannerTransitionType? = .fade
-
-public var edgeTransitionSubtype: CATransitionSubtype = .fromRight
-
-internal var currentRollingDirection: RollingDirection = .right
-
 ##### JXBannerLayoutParams 【Banner layout, animation properties】
 
 * itemSize ---> The cell size。

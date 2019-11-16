@@ -19,7 +19,6 @@ class JXCustomVC: UIViewController {
     lazy var linearBanner: JXBanner = {[weak self] in
         let banner = JXBanner()
         banner.placeholderImgView.image = UIImage(named: "banner_placeholder")
-        banner.backgroundColor = UIColor.black
         banner.indentify = "linearBanner"
         banner.delegate = self
         banner.dataSource = self
@@ -29,8 +28,15 @@ class JXCustomVC: UIViewController {
     lazy var converflowBanner: JXBanner = {
         let banner = JXBanner()
         banner.placeholderImgView.image = UIImage(named: "banner_placeholder")
-        banner.backgroundColor = UIColor.black
         banner.indentify = "converflowBanner"
+        banner.delegate = self
+        banner.dataSource = self
+        return banner
+    }()
+    
+    lazy var customBanner: JXBanner = {
+        let banner = JXBanner()
+        banner.placeholderImgView.image = UIImage(named: "banner_placeholder")
         banner.delegate = self
         banner.dataSource = self
         return banner
@@ -38,17 +44,26 @@ class JXCustomVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         view.addSubview(linearBanner)
         view.addSubview(converflowBanner)
+        view.addSubview(customBanner)
+        
         linearBanner.snp.makeConstraints {(maker) in
             maker.left.right.equalTo(view)
-            maker.height.equalTo(200)
+            maker.height.equalTo(150)
             maker.top.equalTo(view.snp_top).offset(100)
         }
         
         converflowBanner.snp.makeConstraints {(maker) in
             maker.left.right.height.equalTo(linearBanner)
-            maker.top.equalTo(linearBanner.snp_bottom).offset(100)
+            maker.top.equalTo(linearBanner.snp_bottom).offset(50)
+        }
+        
+        customBanner.snp.makeConstraints {(maker) in
+            maker.left.right.equalTo(linearBanner)
+            maker.height.equalTo(200)
+            maker.top.equalTo(converflowBanner.snp_bottom).offset(50)
         }
         
         self.automaticallyAdjustsScrollViewInsets = false
@@ -68,9 +83,12 @@ extension JXCustomVC: JXBannerDataSource {
             if banner.indentify == "linearBanner" {
                 return JXBannerCellRegister(type: JXBannerCell.self,
                                             reuseIdentifier: "LinearBannerCell")
-            }else {
+            }else if banner.indentify == "converflowBanner" {
                 return JXBannerCellRegister(type: JXBannerCell.self,
                                             reuseIdentifier: "ConverflowBannerCell")
+            }else {
+                return JXBannerCellRegister(type: JXBannerCell.self,
+                                            reuseIdentifier: "JXTransformCustomVCCell")
             }
     }
     
@@ -79,12 +97,21 @@ extension JXCustomVC: JXBannerDataSource {
     
     func jxBanner(_ banner: JXBannerType,
                   cellForItemAt index: Int,
-                  cell: JXBannerBaseCell)
-        -> JXBannerBaseCell {
-            let tempCell: JXBannerCell = cell as! JXBannerCell
+                  cell: UICollectionViewCell)
+        -> UICollectionViewCell {
+            let tempCell = cell as! JXBannerCell
             tempCell.layer.cornerRadius = 8
             tempCell.layer.masksToBounds = true
-            tempCell.imageView.image = UIImage(named: "banner_placeholder")
+            tempCell.layer.borderColor = UIColor.gray.cgColor
+            tempCell.layer.borderWidth = 1
+            if banner.indentify == "linearBanner" {
+                tempCell.imageView.image = UIImage(named: "\(index).jpg")
+            }else if banner.indentify == "converflowBanner" {
+                tempCell.imageView.image = UIImage(named: "\(index+5).jpg")
+            }else {
+                tempCell.imageView.image = UIImage(named: "\(index+10).jpg")
+            }
+            
             tempCell.msgLabel.text = String(index) + "---来喽来喽,他真的来喽~"
             return tempCell
     }
@@ -111,20 +138,26 @@ extension JXCustomVC: JXBannerDataSource {
             if banner.indentify == "linearBanner" {
                 return layoutParams
                     .layoutType(JXBannerTransformLinear())
-                    .itemSize(CGSize(width: 250, height: 190))
+                    .itemSize(CGSize(width: 300, height: 150))
                     .itemSpacing(10)
                     .rateOfChange(0.8)
                     .minimumScale(0.7)
                     .rateHorisonMargin(0.5)
                     .minimumAlpha(0.8)
-            }else {
+            }else if banner.indentify == "converflowBanner" {
                 return layoutParams
                     .layoutType(JXBannerTransformCoverflow())
-                    .itemSize(CGSize(width: 300, height: 190))
+                    .itemSize(CGSize(width: 300, height: 150))
                     .itemSpacing(0)
                     .maximumAngle(0.25)
                     .rateHorisonMargin(0.3)
                     .minimumAlpha(0.8)
+            }else {
+                return layoutParams
+                    .layoutType(JXCustomTransform())
+                    .itemSize(CGSize(width: 280, height: 140))
+                    .maximumAngle(0.1)
+                    .itemSpacing(10)
             }
     }
     
@@ -195,5 +228,7 @@ extension JXCustomVC: JXBannerDelegate {
     func jxBanner(_ banner: JXBannerType, center index: Int) {
 //        print(index)
     }
+    
+    
 }
 

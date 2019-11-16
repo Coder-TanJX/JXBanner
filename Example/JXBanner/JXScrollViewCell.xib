@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1so-4P-i94" customClass="JXScrollViewCell" customModule="JXBanner_Example" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="279" height="155"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="279" height="155"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="6Xw-lh-kXh">
+                        <rect key="frame" x="0.0" y="0.0" width="279" height="92"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="92" id="rD2-6t-suT"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WyL-Tb-rIN">
+                        <rect key="frame" x="0.0" y="103" width="279" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="gIU-HB-ZyA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ul-9F-0BE">
+                        <rect key="frame" x="0.0" y="125" width="279" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="WyL-Tb-rIN" firstAttribute="top" secondItem="6Xw-lh-kXh" secondAttribute="bottom" constant="11" id="4BV-LY-Gyq"/>
+                <constraint firstItem="WyL-Tb-rIN" firstAttribute="trailing" secondItem="6Xw-lh-kXh" secondAttribute="trailing" id="9Av-S4-SN2"/>
+                <constraint firstItem="9ul-9F-0BE" firstAttribute="top" secondItem="WyL-Tb-rIN" secondAttribute="bottom" constant="2" id="FYh-R2-OaJ"/>
+                <constraint firstItem="9ul-9F-0BE" firstAttribute="leading" secondItem="6Xw-lh-kXh" secondAttribute="leading" id="J24-DL-lo1"/>
+                <constraint firstItem="6Xw-lh-kXh" firstAttribute="top" secondItem="1so-4P-i94" secondAttribute="top" id="LWv-4Z-W6g"/>
+                <constraint firstItem="9ul-9F-0BE" firstAttribute="trailing" secondItem="6Xw-lh-kXh" secondAttribute="trailing" id="e7T-DH-A6z"/>
+                <constraint firstItem="6Xw-lh-kXh" firstAttribute="leading" secondItem="1so-4P-i94" secondAttribute="leading" id="eU1-pk-7s8"/>
+                <constraint firstAttribute="trailing" secondItem="6Xw-lh-kXh" secondAttribute="trailing" id="wXV-ti-AIS"/>
+                <constraint firstItem="WyL-Tb-rIN" firstAttribute="leading" secondItem="6Xw-lh-kXh" secondAttribute="leading" id="xZF-cd-mp1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Ojc-wm-r3j"/>
+            <size key="customSize" width="279" height="154"/>
+            <connections>
+                <outlet property="detail" destination="9ul-9F-0BE" id="6ia-CV-3Og"/>
+                <outlet property="imgView" destination="6Xw-lh-kXh" id="dAm-mf-p9v"/>
+                <outlet property="title" destination="WyL-Tb-rIN" id="ikk-fT-00x"/>
+            </connections>
+            <point key="canvasLocation" x="28.260869565217394" y="169.41964285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="banner_placeholder" width="800" height="300"/>
+    </resources>
+</document>

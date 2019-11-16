@@ -73,9 +73,21 @@ extension JXBanner {
             
             // Register cell
             if let register = dataSource?.jxBanner(self) {
-                collectionView.register(
+                
+                if let nib = register.nib {
+                    collectionView.register(
+                        nib,
+                        forCellWithReuseIdentifier: register.reuseIdentifier)
+                }else {
+                    collectionView.register(
                     register.type,
                     forCellWithReuseIdentifier: register.reuseIdentifier)
+                    if register.type == nil {
+                        print(" ------JXBanner:   When you are not using the nib cell file, ")
+                        print(" ------you must set the JXBannerCellRegister-> type to the cell class!! ---------------------")
+                    }
+                }
+                
                 cellRegister = register
             }
             
@@ -85,6 +97,8 @@ extension JXBanner {
             // params
             params = dataSource?.jxBanner(self,
                                           params: params) ?? params
+            layout.isPagingEnabled = params.isPagingEnabled
+            collectionView.contentInset = params.contentInset
             
             // layoutParams
             layout.params = tempDataSource.jxBanner(self,
@@ -134,7 +148,6 @@ extension JXBanner {
             params.cycleWay = .skipEnd
         }
         placeholderImgView.isHidden = pageCount > 0
-        placeholderImgView.backgroundColor = UIColor.red
         reinitializeIndexPath()
     }
     
@@ -317,14 +330,9 @@ UICollectionViewDelegate {
             let cell = collectionView.dequeueReusableCell(
                 withReuseIdentifier: cellRegister.reuseIdentifier,
                 for: indexPath)
-            
-            if let bannerViewCell = cell as? JXBannerBaseCell {
-                return dataSource?.jxBanner(self,
-                                            cellForItemAt: indexOfIndexPath(indexPath),
-                                            cell: bannerViewCell) ?? bannerViewCell
-            }
-            
-            return cell
+            return dataSource?.jxBanner(self,
+                                        cellForItemAt: indexOfIndexPath(indexPath),
+                                        cell: cell) ?? cell
     }
     
     

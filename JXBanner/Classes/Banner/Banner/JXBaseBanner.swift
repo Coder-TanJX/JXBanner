@@ -96,7 +96,7 @@ public class JXBaseBanner: UIView {
         collectionView.isPagingEnabled = false
         collectionView.showsVerticalScrollIndicator = false
         collectionView.showsHorizontalScrollIndicator = false
-        collectionView.decelerationRate = UIScrollView.DecelerationRate(rawValue: 0.01)
+//        collectionView.decelerationRate = UIScrollView.DecelerationRate(rawValue: 0.01)
         collectionView.autoresizingMask = [
             .flexibleWidth,
             .flexibleHeight
@@ -122,7 +122,7 @@ public class JXBaseBanner: UIView {
     /// Current shows indexpath of cell
     var currentIndexPath: IndexPath = IndexPath(row: 0, section: 0)
     
-    var cellRegister: JXBannerCellRegister = JXBannerCellRegister(type: JXBannerCell.self,
+    var cellRegister: JXBannerCellRegister = JXBannerCellRegister(type: nil,
                                                                   reuseIdentifier: "JXBannerCell")
     func setCurrentIndex(){}
 }
@@ -189,13 +189,17 @@ extension JXBaseBanner {
             }
         }
         
+        if params.isPagingEnabled {
+            
+            collectionView.scrollToItem(at: indexPath,
+                                        at: .centeredHorizontally,
+                                        animated: animated)
+            collectionView.scrollToItem(at: indexPath,
+                                        at: .centeredHorizontally,
+                                        animated: animated)
+        }
  
-        collectionView.scrollToItem(at: indexPath,
-                                    at: .centeredHorizontally,
-                                    animated: animated)
-        collectionView.scrollToItem(at: indexPath,
-                                    at: .centeredHorizontally,
-                                    animated: animated)
+
     }
     
     override public func willMove(toSuperview newSuperview: UIView?) {

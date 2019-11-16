@@ -9,6 +9,7 @@ PODS:
     - JXBanner/Banner/Common (= 0.1.0)
     - JXBanner/Banner/Transform (= 0.1.0)
   - JXBanner/Banner/API (0.1.0):
+    - JXBanner/Banner/Cell
     - JXBanner/PageControl
   - JXBanner/Banner/Banner (0.1.0):
     - JXBanner/Banner/API
@@ -45,10 +46,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JXBanner: a177a7bf995a7f0f796dd4501182f819afb0b0ca
+  JXBanner: d32dbf30f1d4fb014aad26f65e69b0ea32e32efe
   JXPageControl: eea52838699a4949063e600b25eb9e8b6e20ae3f
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: 981df9c8ed220fe7bc0020d121f89a2ddfdfc662
+PODFILE CHECKSUM: 55a2f798d49bb61948e4d464dc12db95c3ea531b
 
 COCOAPODS: 1.6.1

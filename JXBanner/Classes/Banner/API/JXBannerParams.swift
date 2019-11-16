@@ -17,6 +17,10 @@ public class JXBannerParams {
     
     public var isShowPageControl: Bool = true
     
+    public var isPagingEnabled: Bool = true
+    
+    public var contentInset = UIEdgeInsets.zero
+    
     public var timeInterval: TimeInterval = 5.0
     
     public var cycleWay: CycleWay = .forward
@@ -72,6 +76,16 @@ public extension JXBannerParams {
     
     func isBounces(_ isBounces: Bool) -> JXBannerParams {
         self.isBounces = isBounces
+        return self
+    }
+    
+    func isPagingEnabled(_ isPagingEnabled: Bool) -> JXBannerParams {
+        self.isPagingEnabled = isPagingEnabled
+        return self
+    }
+    
+    func contentInset(_ contentInset: UIEdgeInsets) -> JXBannerParams {
+        self.contentInset = contentInset
         return self
     }
     

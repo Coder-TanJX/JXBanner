@@ -46,6 +46,9 @@
           "dependencies": {
             "JXBanner/PageControl": [
 
+            ],
+            "JXBanner/Banner/Cell": [
+
             ]
           }
         },

@@ -37,14 +37,14 @@ public protocol JXBannerDataSource: class {
      - parameters:
      - banner: An instance of JXBannerType.
      - index: index that the cell will display
-     - cell: XBannerBaseCell or a subclass of JXBannerBaseCell
+     - cell: UICollectionViewCell or a subclass of UICollectionViewCell
      
-     - returns: XBannerBaseCell or a subclass of JXBannerBaseCell
+     - returns: UICollectionViewCell or a subclass of UICollectionViewCell
      */
     func jxBanner(_ banner: JXBannerType,
                   cellForItemAt index: Int,
-                  cell: JXBannerBaseCell)
-        -> JXBannerBaseCell
+                  cell: UICollectionViewCell)
+        -> UICollectionViewCell
     
     /**
      This callback changes the banner

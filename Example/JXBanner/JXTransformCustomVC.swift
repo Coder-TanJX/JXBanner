@@ -19,7 +19,6 @@ class JXTransformCustomVC: UIViewController {
     lazy var banner: JXBanner = {
         let banner = JXBanner()
         banner.placeholderImgView.image = UIImage(named: "banner_placeholder")
-        banner.backgroundColor = UIColor.black
         banner.delegate = self
         banner.dataSource = self
         return banner
@@ -57,12 +56,12 @@ extension JXTransformCustomVC: JXBannerDataSource {
     
     func jxBanner(_ banner: JXBannerType,
                   cellForItemAt index: Int,
-                  cell: JXBannerBaseCell)
-        -> JXBannerBaseCell {
-            let tempCell: JXBannerCell = cell as! JXBannerCell
+                  cell: UICollectionViewCell)
+        -> UICollectionViewCell {
+            let tempCell = cell as! JXBannerCell
             tempCell.layer.cornerRadius = 8
             tempCell.layer.masksToBounds = true
-            tempCell.imageView.image = UIImage(named: "banner_placeholder")
+            tempCell.imageView.image = UIImage(named: "\(index).jpg")
             tempCell.msgLabel.text = String(index) + "---来喽来喽,他真的来喽~"
             return tempCell
     }
@@ -101,7 +100,7 @@ extension JXTransformCustomVC: JXBannerDataSource {
             pageControl.snp.makeConstraints { (maker) in
                 maker.left.right.equalTo(coverView)
                 maker.top.equalTo(coverView.snp_bottom).offset(10)
-                maker.height.equalTo(20)
+                maker.height.equalTo(10)
             }
         }
         return builder

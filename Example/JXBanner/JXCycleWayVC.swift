@@ -19,7 +19,6 @@ class JXCycleWayVC: UIViewController {
     lazy var linearBanner: JXBanner = {[weak self] in
         let banner = JXBanner()
         banner.placeholderImgView.image = UIImage(named: "banner_placeholder")
-        banner.backgroundColor = UIColor.black
         banner.indentify = "linearBanner"
         banner.delegate = self
         banner.dataSource = self
@@ -29,7 +28,6 @@ class JXCycleWayVC: UIViewController {
     lazy var converflowBanner: JXBanner = {
         let banner = JXBanner()
         banner.placeholderImgView.image = UIImage(named: "banner_placeholder")
-        banner.backgroundColor = UIColor.black
         banner.indentify = "converflowBanner"
         banner.delegate = self
         banner.dataSource = self
@@ -42,7 +40,7 @@ class JXCycleWayVC: UIViewController {
         view.addSubview(converflowBanner)
         linearBanner.snp.makeConstraints {(maker) in
             maker.left.right.equalTo(view)
-            maker.height.equalTo(200)
+            maker.height.equalTo(150)
             maker.top.equalTo(view.snp_top).offset(100)
         }
         
@@ -79,12 +77,17 @@ extension JXCycleWayVC: JXBannerDataSource {
     
     func jxBanner(_ banner: JXBannerType,
                   cellForItemAt index: Int,
-                  cell: JXBannerBaseCell)
-        -> JXBannerBaseCell {
-            let tempCell: JXBannerCell = cell as! JXBannerCell
+                  cell: UICollectionViewCell)
+        -> UICollectionViewCell {
+            let tempCell = cell as! JXBannerCell
             tempCell.layer.cornerRadius = 8
             tempCell.layer.masksToBounds = true
-            tempCell.imageView.image = UIImage(named: "banner_placeholder")
+            if banner.indentify == "linearBanner" {
+                tempCell.imageView.image = UIImage(named: "\(index).jpg")
+            }else if banner.indentify == "converflowBanner" {
+                tempCell.imageView.image = UIImage(named: "\(index+5).jpg")
+            }
+            
             tempCell.msgLabel.text = String(index) + "---来喽来喽,他真的来喽~"
             return tempCell
     }
@@ -111,13 +114,13 @@ extension JXCycleWayVC: JXBannerDataSource {
             if banner.indentify == "linearBanner" {
                 return layoutParams
                     .layoutType(JXBannerTransformLinear())
-                    .itemSize(CGSize(width: 250, height: 190))
+                    .itemSize(CGSize(width: 250, height: 150))
                     .itemSpacing(10)
                     .minimumAlpha(0.8)
             }else {
                 return layoutParams
                     .layoutType(JXBannerTransformCoverflow())
-                    .itemSize(CGSize(width: 300, height: 190))
+                    .itemSize(CGSize(width: 300, height: 150))
                     .itemSpacing(0)
                     .minimumAlpha(0.8)
             }

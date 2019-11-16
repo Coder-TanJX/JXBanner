@@ -10,6 +10,25 @@
 		1F30F28D22EFEF2A007ABBED /* JXCustomTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30F28C22EFEF2A007ABBED /* JXCustomTransform.swift */; };
 		1F30F29222F022BA007ABBED /* JXDefaultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30F29122F022BA007ABBED /* JXDefaultVC.swift */; };
 		1F30F29422F022D3007ABBED /* JXCustomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30F29322F022D3007ABBED /* JXCustomVC.swift */; };
+		1F35B04A237FD88100076E3A /* JXScrollViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F35B049237FD88100076E3A /* JXScrollViewVC.swift */; };
+		1F35B04D237FDAD100076E3A /* JXScrollViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F35B04B237FDAD100076E3A /* JXScrollViewCell.swift */; };
+		1F35B04E237FDAD100076E3A /* JXScrollViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F35B04C237FDAD100076E3A /* JXScrollViewCell.xib */; };
+		1F41C6432331D9AD00B83DC4 /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F41C6332331D9AB00B83DC4 /* 0.jpg */; };
+		1F41C6442331D9AD00B83DC4 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F41C6342331D9AC00B83DC4 /* 10.jpg */; };
+		1F41C6452331D9AD00B83DC4 /* 13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F41C6352331D9AC00B83DC4 /* 13.jpg */; };
+		1F41C6462331D9AD00B83DC4 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F41C6362331D9AC00B83DC4 /* 3.jpg */; };
+		1F41C6472331D9AD00B83DC4 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F41C6372331D9AC00B83DC4 /* 8.jpg */; };
+		1F41C6482331D9AD00B83DC4 /* 12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F41C6382331D9AC00B83DC4 /* 12.jpg */; };
+		1F41C6492331D9AD00B83DC4 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F41C6392331D9AC00B83DC4 /* 9.jpg */; };
+		1F41C64A2331D9AD00B83DC4 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F41C63A2331D9AC00B83DC4 /* 5.jpg */; };
+		1F41C64B2331D9AD00B83DC4 /* 11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F41C63B2331D9AC00B83DC4 /* 11.jpg */; };
+		1F41C64C2331D9AD00B83DC4 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F41C63C2331D9AC00B83DC4 /* 4.jpg */; };
+		1F41C64D2331D9AD00B83DC4 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F41C63D2331D9AC00B83DC4 /* 2.jpg */; };
+		1F41C64E2331D9AD00B83DC4 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F41C63E2331D9AD00B83DC4 /* 1.jpg */; };
+		1F41C64F2331D9AD00B83DC4 /* 14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F41C63F2331D9AD00B83DC4 /* 14.jpg */; };
+		1F41C6502331D9AD00B83DC4 /* 15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F41C6402331D9AD00B83DC4 /* 15.jpg */; };
+		1F41C6512331D9AD00B83DC4 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F41C6412331D9AD00B83DC4 /* 7.jpg */; };
+		1F41C6522331D9AD00B83DC4 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F41C6422331D9AD00B83DC4 /* 6.jpg */; };
 		1FAA5AF322A26CA400CC3696 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FAA5AF222A26CA400CC3696 /* Main.storyboard */; };
 		1FD96C4922F03806003972F1 /* JXTransformCustomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD96C4822F03806003972F1 /* JXTransformCustomVC.swift */; };
 		1FEE2D0522F5DE170002BAE5 /* JXCycleWayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEE2D0422F5DE170002BAE5 /* JXCycleWayVC.swift */; };
@@ -34,6 +53,25 @@
 		1F30F28C22EFEF2A007ABBED /* JXCustomTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXCustomTransform.swift; sourceTree = "<group>"; };
 		1F30F29122F022BA007ABBED /* JXDefaultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXDefaultVC.swift; sourceTree = "<group>"; };
 		1F30F29322F022D3007ABBED /* JXCustomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXCustomVC.swift; sourceTree = "<group>"; };
+		1F35B049237FD88100076E3A /* JXScrollViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXScrollViewVC.swift; sourceTree = "<group>"; };
+		1F35B04B237FDAD100076E3A /* JXScrollViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXScrollViewCell.swift; sourceTree = "<group>"; };
+		1F35B04C237FDAD100076E3A /* JXScrollViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JXScrollViewCell.xib; sourceTree = "<group>"; };
+		1F41C6332331D9AB00B83DC4 /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
+		1F41C6342331D9AC00B83DC4 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
+		1F41C6352331D9AC00B83DC4 /* 13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 13.jpg; sourceTree = "<group>"; };
+		1F41C6362331D9AC00B83DC4 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		1F41C6372331D9AC00B83DC4 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
+		1F41C6382331D9AC00B83DC4 /* 12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 12.jpg; sourceTree = "<group>"; };
+		1F41C6392331D9AC00B83DC4 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
+		1F41C63A2331D9AC00B83DC4 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		1F41C63B2331D9AC00B83DC4 /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpg; sourceTree = "<group>"; };
+		1F41C63C2331D9AC00B83DC4 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		1F41C63D2331D9AC00B83DC4 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		1F41C63E2331D9AD00B83DC4 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		1F41C63F2331D9AD00B83DC4 /* 14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 14.jpg; sourceTree = "<group>"; };
+		1F41C6402331D9AD00B83DC4 /* 15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 15.jpg; sourceTree = "<group>"; };
+		1F41C6412331D9AD00B83DC4 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		1F41C6422331D9AD00B83DC4 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
 		1FAA5AF222A26CA400CC3696 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1FD96C4822F03806003972F1 /* JXTransformCustomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXTransformCustomVC.swift; sourceTree = "<group>"; };
 		1FEE2D0422F5DE170002BAE5 /* JXCycleWayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXCycleWayVC.swift; sourceTree = "<group>"; };
@@ -78,9 +116,35 @@
 				1F30F29122F022BA007ABBED /* JXDefaultVC.swift */,
 				1F30F29322F022D3007ABBED /* JXCustomVC.swift */,
 				1FEE2D0422F5DE170002BAE5 /* JXCycleWayVC.swift */,
+				1F35B049237FD88100076E3A /* JXScrollViewVC.swift */,
+				1F35B04B237FDAD100076E3A /* JXScrollViewCell.swift */,
+				1F35B04C237FDAD100076E3A /* JXScrollViewCell.xib */,
 				1FEE2D0622F5E0E00002BAE5 /* JXTransformCustomVC */,
 			);
 			name = Demo;
+			sourceTree = "<group>";
+		};
+		1F41C6242331D36A00B83DC4 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				1F41C6332331D9AB00B83DC4 /* 0.jpg */,
+				1F41C63E2331D9AD00B83DC4 /* 1.jpg */,
+				1F41C63D2331D9AC00B83DC4 /* 2.jpg */,
+				1F41C6362331D9AC00B83DC4 /* 3.jpg */,
+				1F41C63C2331D9AC00B83DC4 /* 4.jpg */,
+				1F41C63A2331D9AC00B83DC4 /* 5.jpg */,
+				1F41C6422331D9AD00B83DC4 /* 6.jpg */,
+				1F41C6412331D9AD00B83DC4 /* 7.jpg */,
+				1F41C6372331D9AC00B83DC4 /* 8.jpg */,
+				1F41C6392331D9AC00B83DC4 /* 9.jpg */,
+				1F41C6342331D9AC00B83DC4 /* 10.jpg */,
+				1F41C63B2331D9AC00B83DC4 /* 11.jpg */,
+				1F41C6382331D9AC00B83DC4 /* 12.jpg */,
+				1F41C6352331D9AC00B83DC4 /* 13.jpg */,
+				1F41C63F2331D9AD00B83DC4 /* 14.jpg */,
+				1F41C6402331D9AD00B83DC4 /* 15.jpg */,
+			);
+			path = source;
 			sourceTree = "<group>";
 		};
 		1FEE2D0622F5E0E00002BAE5 /* JXTransformCustomVC */ = {
@@ -133,6 +197,7 @@
 		607FACD21AFB9204008FA782 /* Example for JXBanner */ = {
 			isa = PBXGroup;
 			children = (
+				1F41C6242331D36A00B83DC4 /* source */,
 				1F30F28E22F02272007ABBED /* Demo */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
@@ -231,7 +296,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = ATRZR4BSXQ;
+						DevelopmentTeam = 29HA8N9RQ5;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -267,9 +332,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F41C64A2331D9AD00B83DC4 /* 5.jpg in Resources */,
+				1F41C6442331D9AD00B83DC4 /* 10.jpg in Resources */,
+				1F41C64D2331D9AD00B83DC4 /* 2.jpg in Resources */,
+				1F41C6522331D9AD00B83DC4 /* 6.jpg in Resources */,
+				1F41C6452331D9AD00B83DC4 /* 13.jpg in Resources */,
+				1F41C64B2331D9AD00B83DC4 /* 11.jpg in Resources */,
+				1F41C6482331D9AD00B83DC4 /* 12.jpg in Resources */,
+				1F41C6492331D9AD00B83DC4 /* 9.jpg in Resources */,
+				1F41C6432331D9AD00B83DC4 /* 0.jpg in Resources */,
 				1FAA5AF322A26CA400CC3696 /* Main.storyboard in Resources */,
+				1F41C64E2331D9AD00B83DC4 /* 1.jpg in Resources */,
+				1F41C64F2331D9AD00B83DC4 /* 14.jpg in Resources */,
+				1F41C6502331D9AD00B83DC4 /* 15.jpg in Resources */,
+				1F35B04E237FDAD100076E3A /* JXScrollViewCell.xib in Resources */,
+				1F41C6472331D9AD00B83DC4 /* 8.jpg in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				1F41C6462331D9AD00B83DC4 /* 3.jpg in Resources */,
+				1F41C6512331D9AD00B83DC4 /* 7.jpg in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				1F41C64C2331D9AD00B83DC4 /* 4.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +425,8 @@
 				1FEE2D0522F5DE170002BAE5 /* JXCycleWayVC.swift in Sources */,
 				1F30F28D22EFEF2A007ABBED /* JXCustomTransform.swift in Sources */,
 				1F30F29422F022D3007ABBED /* JXCustomVC.swift in Sources */,
+				1F35B04D237FDAD100076E3A /* JXScrollViewCell.swift in Sources */,
+				1F35B04A237FD88100076E3A /* JXScrollViewVC.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,9 +567,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ATRZR4BSXQ;
+				DEVELOPMENT_TEAM = 29HA8N9RQ5;
 				INFOPLIST_FILE = JXBanner/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.italkbb.sdfsdfsdf;
@@ -503,9 +587,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ATRZR4BSXQ;
+				DEVELOPMENT_TEAM = 29HA8N9RQ5;
 				INFOPLIST_FILE = JXBanner/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.italkbb.sdfsdfsdf;

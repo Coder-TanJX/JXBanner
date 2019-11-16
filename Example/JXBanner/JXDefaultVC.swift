@@ -13,24 +13,15 @@ import JXBanner
 class JXDefaultVC: UIViewController {
     
     var pageCount = 5
-    
-    lazy var banner: JXBanner = {
-        let banner = JXBanner()
-        banner.backgroundColor = UIColor.black
-        banner.placeholderImgView.image = UIImage(named: "banner_placeholder")
-        banner.delegate = self
-        banner.dataSource = self
-        return banner
-    }()
+
+    @IBOutlet weak var banner: JXBanner!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(banner)
-        banner.snp.makeConstraints { (maker) in
-            maker.left.right.equalTo(view)
-            maker.height.equalTo(250)
-            maker.top.equalTo(view.snp_top).offset(100)
-        }
+        banner.placeholderImgView.image = UIImage(named: "banner_placeholder")
+        banner.delegate = self
+        banner.dataSource = self
+        
         self.automaticallyAdjustsScrollViewInsets = false
     }
     
@@ -53,12 +44,12 @@ extension JXDefaultVC: JXBannerDataSource {
     
     func jxBanner(_ banner: JXBannerType,
                   cellForItemAt index: Int,
-                  cell: JXBannerBaseCell)
-        -> JXBannerBaseCell {
-            let tempCell: JXBannerCell = cell as! JXBannerCell
+                  cell: UICollectionViewCell)
+        -> UICollectionViewCell {
+            let tempCell = cell as! JXBannerCell
             tempCell.layer.cornerRadius = 8
             tempCell.layer.masksToBounds = true
-            tempCell.imageView.image = UIImage(named: "banner_placeholder")
+            tempCell.imageView.image = UIImage(named: "\(index).jpg")
             tempCell.msgLabel.text = String(index) + "---来喽来喽,他真的来喽~"
             return tempCell
     }
@@ -67,7 +58,7 @@ extension JXDefaultVC: JXBannerDataSource {
                   layoutParams: JXBannerLayoutParams)
         -> JXBannerLayoutParams {
         return layoutParams
-            .itemSize(CGSize(width: UIScreen.main.bounds.width - 40, height: 200))
+            .itemSize(CGSize(width: 300, height: 150))
             .itemSpacing(20)
     }
 }

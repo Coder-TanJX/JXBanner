@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5Hw-bO-rW5">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5Hw-bO-rW5">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -53,6 +51,14 @@
                                     <segue destination="QIk-uN-nRW" kind="push" id="mgy-cD-XEq"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKU-qO-VLI">
+                                <rect key="frame" x="142" y="357" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="JXScrollView"/>
+                                <connections>
+                                    <segue destination="je1-oR-IBX" kind="push" id="i5c-YL-SrK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
@@ -79,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EoA-76-x7K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1617" y="-724"/>
+            <point key="canvasLocation" x="1617" y="-1138"/>
         </scene>
         <!--DefaultVC-->
         <scene sceneID="9Kb-nV-3YA">
@@ -92,9 +98,26 @@
                     <view key="view" contentMode="scaleToFill" id="gn7-kb-yEx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vhx-B3-WbH" customClass="JXBanner" customModule="JXBanner">
+                                <rect key="frame" x="0.0" y="64" width="375" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="YO0-JN-9kp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Vhx-B3-WbH" firstAttribute="leading" secondItem="gn7-kb-yEx" secondAttribute="leading" id="9w2-Eb-3XS"/>
+                            <constraint firstAttribute="trailing" secondItem="Vhx-B3-WbH" secondAttribute="trailing" id="G3d-1i-bsr"/>
+                            <constraint firstItem="Vhx-B3-WbH" firstAttribute="top" secondItem="1mm-MI-9a2" secondAttribute="bottom" constant="20" id="LlG-CY-tzY"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cV4-EG-mzg"/>
+                    <connections>
+                        <outlet property="banner" destination="Vhx-B3-WbH" id="gcW-J5-eXh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sSd-zI-3oe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -106,7 +129,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Hw-bO-rW5" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pgN-y2-2Ip">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -135,7 +158,43 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j3K-ay-1eZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1617" y="-1396"/>
+            <point key="canvasLocation" x="1631" y="-1816"/>
+        </scene>
+        <!--Scroll ViewVC-->
+        <scene sceneID="uPv-2g-BIe">
+            <objects>
+                <viewController id="je1-oR-IBX" customClass="JXScrollViewVC" customModule="JXBanner_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7jd-kJ-3ir"/>
+                        <viewControllerLayoutGuide type="bottom" id="W2r-t4-kqt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5rK-PS-nHp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RAl-jo-zhO" customClass="JXBanner" customModule="JXBanner">
+                                <rect key="frame" x="0.0" y="64" width="375" height="160"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="MRE-Rj-jCU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="RAl-jo-zhO" firstAttribute="top" secondItem="7jd-kJ-3ir" secondAttribute="bottom" constant="20" id="6EX-LU-hmt"/>
+                            <constraint firstAttribute="trailing" secondItem="RAl-jo-zhO" secondAttribute="trailing" id="9Uh-hq-bjW"/>
+                            <constraint firstItem="RAl-jo-zhO" firstAttribute="leading" secondItem="5rK-PS-nHp" secondAttribute="leading" id="Cpy-0Z-6nR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fTG-Ox-mPn"/>
+                    <connections>
+                        <outlet property="scrollView" destination="RAl-jo-zhO" id="1cj-w4-bBN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JZq-Cz-fAf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="777" y="-355"/>
         </scene>
         <!--Transform CustomVC-->
         <scene sceneID="7Yg-PF-t6T">
@@ -154,7 +213,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Za4-fQ-vAY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="809" y="-340"/>
+            <point key="canvasLocation" x="1630" y="-355"/>
         </scene>
     </scenes>
 </document>

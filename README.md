@@ -43,6 +43,14 @@ end
 
 ### The UI effect
 
+* scrollView
+
+You need to set jxbannerparams-> isPagingEnabled(false) and isAutoPlay(false)
+
+<img src="gif/scrollView.gif">
+
+---
+
 * default
 
 You don't need to set JXBanner -> JXBannerLayoutParams
@@ -74,7 +82,7 @@ Need to implement JXBannerTransformable agreement, modify UICollectionViewLayout
 
 ###### Banner 【Public class file of the graph framework in rotation】
 * API  ---> All interfaces that developers can call
-* Cell  ---> The framework provides cell base class (if you want to customize cell content, create a new cell that inherits from JXBannerBaseCell)
+* Cell  ---> The framework provides cell base class (if you want to customize cell content, create a new cell that inherits from UICollectionViewCell)
 * Common ---> Framework common class files
 * Transform ---> Animation class files (if the framework provided by the animation effect can't meet the demand of the developer, can achieve new [JXBannerTransformable]() agreement struct/class , modified UICollectionViewLayoutAttributes - > the transform3D or transform properties)
 
@@ -92,13 +100,35 @@ Need to implement JXBannerTransformable agreement, modify UICollectionViewLayout
 
 * isAutoPlay ---> Automatically play
 * isBounces ---> Whether the boundary can slip beyond the boundary
-* timeInterval ---> Play scheduling interval
 * isShowPageControl ---> Whether internal load indicator  ( [JXPageControl（Framework features）](https://github.com/Coder-TanJX/JXPageControl)  ) 
+* timeInterval ---> Play scheduling interval
+* isPagingEnabled ---> Page scrolling mode
+* contentInset ---> Set the padding
 * cycleWay ---> [Loop mode（Framework features）]() （Forward: wireless right play, skipEnd: end-to-end custom animation jump, rollingBack: left-right rollback mode）
 * edgeTransitionType ---> CycleWay uses skipEnd to choose how to animate
 * edgeTransitionSubtype ---> CycleWay uses skipEnd to choose how to animate
 
 ---
+
+public var isAutoPlay: Bool = true
+
+public var isBounces: Bool = true
+
+public var isShowPageControl: Bool = true
+
+public var isPagingEnabled: Bool = true
+
+public var contentInset = UIEdgeInsets.zero
+
+public var timeInterval: TimeInterval = 5.0
+
+public var cycleWay: CycleWay = .forward
+
+public var edgeTransitionType: JXBannerTransitionType? = .fade
+
+public var edgeTransitionSubtype: CATransitionSubtype = .fromRight
+
+internal var currentRollingDirection: RollingDirection = .right
 
 ##### JXBannerLayoutParams 【Banner layout, animation properties】
 
@@ -115,11 +145,11 @@ Need to implement JXBannerTransformable agreement, modify UICollectionViewLayout
 
 ##### JXBannerCellRegister 【Cell registers builders】
 
-* type ---> To register the cell type, you must be a subclass of JXBannerBaseCell
-* reuseIdentifier ---> Cell reuse identity
+* type ---> To register the cell type, you must be a subclass of UICollectionViewCell, When you are not using the nib cell file, you must set the  'type' to the cell class!!
+* reuseIdentifier ---> Cell reuse identity. If you use multiple jxbanners in your app, please set different values to facilitate the differentiation
+* nib ---> The nib parameter assignment must be done when using the nib cell file !!!
 
-var type: JXBannerBaseCell.Type
-var reuseIdentifier: String
+
 
 ---
 ###  JXBanner use 
@@ -183,8 +213,8 @@ extension JXDefaultVC: JXBannerDataSource {
     // 轮播cell内容设置
     func jxBanner(_ banner: JXBannerType,
         cellForItemAt index: Int,
-        cell: JXBannerBaseCell)
-        -> JXBannerBaseCell {
+        cell: UICollectionViewCell)
+        -> UICollectionViewCell {
             let tempCell: JXBannerCell = cell as! JXBannerCell
             tempCell.layer.cornerRadius = 8
             tempCell.layer.masksToBounds = true
@@ -301,8 +331,8 @@ extension JXCustomVC: JXBannerDataSource {
     // 轮播cell内容设置
     func jxBanner(_ banner: JXBannerType,
         cellForItemAt index: Int,
-        cell: JXBannerBaseCell)
-        -> JXBannerBaseCell {
+        cell: UICollectionViewCell)
+        -> UICollectionViewCell {
             let tempCell: JXBannerCell = cell as! JXBannerCell
             tempCell.layer.cornerRadius = 8
             tempCell.layer.masksToBounds = true

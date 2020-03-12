@@ -381,6 +381,6 @@ UICollectionViewDelegate {
     
     func indexOfIndexPath(_ indexPath : IndexPath)
         -> Int {
-            return Int(indexPath.item % pageCount)
+            return pageCount > 0 ? Int(indexPath.item % pageCount) : 0
     }
 }

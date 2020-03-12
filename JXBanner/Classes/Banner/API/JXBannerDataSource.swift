@@ -90,6 +90,33 @@ public protocol JXBannerDataSource: class {
                   numberOfPages: Int,
                   coverView: UIView,
                   builder: JXBannerPageControlBuilder) -> JXBannerPageControlBuilder
+    
+    /**
+     Returns the centerIndex/centerCell of the item in the middle of the bannerview
+     
+     - parameters:
+     - banner: An instance of JXBannerType.
+     - centerIndex: the index of the item in the middle of the bannerview
+     - centerCell: the cell of the item in the middle of the bannerview
+     */
+    
+    func jxBanner(_ banner: JXBannerType,
+                  centerIndex: Int,
+                  centerCell: UICollectionViewCell)
+    
+    
+    /**
+     Returns the lastCenterIndex/lastCenterCell of the item in the middle of the bannerview
+     
+     - parameters:
+     - banner: An instance of JXBannerType.
+     - lastCenterIndex: Last index of the middle item in bannerview
+     - lastCenterCell: Last cell of the middle item in bannerview
+     */
+    
+    func jxBanner(_ banner: JXBannerType,
+                  lastCenterIndex: Int?,
+                  lastCenterCell: UICollectionViewCell?)
 }
 
 /// The default implementation
@@ -127,5 +154,15 @@ public extension JXBannerDataSource {
         
         return builder
     }
+    
+    /// Returns the centerIndex/centerCell of the item in the middle of the bannerview
+    func jxBanner(_ banner: JXBannerType,
+                  centerIndex: Int,
+                  centerCell: UICollectionViewCell) {}
+    
+    /// Returns the lastCenterIndex/lastCenterCell of the item in the middle of the bannerview
+    func jxBanner(_ banner: JXBannerType,
+                  lastCenterIndex: Int?,
+                  lastCenterCell: UICollectionViewCell?) {}
     
 }

@@ -28,6 +28,10 @@ class JXDefaultVC: UIViewController {
     deinit {
         print("\(#function) ----------> \(#file.components(separatedBy: "/").last?.components(separatedBy: ".").first ?? #file)")
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        banner.reloadView()
+    }
 }
 
 //MARK:- JXBannerDataSource
@@ -61,6 +65,7 @@ extension JXDefaultVC: JXBannerDataSource {
             .itemSize(CGSize(width: 300, height: 150))
             .itemSpacing(20)
     }
+    
 }
 
 //MARK:- JXBannerDelegate
@@ -70,5 +75,11 @@ extension JXDefaultVC: JXBannerDelegate {
                          didSelectItemAt index: Int) {
         print(index)
     }
+    
+    func jxBanner(_ banner: JXBannerType, center index: Int) {
+        print(index)
+    }
+    
+    
     
 }

@@ -96,7 +96,6 @@ public class JXBaseBanner: UIView {
         collectionView.isPagingEnabled = false
         collectionView.showsVerticalScrollIndicator = false
         collectionView.showsHorizontalScrollIndicator = false
-//        collectionView.decelerationRate = UIScrollView.DecelerationRate(rawValue: 0.01)
         collectionView.autoresizingMask = [
             .flexibleWidth,
             .flexibleHeight
@@ -118,9 +117,15 @@ public class JXBaseBanner: UIView {
     var pageCount: Int = 0
     
     var params: JXBannerParams = JXBannerParams()
+
+    /// The IndexPath of the item in the middle of the bannerview
+    var currentIndexPath: IndexPath = IndexPath(row: 0, section: 0) {
+        didSet { setCurrentIndex() }
+    }
     
-    /// Current shows indexpath of cell
-    var currentIndexPath: IndexPath = IndexPath(row: 0, section: 0)
+    // Last indexPath/cell of the middle item in bannerview
+    var lastCenterIndex: Int?
+    var lastIndexPathCell: UICollectionViewCell?
     
     var cellRegister: JXBannerCellRegister = JXBannerCellRegister(type: nil,
                                                                   reuseIdentifier: "JXBannerCell")
@@ -141,8 +146,8 @@ extension JXBaseBanner {
     }
     
     func start() {
-        if params.timeInterval > 0,
-            params.isAutoPlay,
+        if params.isAutoPlay,
+            params.timeInterval > 0,
             pageCount > 1 {
             if timer == nil {
                 timer = Timer.jx_scheduledTimer(
@@ -168,29 +173,26 @@ extension JXBaseBanner {
         _ indexPath: IndexPath, animated: Bool) {
         
         // Handle indexpath bounds
-        if params.cycleWay == .forward {
+        if params.cycleWay == .forward,
+            pageCount > 1 {
             
             if indexPath.row >= kMultiplier * pageCount - pageCount{
                 currentIndexPath = IndexPath(row: (kMultiplier * pageCount / 2),
                                              section: 0)
                 scrollToIndexPath(currentIndexPath, animated: false)
-                setCurrentIndex()
-                start()
                 return
                 
             }else if indexPath.row == -1 + pageCount {
                 currentIndexPath = IndexPath(row: (kMultiplier * pageCount / 2) + (pageCount - 1),
                                              section: 0)
                 scrollToIndexPath(currentIndexPath, animated: false)
-                
-                setCurrentIndex()
-                start()
                 return
             }
         }
         
         if params.isPagingEnabled {
             
+            // reuse scrollToItem: to mask the bug of inaccurate scroll position
             collectionView.scrollToItem(at: indexPath,
                                         at: .centeredHorizontally,
                                         animated: animated)
@@ -198,8 +200,6 @@ extension JXBaseBanner {
                                         at: .centeredHorizontally,
                                         animated: animated)
         }
- 
-
     }
     
     override public func willMove(toSuperview newSuperview: UIView?) {

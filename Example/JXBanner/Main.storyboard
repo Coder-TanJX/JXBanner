@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5Hw-bO-rW5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5Hw-bO-rW5">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -59,6 +59,14 @@
                                     <segue destination="je1-oR-IBX" kind="push" id="i5c-YL-SrK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGR-mX-Tgt">
+                                <rect key="frame" x="118" y="410" width="126" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="JXMiddleTargetVC"/>
+                                <connections>
+                                    <segue destination="bXd-Wh-EjW" kind="push" id="ZHV-0w-o9Y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
@@ -67,6 +75,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dPM-Jm-ZXy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="777" y="-1064"/>
+        </scene>
+        <!--Middle TargetVC-->
+        <scene sceneID="j63-FG-0Yo">
+            <objects>
+                <viewController id="bXd-Wh-EjW" customClass="JXMiddleTargetVC" customModule="JXBanner_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J70-4d-9R4"/>
+                        <viewControllerLayoutGuide type="bottom" id="cGd-xf-jcp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OGz-3G-MQY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kae-Ys-1CG" customClass="JXBanner" customModule="JXBanner">
+                                <rect key="frame" x="0.0" y="144" width="375" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="kCS-Sx-Z6B"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="kae-Ys-1CG" firstAttribute="top" secondItem="J70-4d-9R4" secondAttribute="bottom" constant="100" id="ALC-Cm-kyu"/>
+                            <constraint firstAttribute="trailing" secondItem="kae-Ys-1CG" secondAttribute="trailing" id="lfp-Zs-25l"/>
+                            <constraint firstItem="kae-Ys-1CG" firstAttribute="leading" secondItem="OGz-3G-MQY" secondAttribute="leading" id="sY4-RT-zLh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="PCb-LX-6YI"/>
+                    <connections>
+                        <outlet property="banner" destination="kae-Ys-1CG" id="HOl-Vt-DDz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T5h-5R-eB5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="806" y="-337"/>
         </scene>
         <!--Cycle WayVC-->
         <scene sceneID="Kdj-Bg-Rap">
@@ -85,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EoA-76-x7K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1617" y="-1138"/>
+            <point key="canvasLocation" x="2473" y="-1824"/>
         </scene>
         <!--DefaultVC-->
         <scene sceneID="9Kb-nV-3YA">
@@ -121,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sSd-zI-3oe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="809" y="-1808"/>
+            <point key="canvasLocation" x="807" y="-1823"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7IZ-Bh-X5B">
@@ -194,7 +238,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JZq-Cz-fAf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="777" y="-355"/>
+            <point key="canvasLocation" x="2473" y="-297"/>
         </scene>
         <!--Transform CustomVC-->
         <scene sceneID="7Yg-PF-t6T">
@@ -213,7 +257,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Za4-fQ-vAY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1630" y="-355"/>
+            <point key="canvasLocation" x="2473" y="-1065"/>
         </scene>
     </scenes>
 </document>

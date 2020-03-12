@@ -43,6 +43,14 @@ end
 
 ### The UI effect
 
+* middleTarget
+
+Add control proxy method to central Cell (when central Cell is shown/when leaving the center: developers can use custom actions, such as intermediate Cell, to play the video and stop it when leaving the center)
+
+<img src="gif/middleTarget.gif">
+
+---
+
 * scrollView
 
 You need to set jxbannerparams-> isPagingEnabled(false) and isAutoPlay(false)

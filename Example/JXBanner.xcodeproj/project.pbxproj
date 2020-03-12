@@ -37,6 +37,14 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		6E06070B24174BBC00260BD9 /* mp4_0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E06070624174BBC00260BD9 /* mp4_0.jpg */; };
+		6E06070C24174BBC00260BD9 /* mp4_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E06070724174BBC00260BD9 /* mp4_2.jpg */; };
+		6E06070D24174BBC00260BD9 /* mp4_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E06070824174BBC00260BD9 /* mp4_3.jpg */; };
+		6E06070E24174BBC00260BD9 /* mp4_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E06070924174BBC00260BD9 /* mp4_4.jpg */; };
+		6E06070F24174BBC00260BD9 /* mp4_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E06070A24174BBC00260BD9 /* mp4_1.jpg */; };
+		6E07819923D5B13100FE8C60 /* JXMiddleTargetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E07819823D5B13100FE8C60 /* JXMiddleTargetVC.swift */; };
+		6E07819E23D5B17300FE8C60 /* JXMiddleTargetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E07819C23D5B17300FE8C60 /* JXMiddleTargetCell.swift */; };
+		6E07819F23D5B17300FE8C60 /* JXMiddleTargetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E07819D23D5B17300FE8C60 /* JXMiddleTargetCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +93,14 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		69253EFB2BEA3E4346A791AE /* Pods_JXBanner_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JXBanner_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E06070624174BBC00260BD9 /* mp4_0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mp4_0.jpg; sourceTree = "<group>"; };
+		6E06070724174BBC00260BD9 /* mp4_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mp4_2.jpg; sourceTree = "<group>"; };
+		6E06070824174BBC00260BD9 /* mp4_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mp4_3.jpg; sourceTree = "<group>"; };
+		6E06070924174BBC00260BD9 /* mp4_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mp4_4.jpg; sourceTree = "<group>"; };
+		6E06070A24174BBC00260BD9 /* mp4_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mp4_1.jpg; sourceTree = "<group>"; };
+		6E07819823D5B13100FE8C60 /* JXMiddleTargetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXMiddleTargetVC.swift; sourceTree = "<group>"; };
+		6E07819C23D5B17300FE8C60 /* JXMiddleTargetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXMiddleTargetCell.swift; sourceTree = "<group>"; };
+		6E07819D23D5B17300FE8C60 /* JXMiddleTargetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JXMiddleTargetCell.xib; sourceTree = "<group>"; };
 		86DD0217E9DE21DAB1A6418E /* JXBanner.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JXBanner.podspec; path = ../JXBanner.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A8BAC75A289C5E5883552C0B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B37FA8DFCA403B9BCA5A97D5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -110,20 +126,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1F30F28E22F02272007ABBED /* Demo */ = {
-			isa = PBXGroup;
-			children = (
-				1F30F29122F022BA007ABBED /* JXDefaultVC.swift */,
-				1F30F29322F022D3007ABBED /* JXCustomVC.swift */,
-				1FEE2D0422F5DE170002BAE5 /* JXCycleWayVC.swift */,
-				1F35B049237FD88100076E3A /* JXScrollViewVC.swift */,
-				1F35B04B237FDAD100076E3A /* JXScrollViewCell.swift */,
-				1F35B04C237FDAD100076E3A /* JXScrollViewCell.xib */,
-				1FEE2D0622F5E0E00002BAE5 /* JXTransformCustomVC */,
-			);
-			name = Demo;
-			sourceTree = "<group>";
-		};
 		1F41C6242331D36A00B83DC4 /* source */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,15 +147,6 @@
 				1F41C6402331D9AD00B83DC4 /* 15.jpg */,
 			);
 			path = source;
-			sourceTree = "<group>";
-		};
-		1FEE2D0622F5E0E00002BAE5 /* JXTransformCustomVC */ = {
-			isa = PBXGroup;
-			children = (
-				1FD96C4822F03806003972F1 /* JXTransformCustomVC.swift */,
-				1F30F28C22EFEF2A007ABBED /* JXCustomTransform.swift */,
-			);
-			name = JXTransformCustomVC;
 			sourceTree = "<group>";
 		};
 		4FC073646F1C0DF9E1D9E731 /* Frameworks */ = {
@@ -197,8 +190,9 @@
 		607FACD21AFB9204008FA782 /* Example for JXBanner */ = {
 			isa = PBXGroup;
 			children = (
+				6E0606FB241747AC00260BD9 /* mp4 */,
 				1F41C6242331D36A00B83DC4 /* source */,
-				1F30F28E22F02272007ABBED /* Demo */,
+				6E07819523D5AF9D00FE8C60 /* Demo */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				1FAA5AF222A26CA400CC3696 /* Main.storyboard */,
@@ -242,6 +236,60 @@
 				B37FA8DFCA403B9BCA5A97D5 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		6E0606FB241747AC00260BD9 /* mp4 */ = {
+			isa = PBXGroup;
+			children = (
+				6E06070624174BBC00260BD9 /* mp4_0.jpg */,
+				6E06070A24174BBC00260BD9 /* mp4_1.jpg */,
+				6E06070724174BBC00260BD9 /* mp4_2.jpg */,
+				6E06070824174BBC00260BD9 /* mp4_3.jpg */,
+				6E06070924174BBC00260BD9 /* mp4_4.jpg */,
+			);
+			path = mp4;
+			sourceTree = "<group>";
+		};
+		6E07819423D5AF7C00FE8C60 /* JXScrollViewVC */ = {
+			isa = PBXGroup;
+			children = (
+				1F35B049237FD88100076E3A /* JXScrollViewVC.swift */,
+				1F35B04B237FDAD100076E3A /* JXScrollViewCell.swift */,
+				1F35B04C237FDAD100076E3A /* JXScrollViewCell.xib */,
+			);
+			path = JXScrollViewVC;
+			sourceTree = "<group>";
+		};
+		6E07819523D5AF9D00FE8C60 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				1F30F29122F022BA007ABBED /* JXDefaultVC.swift */,
+				1F30F29322F022D3007ABBED /* JXCustomVC.swift */,
+				1FEE2D0422F5DE170002BAE5 /* JXCycleWayVC.swift */,
+				6E07819423D5AF7C00FE8C60 /* JXScrollViewVC */,
+				6E07819623D5AFDA00FE8C60 /* JXTransformCustomVC */,
+				6E07819723D5AFFA00FE8C60 /* JXMiddleTargetVC */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		6E07819623D5AFDA00FE8C60 /* JXTransformCustomVC */ = {
+			isa = PBXGroup;
+			children = (
+				1FD96C4822F03806003972F1 /* JXTransformCustomVC.swift */,
+				1F30F28C22EFEF2A007ABBED /* JXCustomTransform.swift */,
+			);
+			path = JXTransformCustomVC;
+			sourceTree = "<group>";
+		};
+		6E07819723D5AFFA00FE8C60 /* JXMiddleTargetVC */ = {
+			isa = PBXGroup;
+			children = (
+				6E07819823D5B13100FE8C60 /* JXMiddleTargetVC.swift */,
+				6E07819C23D5B17300FE8C60 /* JXMiddleTargetCell.swift */,
+				6E07819D23D5B17300FE8C60 /* JXMiddleTargetCell.xib */,
+			);
+			path = JXMiddleTargetVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,12 +382,17 @@
 			files = (
 				1F41C64A2331D9AD00B83DC4 /* 5.jpg in Resources */,
 				1F41C6442331D9AD00B83DC4 /* 10.jpg in Resources */,
+				6E06070B24174BBC00260BD9 /* mp4_0.jpg in Resources */,
 				1F41C64D2331D9AD00B83DC4 /* 2.jpg in Resources */,
+				6E06070C24174BBC00260BD9 /* mp4_2.jpg in Resources */,
 				1F41C6522331D9AD00B83DC4 /* 6.jpg in Resources */,
 				1F41C6452331D9AD00B83DC4 /* 13.jpg in Resources */,
+				6E07819F23D5B17300FE8C60 /* JXMiddleTargetCell.xib in Resources */,
 				1F41C64B2331D9AD00B83DC4 /* 11.jpg in Resources */,
+				6E06070F24174BBC00260BD9 /* mp4_1.jpg in Resources */,
 				1F41C6482331D9AD00B83DC4 /* 12.jpg in Resources */,
 				1F41C6492331D9AD00B83DC4 /* 9.jpg in Resources */,
+				6E06070E24174BBC00260BD9 /* mp4_4.jpg in Resources */,
 				1F41C6432331D9AD00B83DC4 /* 0.jpg in Resources */,
 				1FAA5AF322A26CA400CC3696 /* Main.storyboard in Resources */,
 				1F41C64E2331D9AD00B83DC4 /* 1.jpg in Resources */,
@@ -349,6 +402,7 @@
 				1F41C6472331D9AD00B83DC4 /* 8.jpg in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				1F41C6462331D9AD00B83DC4 /* 3.jpg in Resources */,
+				6E06070D24174BBC00260BD9 /* mp4_3.jpg in Resources */,
 				1F41C6512331D9AD00B83DC4 /* 7.jpg in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 				1F41C64C2331D9AD00B83DC4 /* 4.jpg in Resources */,
@@ -424,10 +478,12 @@
 				1F30F29222F022BA007ABBED /* JXDefaultVC.swift in Sources */,
 				1FEE2D0522F5DE170002BAE5 /* JXCycleWayVC.swift in Sources */,
 				1F30F28D22EFEF2A007ABBED /* JXCustomTransform.swift in Sources */,
+				6E07819E23D5B17300FE8C60 /* JXMiddleTargetCell.swift in Sources */,
 				1F30F29422F022D3007ABBED /* JXCustomVC.swift in Sources */,
 				1F35B04D237FDAD100076E3A /* JXScrollViewCell.swift in Sources */,
 				1F35B04A237FD88100076E3A /* JXScrollViewVC.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				6E07819923D5B13100FE8C60 /* JXMiddleTargetVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

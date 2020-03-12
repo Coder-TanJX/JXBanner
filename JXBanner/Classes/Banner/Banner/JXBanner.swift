@@ -37,12 +37,20 @@ public class JXBanner: JXBaseBanner, JXBannerType {
     internal var pageControl: (UIView & JXPageControlType)?
     
     override func setCurrentIndex() {
-        let point = CGPoint(x: collectionView.contentOffset.x + collectionView.frame.width * 0.5,
-                            y: collectionView.contentOffset.y + collectionView.frame.height * 0.5)
-        if let indexPath = collectionView.indexPathForItem(at: point) {
-            let currentPage = indexOfIndexPath(indexPath)
-            pageControl?.currentPage = currentPage
-            delegate?.jxBanner(self, center: currentPage)
+        
+        let currentPage = indexOfIndexPath(currentIndexPath)
+        pageControl?.currentPage = currentPage
+        delegate?.jxBanner(self, center: currentPage)
+
+        if let cell = collectionView.cellForItem(at: currentIndexPath) {
+            dataSource?.jxBanner(self,
+                                 lastCenterIndex: lastCenterIndex,
+                                 lastCenterCell: lastIndexPathCell)
+            dataSource?.jxBanner(self,
+                                 centerIndex: currentPage,
+                                 centerCell: cell)
+            lastCenterIndex = currentPage
+            lastIndexPathCell = cell
         }
     }
 
@@ -138,6 +146,14 @@ extension JXBanner {
     
     private func refreshData() {
         
+        if let cell = lastIndexPathCell {
+            dataSource?.jxBanner(self,
+                                 lastCenterIndex: lastCenterIndex,
+                                 lastCenterCell: cell)
+            lastCenterIndex = nil
+            lastIndexPathCell = nil
+        }
+        
         // Reinitialize data
         params.currentRollingDirection = .right
         collectionView.setCollectionViewLayout(layout, animated: true)
@@ -153,17 +169,21 @@ extension JXBanner {
     
     /// Reload current indexpath
     private func reinitializeIndexPath() {
+        
+        var tempIndexPath = IndexPath(row: 0, section: 0)
         if pageCount > 0,
             params.cycleWay == .forward {
             // Take the middle group and show it
-            currentIndexPath = IndexPath(row: (kMultiplier * pageCount / 2),
+            tempIndexPath = IndexPath(row: (kMultiplier * pageCount / 2),
                                          section: 0)
-        }else {
-            currentIndexPath = IndexPath(row: 0, section: 0)
         }
+
         if pageCount > 0 {
-            scrollToIndexPath(currentIndexPath, animated: false)
+            scrollToIndexPath(tempIndexPath, animated: false)
         }
+        
+        collectionView.layoutIfNeeded()
+        currentIndexPath = tempIndexPath
     }
 
     @objc internal override func autoScroll() {
@@ -242,16 +262,23 @@ extension JXBanner {
         if layout.params?.layoutType != nil && indexPaths.count <= 2 {
             shouldSet = false
         }
+        
+        var tempIndexPath: IndexPath?
         for atr in attriArr {
             if let obj = atr, shouldSet {
                 obj.zIndex = 0;
                 if(abs(minSpace) > abs(obj.center.x - centerX)) {
                     minSpace = obj.center.x - centerX;
-                    currentIndexPath = obj.indexPath;
+                    tempIndexPath = obj.indexPath;
                 }
             }
         }
-        scrollViewWillBeginDecelerating(collectionView)
+        // currentIndexPath != tempIndexPath : To mask multiple calls to currentIndexPath's didSet method
+        if currentIndexPath != tempIndexPath,
+            let indexPath = tempIndexPath {
+            currentIndexPath = indexPath
+        }
+        scrollToIndexPath(currentIndexPath, animated: true)
     }
 }
 
@@ -271,10 +298,20 @@ extension JXBanner {
         pause()
         
         if params.cycleWay != .forward {
+            
             if velocity.x >= 0 ,
-                currentIndexPath.row == pageCount - 1 { return }
+                currentIndexPath.row == pageCount - 1 {
+                scrollToIndexPath(currentIndexPath, animated: true)
+                return
+                
+            }
+            
             if velocity.x <= 0 ,
-                currentIndexPath.row == 0 { return }
+                currentIndexPath.row == 0 {
+                scrollToIndexPath(currentIndexPath, animated: true)
+                return
+                
+            }
         }
         
         if velocity.x > 0 {
@@ -304,7 +341,6 @@ extension JXBanner {
     public func scrollViewDidEndScrollingAnimation(
         _ scrollView: UIScrollView) {
         start()
-        setCurrentIndex()
     }
     
     /// Rolling in the

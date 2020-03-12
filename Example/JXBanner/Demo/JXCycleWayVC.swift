@@ -1,8 +1,8 @@
 //
-//  JXCustomVC.swift
+//  JXCycleWayVC.swift
 //  JXBanner_Example
 //
-//  Created by Coder_TanJX on 2019/7/30.
+//  Created by Coder_TanJX on 2019/8/3.
 //  Copyright © 2019 CocoaPods. All rights reserved.
 //
 
@@ -12,7 +12,7 @@ import SnapKit
 import JXBanner
 import JXPageControl
 
-class JXCustomVC: UIViewController {
+class JXCycleWayVC: UIViewController {
     
     var pageCount = 5
     
@@ -23,7 +23,7 @@ class JXCustomVC: UIViewController {
         banner.delegate = self
         banner.dataSource = self
         return banner
-    }()
+        }()
     
     lazy var converflowBanner: JXBanner = {
         let banner = JXBanner()
@@ -34,21 +34,10 @@ class JXCustomVC: UIViewController {
         return banner
     }()
     
-    lazy var customBanner: JXBanner = {
-        let banner = JXBanner()
-        banner.placeholderImgView.image = UIImage(named: "banner_placeholder")
-        banner.delegate = self
-        banner.dataSource = self
-        return banner
-    }()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         view.addSubview(linearBanner)
         view.addSubview(converflowBanner)
-        view.addSubview(customBanner)
-        
         linearBanner.snp.makeConstraints {(maker) in
             maker.left.right.equalTo(view)
             maker.height.equalTo(150)
@@ -57,13 +46,7 @@ class JXCustomVC: UIViewController {
         
         converflowBanner.snp.makeConstraints {(maker) in
             maker.left.right.height.equalTo(linearBanner)
-            maker.top.equalTo(linearBanner.snp_bottom).offset(50)
-        }
-        
-        customBanner.snp.makeConstraints {(maker) in
-            maker.left.right.equalTo(linearBanner)
-            maker.height.equalTo(200)
-            maker.top.equalTo(converflowBanner.snp_bottom).offset(50)
+            maker.top.equalTo(linearBanner.snp_bottom).offset(100)
         }
         
         self.automaticallyAdjustsScrollViewInsets = false
@@ -75,20 +58,17 @@ class JXCustomVC: UIViewController {
 }
 
 //MARK:- JXBannerDataSource
-extension JXCustomVC: JXBannerDataSource {
+extension JXCycleWayVC: JXBannerDataSource {
     
     func jxBanner(_ banner: JXBannerType)
         -> (JXBannerCellRegister) {
-
+            
             if banner.indentify == "linearBanner" {
                 return JXBannerCellRegister(type: JXBannerCell.self,
                                             reuseIdentifier: "LinearBannerCell")
-            }else if banner.indentify == "converflowBanner" {
-                return JXBannerCellRegister(type: JXBannerCell.self,
-                                            reuseIdentifier: "ConverflowBannerCell")
             }else {
                 return JXBannerCellRegister(type: JXBannerCell.self,
-                                            reuseIdentifier: "JXTransformCustomVCCell")
+                                            reuseIdentifier: "ConverflowBannerCell")
             }
     }
     
@@ -102,14 +82,10 @@ extension JXCustomVC: JXBannerDataSource {
             let tempCell = cell as! JXBannerCell
             tempCell.layer.cornerRadius = 8
             tempCell.layer.masksToBounds = true
-            tempCell.layer.borderColor = UIColor.gray.cgColor
-            tempCell.layer.borderWidth = 1
             if banner.indentify == "linearBanner" {
                 tempCell.imageView.image = UIImage(named: "\(index).jpg")
             }else if banner.indentify == "converflowBanner" {
                 tempCell.imageView.image = UIImage(named: "\(index+5).jpg")
-            }else {
-                tempCell.imageView.image = UIImage(named: "\(index+10).jpg")
             }
             
             tempCell.msgLabel.text = String(index) + "---来喽来喽,他真的来喽~"
@@ -119,15 +95,15 @@ extension JXCustomVC: JXBannerDataSource {
     func jxBanner(_ banner: JXBannerType,
                   params: JXBannerParams)
         -> JXBannerParams {
-        
+            
             if banner.indentify == "linearBanner" {
                 return params
-                    .timeInterval(2)
-                    .cycleWay(.forward)
+                    .timeInterval(5)
+                    .cycleWay(.rollingBack)
             }else {
                 return params
-                    .timeInterval(3)
-                    .cycleWay(.forward)
+                    .timeInterval(10)
+                    .cycleWay(.skipEnd)
             }
     }
     
@@ -138,26 +114,15 @@ extension JXCustomVC: JXBannerDataSource {
             if banner.indentify == "linearBanner" {
                 return layoutParams
                     .layoutType(JXBannerTransformLinear())
-                    .itemSize(CGSize(width: 300, height: 150))
+                    .itemSize(CGSize(width: 250, height: 150))
                     .itemSpacing(10)
-                    .rateOfChange(0.8)
-                    .minimumScale(0.7)
-                    .rateHorisonMargin(0.5)
                     .minimumAlpha(0.8)
-            }else if banner.indentify == "converflowBanner" {
+            }else {
                 return layoutParams
                     .layoutType(JXBannerTransformCoverflow())
                     .itemSize(CGSize(width: 300, height: 150))
                     .itemSpacing(0)
-                    .maximumAngle(0.25)
-                    .rateHorisonMargin(0.3)
                     .minimumAlpha(0.8)
-            }else {
-                return layoutParams
-                    .layoutType(JXCustomTransform())
-                    .itemSize(CGSize(width: 280, height: 140))
-                    .maximumAngle(0.1)
-                    .itemSpacing(10)
             }
     }
     
@@ -165,7 +130,7 @@ extension JXCustomVC: JXBannerDataSource {
                   numberOfPages: Int,
                   coverView: UIView,
                   builder: JXBannerPageControlBuilder) -> JXBannerPageControlBuilder {
-
+        
         if banner.indentify == "linearBanner" {
             let pageControl = JXPageControlScale()
             pageControl.contentMode = .bottom
@@ -184,7 +149,7 @@ extension JXCustomVC: JXBannerDataSource {
                 }
             }
             return builder
-
+            
         }else {
             let pageControl = JXPageControlExchange()
             pageControl.contentMode = .bottom
@@ -203,32 +168,22 @@ extension JXCustomVC: JXBannerDataSource {
             }
             return builder
         }
-
+        
     }
     
 }
 
 //MARK:- JXBannerDelegate
-extension JXCustomVC: JXBannerDelegate {
+extension JXCycleWayVC: JXBannerDelegate {
     
     public func jxBanner(_ banner: JXBannerType,
                          didSelectItemAt index: Int) {
         print(index)
     }
     
-    func jxBanner(_ banner: JXBannerType, coverView: UIView) {
-        let title = UILabel()
-        title.frame = CGRect(x: 0, y: 0, width: 100, height: 30)
-        title.text = "JXBanner"
-        title.textColor = UIColor.red
-        title.font = UIFont.systemFont(ofSize: 16)
-        coverView.addSubview(title)
-    }
-    
     func jxBanner(_ banner: JXBannerType, center index: Int) {
-//        print(index)
+        print(index)
     }
-    
-    
 }
+
 

@@ -121,7 +121,7 @@
 /* Begin PBXFileReference section */
 		0287752C5A6BFAD69522F171FE67C69D /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
 		02BB2DC76B097EEC8C0772D7AB32BA6F /* JXBannerPageControlBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXBannerPageControlBuilder.swift; path = JXBanner/Classes/PageControl/JXBannerPageControlBuilder.swift; sourceTree = "<group>"; };
-		0909C73C5F9793C5958F609BFD074259 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0909C73C5F9793C5958F609BFD074259 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B9D0BD258AB49A6465CD2F7F6F6A5E4 /* JXPageControlLine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPageControlLine.swift; path = JXPageControl/Classes/Jump/JXPageControlLine.swift; sourceTree = "<group>"; };
 		0BC698E1DCA9EEEAE00B79B729098422 /* JXBannerTransformLinear.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXBannerTransformLinear.swift; path = JXBanner/Classes/Banner/Transform/JXBannerTransformLinear.swift; sourceTree = "<group>"; };
 		0C490943A9F54848FC49E77B7B9869DA /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
@@ -153,7 +153,7 @@
 		52654F3308568CF99DFECF17A113D193 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
 		5557ED81910BC64D4E89FBA0D6D61E71 /* JXBanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JXBanner-umbrella.h"; sourceTree = "<group>"; };
 		6A02F8C9AFD23635DE32A38173ACC215 /* JXBannerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXBannerDelegate.swift; path = JXBanner/Classes/Banner/API/JXBannerDelegate.swift; sourceTree = "<group>"; };
-		6CA792D354251AD1668350A8B4A9CEF5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		6CA792D354251AD1668350A8B4A9CEF5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		6D0E5A0D7E8D4117E685BD79621CA583 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
 		6E354CCC94B948026081A7FE62AE3002 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
 		6E524F6DBDE960D9CA58C84A973B16CA /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
@@ -161,21 +161,21 @@
 		741B22239EB57D90C2042071E62595F7 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
 		74E4F29F1D68ADBDCA283B0D4CBD6152 /* JXBanner-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JXBanner-Info.plist"; sourceTree = "<group>"; };
 		74F1BF5F371AD7962B918696C2186186 /* JXBanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JXBanner-dummy.m"; sourceTree = "<group>"; };
-		7BD90135AFFC300C79BED5A8E446E5D0 /* Pods_JXBanner_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JXBanner_Example.framework; path = "Pods-JXBanner_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BD90135AFFC300C79BED5A8E446E5D0 /* Pods_JXBanner_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JXBanner_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DE4A20C66B8739C0B173987392A7608 /* JXPageControl-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JXPageControl-Info.plist"; sourceTree = "<group>"; };
 		7EBD668FE304474E75C643B1F41C2918 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
 		7F78D3307348642F2B3E10E26F6E6F54 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
 		82642C69FAC8150A1598DA763667F6F7 /* JXBannerTransformCoverflow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXBannerTransformCoverflow.swift; path = JXBanner/Classes/Banner/Transform/JXBannerTransformCoverflow.swift; sourceTree = "<group>"; };
-		82785579B4BB73691B4571A788CA5B83 /* JXBanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JXBanner.framework; path = JXBanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82785579B4BB73691B4571A788CA5B83 /* JXBanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JXBanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		842193070C12A72ECB4F1CDEE1A27038 /* Pods-JXBanner_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JXBanner_Example-Info.plist"; sourceTree = "<group>"; };
 		846F4E45A51AB41AD1FBD541911C21DA /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
 		86243779885A89BFD40AA25D537E2ACD /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
 		8E7210D6DD1F2688E4E3F9556F7F12AA /* JXPageControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JXPageControl-dummy.m"; sourceTree = "<group>"; };
-		8F1F138E4A36760593CD2F1F8C8A4907 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		8F1F138E4A36760593CD2F1F8C8A4907 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		94E95A72538D27EDE6CD5FCD0FD925BA /* JXPageControlJump.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPageControlJump.swift; path = JXPageControl/Classes/Jump/JXPageControlJump.swift; sourceTree = "<group>"; };
 		98F0DE1DD9F743281DBFA82BA8CE37EB /* JXPageControl.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JXPageControl.xcconfig; sourceTree = "<group>"; };
 		999EDE29E6EDB2FE1131095FE212EDFE /* JXPageControlTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPageControlTool.swift; path = JXPageControl/Classes/Common/JXPageControlTool.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E210C8FB3212B61963E6C0056714960 /* JXBannerCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXBannerCell.swift; path = JXBanner/Classes/Banner/Cell/JXBannerCell.swift; sourceTree = "<group>"; };
 		A11FB038514379D3755EC971672CD3E0 /* Pods-JXBanner_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JXBanner_Example-frameworks.sh"; sourceTree = "<group>"; };
 		A163B7B09ACB7927E5FE0E5F0DAD9171 /* JXPageControlFill.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPageControlFill.swift; path = JXPageControl/Classes/Transform/JXPageControlFill.swift; sourceTree = "<group>"; };
@@ -195,7 +195,7 @@
 		BBF6DE944C4BA6D7A11BCF201B5A58E9 /* JXBannerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXBannerType.swift; path = JXBanner/Classes/Banner/API/JXBannerType.swift; sourceTree = "<group>"; };
 		BC761311EA28A0E21DCBE1585C33694D /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
 		BDAC684DC191CA97C56A9AB92B642C24 /* JXBanner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JXBanner-prefix.pch"; sourceTree = "<group>"; };
-		BFB9FE8041222FC1C934B8B9C2C27FD0 /* JXBanner.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JXBanner.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BFB9FE8041222FC1C934B8B9C2C27FD0 /* JXBanner.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = JXBanner.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C4D74113E52DCB4F7A1AAD717946B41E /* JXBaseBanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXBaseBanner.swift; path = JXBanner/Classes/Banner/Banner/JXBaseBanner.swift; sourceTree = "<group>"; };
 		C6DF5B4FB133A3148E670FE7B5D4850B /* JXPageControlBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPageControlBase.swift; path = JXPageControl/Classes/Common/JXPageControlBase.swift; sourceTree = "<group>"; };
 		C80EA48F1E6E30C692EBBEC76F3AC0C8 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
@@ -212,7 +212,7 @@
 		E0B87C7D080FC051E35676D2594816DF /* JXPageControlScale.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPageControlScale.swift; path = JXPageControl/Classes/Transform/JXPageControlScale.swift; sourceTree = "<group>"; };
 		E4D9C02D201B60CE41146DEC090F7172 /* Pods-JXBanner_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JXBanner_Example.modulemap"; sourceTree = "<group>"; };
 		E8F99B3D2CB0B9A24388B4229F464DF3 /* JXBanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JXBanner.modulemap; sourceTree = "<group>"; };
-		EEBDCB8705FF08A6696F40EDE2B29852 /* JXPageControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JXPageControl.framework; path = JXPageControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEBDCB8705FF08A6696F40EDE2B29852 /* JXPageControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JXPageControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED9B9EB52BFF37F00F252082BA0BE02 /* JXBanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXBanner.swift; path = JXBanner/Classes/Banner/Banner/JXBanner.swift; sourceTree = "<group>"; };
 		F0BC1BAB8FE642334D5ABD1D0C68CADC /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
 		F4431CB2674E24E47A4FA4CB2C46CA48 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
@@ -427,7 +427,6 @@
 				F9068C0B086B34802C24E518D96E6FC4 /* Support Files */,
 				E58ED26DC90023BE62A3CE8BF4FE519E /* Transform */,
 			);
-			name = JXPageControl;
 			path = JXPageControl;
 			sourceTree = "<group>";
 		};
@@ -528,7 +527,6 @@
 				309B90D1E114BD5D8BFBA680054E6004 /* UILayoutSupport+Extensions.swift */,
 				850AF63BF7A4FDBFE2822918BEF58EA0 /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -695,6 +693,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
@@ -922,8 +921,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};

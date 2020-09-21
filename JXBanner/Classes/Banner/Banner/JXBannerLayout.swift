@@ -21,19 +21,28 @@ class JXBannerLayout: UICollectionViewFlowLayout {
     var params: JXBannerLayoutParams? {
         didSet {
             if let params = params {
+                shouldInvalidateLayout = true
                 itemSize = params.itemSize ?? collectionView?.bounds.size ?? CGSize(width: 2, height: 2)
                 minimumLineSpacing = params.itemSpacing
                 minimumInteritemSpacing = params.itemSpacing
             }
         }
     }
-
+    
+    /// Fixed cell offset bug:  when XIB loaded JXBanner with Pagecount equal to 1
+    var shouldInvalidateLayout = true
+    
     var isPagingEnabled: Bool = true
     
     override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) ->
         Bool {
-        if let _ = params?.layoutType { return true }
-        return super.shouldInvalidateLayout(forBoundsChange: newBounds)
+
+            if shouldInvalidateLayout || params?.layoutType != nil {
+                shouldInvalidateLayout = false
+                return true
+            }
+
+            return super.shouldInvalidateLayout(forBoundsChange: newBounds)
     }
     
     override func prepare() {

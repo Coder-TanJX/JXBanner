@@ -66,7 +66,13 @@ class JXCustomVC: UIViewController {
             maker.top.equalTo(converflowBanner.snp_bottom).offset(50)
         }
         
+        linearBanner.scrollToIndex(3, animated: false)
+        
         self.automaticallyAdjustsScrollViewInsets = false
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        linearBanner.scrollToIndex(3, animated: false)
     }
     
     deinit {

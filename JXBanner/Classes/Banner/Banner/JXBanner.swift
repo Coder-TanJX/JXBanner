@@ -53,6 +53,23 @@ public class JXBanner: JXBaseBanner, JXBannerType {
             lastIndexPathCell = cell
         }
     }
+    
+    public func scrollToIndex(_ index: Int, animated: Bool) {
+        
+        guard index >= 0, index < pageCount else { return }
+        
+        let currentPage = indexOfIndexPath(currentIndexPath)
+        
+        let offset = index - currentPage
+        if currentPage + offset >= 0,
+           currentPage + offset < pageCount {
+            currentIndexPath = currentIndexPath + offset
+            pause()
+            scrollToIndexPath(currentIndexPath, animated: animated)
+            resume()
+        }
+        
+    }
 
     /// The refresh UI, get data from
     public func reloadView() {

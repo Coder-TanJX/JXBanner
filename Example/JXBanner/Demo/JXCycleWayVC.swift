@@ -55,6 +55,11 @@ class JXCycleWayVC: UIViewController {
     deinit {
         print("\(#function) ----------> \(#file.components(separatedBy: "/").last?.components(separatedBy: ".").first ?? #file)")
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        linearBanner.scrollToIndex(3, animated: false)
+        converflowBanner.scrollToIndex(3, animated: false)
+    }
 }
 
 //MARK:- JXBannerDataSource

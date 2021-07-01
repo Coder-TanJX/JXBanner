@@ -175,13 +175,16 @@ extension JXBanner {
         params.currentRollingDirection = .right
         collectionView.setCollectionViewLayout(layout, animated: true)
         collectionView.bounces = params.isBounces
-        collectionView.reloadData()
         if pageCount == 1,
             params.cycleWay == .forward {
             params.cycleWay = .skipEnd
         }
         placeholderImgView.isHidden = pageCount > 0
-        reinitializeIndexPath()
+        collectionView.performBatchUpdates {[weak self] in
+            self?.collectionView.reloadData()
+        } completion: { [weak self] _ in
+            self?.reinitializeIndexPath()
+        }
     }
     
     /// Reload current indexpath

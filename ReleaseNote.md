@@ -10,6 +10,6 @@
 ## 0.3.5
 * **日期**：2020-07-29
 * **tag**: 0.3.5
-* **commit**:  `f294d0ae68d7c`
+* **commit**:  `2fbe2b7d1a5bdc4c6`
 * **主要更新**：
     * 修复：使用performBatchUpdates获取刷新结束方式出现崩溃。

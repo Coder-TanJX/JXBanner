@@ -45,6 +45,7 @@
 		6E07819923D5B13100FE8C60 /* JXMiddleTargetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E07819823D5B13100FE8C60 /* JXMiddleTargetVC.swift */; };
 		6E07819E23D5B17300FE8C60 /* JXMiddleTargetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E07819C23D5B17300FE8C60 /* JXMiddleTargetCell.swift */; };
 		6E07819F23D5B17300FE8C60 /* JXMiddleTargetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E07819D23D5B17300FE8C60 /* JXMiddleTargetCell.xib */; };
+		6ED96CCF26B2816300A186BB /* ReleaseNote.md in Resources */ = {isa = PBXBuildFile; fileRef = 6ED96CCE26B2816300A186BB /* ReleaseNote.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		6E07819823D5B13100FE8C60 /* JXMiddleTargetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXMiddleTargetVC.swift; sourceTree = "<group>"; };
 		6E07819C23D5B17300FE8C60 /* JXMiddleTargetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXMiddleTargetCell.swift; sourceTree = "<group>"; };
 		6E07819D23D5B17300FE8C60 /* JXMiddleTargetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JXMiddleTargetCell.xib; sourceTree = "<group>"; };
+		6ED96CCE26B2816300A186BB /* ReleaseNote.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = ReleaseNote.md; path = ../ReleaseNote.md; sourceTree = "<group>"; };
 		86DD0217E9DE21DAB1A6418E /* JXBanner.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JXBanner.podspec; path = ../JXBanner.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A8BAC75A289C5E5883552C0B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B37FA8DFCA403B9BCA5A97D5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				6ED96CCE26B2816300A186BB /* ReleaseNote.md */,
 				86DD0217E9DE21DAB1A6418E /* JXBanner.podspec */,
 				A8BAC75A289C5E5883552C0B /* README.md */,
 				B37FA8DFCA403B9BCA5A97D5 /* LICENSE */,
@@ -390,6 +393,7 @@
 				6E07819F23D5B17300FE8C60 /* JXMiddleTargetCell.xib in Resources */,
 				1F41C64B2331D9AD00B83DC4 /* 11.jpg in Resources */,
 				6E06070F24174BBC00260BD9 /* mp4_1.jpg in Resources */,
+				6ED96CCF26B2816300A186BB /* ReleaseNote.md in Resources */,
 				1F41C6482331D9AD00B83DC4 /* 12.jpg in Resources */,
 				1F41C6492331D9AD00B83DC4 /* 9.jpg in Resources */,
 				6E06070E24174BBC00260BD9 /* mp4_4.jpg in Resources */,

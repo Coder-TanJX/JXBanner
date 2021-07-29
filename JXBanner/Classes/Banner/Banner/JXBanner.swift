@@ -180,10 +180,10 @@ extension JXBanner {
             params.cycleWay = .skipEnd
         }
         placeholderImgView.isHidden = pageCount > 0
-        collectionView.performBatchUpdates {[weak self] in
-            self?.collectionView.reloadData()
-        } completion: { [weak self] _ in
-            self?.reinitializeIndexPath()
+        collectionView.reloadData()
+        collectionView.layoutIfNeeded()
+        DispatchQueue.main.async {
+            self.reinitializeIndexPath()
         }
     }
     

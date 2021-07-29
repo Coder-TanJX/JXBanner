@@ -72,7 +72,11 @@ class JXCustomVC: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        linearBanner.scrollToIndex(3, animated: false)
+//        linearBanner.scrollToIndex(3, animated: false)
+        pageCount = 1
+        converflowBanner.reloadView()
+        linearBanner.reloadView()
+        customBanner.reloadView()
     }
     
     deinit {

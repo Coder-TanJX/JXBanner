@@ -223,3 +223,14 @@ extension JXBaseBanner {
     }
     
 }
+
+// MARK: - global support for pausing and resume autoScrolling
+public extension JXBaseBanner {
+    func pauseAutoScrolling(){
+        self.pause()
+    }
+    
+    func resumeAutoScrolling() {
+        self.resume()
+    }
+}

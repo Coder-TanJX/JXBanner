@@ -137,6 +137,17 @@ Need to implement JXBannerTransformable agreement, modify UICollectionViewLayout
 * reuseIdentifier ---> Cell reuse identity. If you use multiple jxbanners in your app, please set different values to facilitate the differentiation
 * nib ---> The nib parameter assignment must be done when using the nib cell file !!!
 
+##### Pause or resume auto-scrolling
+```swift
+let banner = JXBanner(frame: .zero)
+
+// Pause
+banner.pauseAutoScrolling()
+
+// Resume
+banner.resumeAutoScrolling()
+```
+
 
 
 ---

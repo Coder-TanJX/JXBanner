@@ -15,12 +15,17 @@ class JXDefaultVC: UIViewController {
     var pageCount = 5
 
     @IBOutlet weak var banner: JXBanner!
+    @IBOutlet weak var verticalBanner: JXBanner!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         banner.placeholderImgView.image = UIImage(named: "banner_placeholder")
+        banner.indentify = "banner"
         banner.delegate = self
         banner.dataSource = self
+        verticalBanner.placeholderImgView.image = UIImage(named: "banner_placeholder")
+        verticalBanner.delegate = self
+        verticalBanner.dataSource = self
         
         self.automaticallyAdjustsScrollViewInsets = false
     }
@@ -61,9 +66,18 @@ extension JXDefaultVC: JXBannerDataSource {
     func jxBanner(_ banner: JXBannerType,
                   layoutParams: JXBannerLayoutParams)
         -> JXBannerLayoutParams {
-        return layoutParams
-            .itemSize(CGSize(width: 300, height: 150))
-            .itemSpacing(20)
+        
+        
+        if banner.indentify == "banner" {
+            return layoutParams
+                .itemSize(CGSize(width: 300, height: 150))
+                .itemSpacing(20)
+        } else {
+            return layoutParams
+                .itemSize(CGSize(width: 300, height: 150))
+                .itemSpacing(20)
+                .scrollDirection(.vertical)
+        }
     }
     
 }

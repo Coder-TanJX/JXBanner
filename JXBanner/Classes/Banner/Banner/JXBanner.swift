@@ -276,7 +276,10 @@ extension JXBanner {
             let attri = collectionView.layoutAttributesForItem(at: indexPath)
             attriArr.append(attri)
         }
-        let centerX: CGFloat = collectionView.contentOffset.x + collectionView.frame.width * 0.5
+
+        let centerValue = (layout.params?.scrollDirection == .vertical)
+            ? collectionView.contentOffset.y + collectionView.frame.height * 0.5
+            : collectionView.contentOffset.x + collectionView.frame.width * 0.5
         var minSpace = CGFloat(MAXFLOAT)
         var shouldSet = true
         if layout.params?.layoutType != nil && indexPaths.count <= 2 {
@@ -287,8 +290,11 @@ extension JXBanner {
         for atr in attriArr {
             if let obj = atr, shouldSet {
                 obj.zIndex = 0;
-                if(abs(minSpace) > abs(obj.center.x - centerX)) {
-                    minSpace = obj.center.x - centerX;
+                
+                let objCenterValue = (layout.params?.scrollDirection == .vertical)
+                    ? obj.center.y : obj.center.x
+                if(abs(minSpace) > abs(objCenterValue - centerValue)) {
+                    minSpace = objCenterValue - centerValue;
                     tempIndexPath = obj.indexPath;
                 }
             }
@@ -317,27 +323,28 @@ extension JXBanner {
         
         pause()
         
+        let resVelocity = (layout.params?.scrollDirection == .vertical)
+            ? velocity.y : velocity.x
+        
         if params.cycleWay != .forward {
             
-            if velocity.x >= 0 ,
+            if resVelocity >= 0 ,
                 currentIndexPath.row == pageCount - 1 {
                 scrollToIndexPath(currentIndexPath, animated: true)
                 return
-                
             }
             
-            if velocity.x <= 0 ,
+            if resVelocity <= 0 ,
                 currentIndexPath.row == 0 {
                 scrollToIndexPath(currentIndexPath, animated: true)
                 return
-                
             }
         }
         
-        if velocity.x > 0 {
+        if resVelocity > 0 {
             // Slide left. Next slide
             currentIndexPath = currentIndexPath + 1
-        }else if velocity.x < 0 {
+        }else if resVelocity < 0 {
             // Slide right. Go ahead
             currentIndexPath = currentIndexPath - 1
         }else {

@@ -14,6 +14,7 @@ public class JXBannerLayoutParams {
     public var itemSize: CGSize?
     public var itemSpacing: CGFloat = 0.0
     public var layoutType: JXBannerTransformable?
+    public var scrollDirection: UICollectionView.ScrollDirection = .horizontal
     
     // JXBannerTransformable
     public var minimumScale: CGFloat = 0.8
@@ -39,6 +40,11 @@ public extension JXBannerLayoutParams {
     
     func layoutType(_ layoutType: JXBannerTransformable?) -> JXBannerLayoutParams {
         self.layoutType = layoutType
+        return self
+    }
+    
+    func scrollDirection(_ scrollDirection: UICollectionView.ScrollDirection) -> JXBannerLayoutParams {
+        self.scrollDirection = scrollDirection
         return self
     }
     

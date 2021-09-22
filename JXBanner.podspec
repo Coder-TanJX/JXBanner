@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JXBanner'
-  s.version          = '0.3.5'
+  s.version          = '0.3.6'
   s.summary          = 'A multifunctional framework for banner unlimited rollover diagrams'
 
 # This description is used to generate tags and improve search results.

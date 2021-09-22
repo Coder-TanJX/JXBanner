@@ -22,9 +22,13 @@ class JXBannerLayout: UICollectionViewFlowLayout {
         didSet {
             if let params = params {
                 shouldInvalidateLayout = true
-                itemSize = params.itemSize ?? collectionView?.bounds.size ?? CGSize(width: 2, height: 2)
+                scrollDirection = params.scrollDirection
+                itemSize = params.itemSize ?? collectionView?.bounds.size
+                    ?? CGSize(width: 2, height: 2)
                 minimumLineSpacing = params.itemSpacing
                 minimumInteritemSpacing = params.itemSpacing
+            } else {
+                scrollDirection = .horizontal
             }
         }
     }
@@ -47,7 +51,6 @@ class JXBannerLayout: UICollectionViewFlowLayout {
     
     override func prepare() {
         super.prepare()
-        scrollDirection = .horizontal
         
         // Set the margins
         if isPagingEnabled {

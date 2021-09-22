@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5Hw-bO-rW5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5Hw-bO-rW5">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gM-Eh-0YE">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gM-Eh-0YE">
                                 <rect key="frame" x="137" y="135" width="87" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="JXDefaultVC"/>
@@ -27,7 +28,7 @@
                                     <segue destination="mqW-87-fvQ" kind="push" id="zdm-wa-4eg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4M-Lh-Yko">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4M-Lh-Yko">
                                 <rect key="frame" x="137" y="197" width="90" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="JXCustomVC"/>
@@ -35,7 +36,7 @@
                                     <segue destination="x1l-6j-oSl" kind="push" id="l61-iE-tfq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLq-DB-kiK">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLq-DB-kiK">
                                 <rect key="frame" x="130" y="257" width="104" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="JXCycleWayVC"/>
@@ -43,7 +44,7 @@
                                     <segue destination="Lgi-rs-2FX" kind="push" id="1ki-n2-m7p"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4QA-Wk-PDr">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4QA-Wk-PDr">
                                 <rect key="frame" x="119" y="311" width="137" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="JXLayoutCustomVC"/>
@@ -51,7 +52,7 @@
                                     <segue destination="QIk-uN-nRW" kind="push" id="mgy-cD-XEq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKU-qO-VLI">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKU-qO-VLI">
                                 <rect key="frame" x="142" y="357" width="90" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="JXScrollView"/>
@@ -59,7 +60,7 @@
                                     <segue destination="je1-oR-IBX" kind="push" id="i5c-YL-SrK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGR-mX-Tgt">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGR-mX-Tgt">
                                 <rect key="frame" x="118" y="410" width="126" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="JXMiddleTargetVC"/>
@@ -90,13 +91,13 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kae-Ys-1CG" customClass="JXBanner" customModule="JXBanner">
                                 <rect key="frame" x="0.0" y="144" width="375" height="200"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="kCS-Sx-Z6B"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="kae-Ys-1CG" firstAttribute="top" secondItem="J70-4d-9R4" secondAttribute="bottom" constant="100" id="ALC-Cm-kyu"/>
                             <constraint firstAttribute="trailing" secondItem="kae-Ys-1CG" secondAttribute="trailing" id="lfp-Zs-25l"/>
@@ -150,17 +151,28 @@
                                     <constraint firstAttribute="height" constant="200" id="YO0-JN-9kp"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iLb-xD-kif" customClass="JXBanner" customModule="JXBanner">
+                                <rect key="frame" x="0.0" y="286" width="375" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="2cV-eX-T92"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Vhx-B3-WbH" firstAttribute="leading" secondItem="gn7-kb-yEx" secondAttribute="leading" id="9w2-Eb-3XS"/>
+                            <constraint firstItem="iLb-xD-kif" firstAttribute="leading" secondItem="gn7-kb-yEx" secondAttribute="leading" id="Ayr-N8-V5D"/>
                             <constraint firstAttribute="trailing" secondItem="Vhx-B3-WbH" secondAttribute="trailing" id="G3d-1i-bsr"/>
                             <constraint firstItem="Vhx-B3-WbH" firstAttribute="top" secondItem="1mm-MI-9a2" secondAttribute="bottom" constant="20" id="LlG-CY-tzY"/>
+                            <constraint firstItem="iLb-xD-kif" firstAttribute="top" secondItem="Vhx-B3-WbH" secondAttribute="bottom" constant="22" id="g7r-ip-2dK"/>
+                            <constraint firstAttribute="trailing" secondItem="iLb-xD-kif" secondAttribute="trailing" id="yXv-Fa-BJf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cV4-EG-mzg"/>
                     <connections>
                         <outlet property="banner" destination="Vhx-B3-WbH" id="gcW-J5-eXh"/>
+                        <outlet property="verticalBanner" destination="iLb-xD-kif" id="J2W-RB-CEJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sSd-zI-3oe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -218,13 +230,13 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RAl-jo-zhO" customClass="JXBanner" customModule="JXBanner">
                                 <rect key="frame" x="0.0" y="64" width="375" height="160"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="MRE-Rj-jCU"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="RAl-jo-zhO" firstAttribute="top" secondItem="7jd-kJ-3ir" secondAttribute="bottom" constant="20" id="6EX-LU-hmt"/>
                             <constraint firstAttribute="trailing" secondItem="RAl-jo-zhO" secondAttribute="trailing" id="9Uh-hq-bjW"/>
@@ -260,4 +272,9 @@
             <point key="canvasLocation" x="2473" y="-1065"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

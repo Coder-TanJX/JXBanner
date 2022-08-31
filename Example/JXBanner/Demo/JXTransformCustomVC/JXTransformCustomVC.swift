@@ -18,7 +18,7 @@ class JXTransformCustomVC: UIViewController {
     
     lazy var banner: JXBanner = {
         let banner = JXBanner()
-        banner.placeholderImgView.image = UIImage(named: "banner_placeholder")
+        banner.placeholderImageView.image = UIImage(named: "banner_placeholder")
         banner.delegate = self
         banner.dataSource = self
         return banner

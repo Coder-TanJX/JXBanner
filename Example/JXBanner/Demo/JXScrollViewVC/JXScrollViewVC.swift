@@ -17,7 +17,7 @@ class JXScrollViewVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        scrollView.placeholderImgView.image = UIImage(named: "banner_placeholder")
+        scrollView.placeholderImageView.image = UIImage(named: "banner_placeholder")
         scrollView.delegate = self
         scrollView.dataSource = self
         

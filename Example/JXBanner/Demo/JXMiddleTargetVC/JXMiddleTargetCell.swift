@@ -16,7 +16,7 @@ class JXMiddleTargetCell: UICollectionViewCell {
     
     
     var player : AVPlayer!
-    var palyerItem : AVPlayerItem!
+    var playerItem : AVPlayerItem!
     var bufferTimeLabel : UILabel!
     var playerLayer: AVPlayerLayer?
     
@@ -30,9 +30,9 @@ class JXMiddleTargetCell: UICollectionViewCell {
             return
         }
         
-        self.palyerItem = AVPlayerItem(url: url)
+        self.playerItem = AVPlayerItem(url: url)
         //创建ACplayer：负责视频播放
-        self.player = AVPlayer.init(playerItem: self.palyerItem)
+        self.player = AVPlayer.init(playerItem: self.playerItem)
         self.player.rate = 1.0//播放速度 播放前设置
         //创建显示视频的图层
         playerLayer = AVPlayerLayer.init(player: self.player)

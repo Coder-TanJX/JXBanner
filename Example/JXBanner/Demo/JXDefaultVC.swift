@@ -19,11 +19,11 @@ class JXDefaultVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        banner.placeholderImgView.image = UIImage(named: "banner_placeholder")
-        banner.indentify = "banner"
+        banner.placeholderImageView.image = UIImage(named: "banner_placeholder")
+        banner.identify = "banner"
         banner.delegate = self
         banner.dataSource = self
-        verticalBanner.placeholderImgView.image = UIImage(named: "banner_placeholder")
+        verticalBanner.placeholderImageView.image = UIImage(named: "banner_placeholder")
         verticalBanner.delegate = self
         verticalBanner.dataSource = self
         
@@ -68,7 +68,7 @@ extension JXDefaultVC: JXBannerDataSource {
         -> JXBannerLayoutParams {
         
         
-        if banner.indentify == "banner" {
+        if banner.identify == "banner" {
             return layoutParams
                 .itemSize(CGSize(width: 300, height: 150))
                 .itemSpacing(20)

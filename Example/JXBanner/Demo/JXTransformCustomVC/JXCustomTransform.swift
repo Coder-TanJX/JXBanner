@@ -18,14 +18,14 @@ struct JXCustomTransform: JXBannerTransformable {
         let collectionViewWidth = collectionView.frame.width
         if collectionViewWidth <= 0 { return }
         
-        let centetX = collectionView.contentOffset.x + collectionViewWidth * 0.5;
-        let delta = abs(attributes.center.x - centetX)
+        let centerX = collectionView.contentOffset.x + collectionViewWidth * 0.5;
+        let delta = abs(attributes.center.x - centerX)
         let calculateRate = 1 - delta / collectionViewWidth
         let angle = min(delta / collectionViewWidth * (1 - params.rateOfChange), params.maximumAngle)
         let alpha = max(calculateRate, params.minimumAlpha)
         
         
-        applyCoverflowTransformToAttributes(viewCentetX: centetX,
+        applyCoverFlowTransformToAttributes(viewCenterX: centerX,
                                             attributes: attributes,
                                             params: params,
                                             angle: angle,
@@ -33,7 +33,7 @@ struct JXCustomTransform: JXBannerTransformable {
                                             calculateRate: calculateRate)
     }
     
-    func applyCoverflowTransformToAttributes(viewCentetX: CGFloat,
+    func applyCoverFlowTransformToAttributes(viewCenterX: CGFloat,
                                              attributes: UICollectionViewLayoutAttributes,
                                              params: JXBannerLayoutParams,
                                              angle: CGFloat,
@@ -42,7 +42,7 @@ struct JXCustomTransform: JXBannerTransformable {
         var transform3D: CATransform3D = CATransform3DIdentity
         
         
-        let location = JXBannerTransfrom.itemLocation(viewCentetX: viewCentetX,
+        let location = JXBannerTransfrom.itemLocation(viewCenterX: viewCenterX,
                                                       itemCenterX: attributes.center.x)
 
         var _angle = angle

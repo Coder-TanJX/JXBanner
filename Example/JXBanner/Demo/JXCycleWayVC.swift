@@ -18,17 +18,17 @@ class JXCycleWayVC: UIViewController {
     
     lazy var linearBanner: JXBanner = {[weak self] in
         let banner = JXBanner()
-        banner.placeholderImgView.image = UIImage(named: "banner_placeholder")
-        banner.indentify = "linearBanner"
+        banner.placeholderImageView.image = UIImage(named: "banner_placeholder")
+        banner.identify = "linearBanner"
         banner.delegate = self
         banner.dataSource = self
         return banner
         }()
     
-    lazy var converflowBanner: JXBanner = {
+    lazy var connerFlowBanner: JXBanner = {
         let banner = JXBanner()
-        banner.placeholderImgView.image = UIImage(named: "banner_placeholder")
-        banner.indentify = "converflowBanner"
+        banner.placeholderImageView.image = UIImage(named: "banner_placeholder")
+        banner.identify = "connerFlowBanner"
         banner.delegate = self
         banner.dataSource = self
         return banner
@@ -37,14 +37,14 @@ class JXCycleWayVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(linearBanner)
-        view.addSubview(converflowBanner)
+        view.addSubview(connerFlowBanner)
         linearBanner.snp.makeConstraints {(maker) in
             maker.left.right.equalTo(view)
             maker.height.equalTo(150)
             maker.top.equalTo(view.snp_top).offset(100)
         }
         
-        converflowBanner.snp.makeConstraints {(maker) in
+        connerFlowBanner.snp.makeConstraints {(maker) in
             maker.left.right.height.equalTo(linearBanner)
             maker.top.equalTo(linearBanner.snp_bottom).offset(100)
         }
@@ -58,7 +58,7 @@ class JXCycleWayVC: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         linearBanner.scrollToIndex(3, animated: false)
-        converflowBanner.scrollToIndex(3, animated: false)
+        connerFlowBanner.scrollToIndex(3, animated: false)
     }
 }
 
@@ -68,12 +68,12 @@ extension JXCycleWayVC: JXBannerDataSource {
     func jxBanner(_ banner: JXBannerType)
         -> (JXBannerCellRegister) {
             
-            if banner.indentify == "linearBanner" {
+            if banner.identify == "linearBanner" {
                 return JXBannerCellRegister(type: JXBannerCell.self,
                                             reuseIdentifier: "LinearBannerCell")
             }else {
                 return JXBannerCellRegister(type: JXBannerCell.self,
-                                            reuseIdentifier: "ConverflowBannerCell")
+                                            reuseIdentifier: "connerFlowBannerCell")
             }
     }
     
@@ -87,9 +87,9 @@ extension JXCycleWayVC: JXBannerDataSource {
             let tempCell = cell as! JXBannerCell
             tempCell.layer.cornerRadius = 8
             tempCell.layer.masksToBounds = true
-            if banner.indentify == "linearBanner" {
+            if banner.identify == "linearBanner" {
                 tempCell.imageView.image = UIImage(named: "\(index).jpg")
-            }else if banner.indentify == "converflowBanner" {
+            }else if banner.identify == "connerFlowBanner" {
                 tempCell.imageView.image = UIImage(named: "\(index+5).jpg")
             }
             
@@ -101,7 +101,7 @@ extension JXCycleWayVC: JXBannerDataSource {
                   params: JXBannerParams)
         -> JXBannerParams {
             
-            if banner.indentify == "linearBanner" {
+            if banner.identify == "linearBanner" {
                 return params
                     .timeInterval(5)
                     .cycleWay(.rollingBack)
@@ -116,7 +116,7 @@ extension JXCycleWayVC: JXBannerDataSource {
                   layoutParams: JXBannerLayoutParams)
         -> JXBannerLayoutParams {
             
-            if banner.indentify == "linearBanner" {
+            if banner.identify == "linearBanner" {
                 return layoutParams
                     .layoutType(JXBannerTransformLinear())
                     .itemSize(CGSize(width: 250, height: 150))
@@ -124,7 +124,7 @@ extension JXCycleWayVC: JXBannerDataSource {
                     .minimumAlpha(0.8)
             }else {
                 return layoutParams
-                    .layoutType(JXBannerTransformCoverflow())
+                    .layoutType(JXBannerTransformCoverFlow())
                     .itemSize(CGSize(width: 300, height: 150))
                     .itemSpacing(0)
                     .minimumAlpha(0.8)
@@ -136,7 +136,7 @@ extension JXCycleWayVC: JXBannerDataSource {
                   coverView: UIView,
                   builder: JXBannerPageControlBuilder) -> JXBannerPageControlBuilder {
         
-        if banner.indentify == "linearBanner" {
+        if banner.identify == "linearBanner" {
             let pageControl = JXPageControlScale()
             pageControl.contentMode = .bottom
             pageControl.activeSize = CGSize(width: 15, height: 6)

@@ -18,8 +18,8 @@ public struct JXBannerTransformLinear: JXBannerTransformable {
         
         let collectionViewWidth = collectionView.frame.width
         if collectionViewWidth <= 0 { return }
-        let centetX = collectionView.contentOffset.x + collectionViewWidth * 0.5
-        let delta = abs(attributes.center.x - centetX)
+        let centerX = collectionView.contentOffset.x + collectionViewWidth * 0.5
+        let delta = abs(attributes.center.x - centerX)
         let scale = max(1 - delta / collectionViewWidth * params.rateOfChange, params.minimumScale)
         let alpha = max(1 - delta / collectionViewWidth, params.minimumAlpha)
         
@@ -27,9 +27,9 @@ public struct JXBannerTransformLinear: JXBannerTransformable {
         var _alpha = alpha
         
         // Adjust spacing When Scroling
-        let location = JXBannerTransfrom.itemLocation(viewCentetX: centetX,
+        let location = JXBannerTransfrom.itemLocation(viewCenterX: centerX,
                                                       itemCenterX: attributes.center.x)
-        let rate = 1.05 + params.rateHorisonMargin
+        let rate = 1.05 + params.rateHorizonMargin
         var translate: CGFloat = 0
         switch location {
         case .left:

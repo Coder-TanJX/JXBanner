@@ -12,7 +12,7 @@ import JXPageControl
 // MARK: - JXBannerType
 public class JXBanner: JXBaseBanner, JXBannerType {
     
-    public var indentify: String? = "JXBaseBanner"
+    public var identify: String? = "JXBaseBanner"
     
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -179,7 +179,7 @@ extension JXBanner {
             params.cycleWay == .forward {
             params.cycleWay = .skipEnd
         }
-        placeholderImgView.isHidden = pageCount > 0
+        placeholderImageView.isHidden = pageCount > 0
         collectionView.reloadData()
         collectionView.layoutIfNeeded()
         DispatchQueue.main.async {

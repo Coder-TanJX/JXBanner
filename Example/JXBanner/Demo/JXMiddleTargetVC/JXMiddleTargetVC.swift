@@ -25,7 +25,7 @@ class JXMiddleTargetVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        banner.placeholderImgView.image = UIImage(named: "banner_placeholder")
+        banner.placeholderImageView.image = UIImage(named: "banner_placeholder")
         banner.delegate = self
         banner.dataSource = self
         

@@ -18,17 +18,17 @@ class JXCustomVC: UIViewController {
     
     lazy var linearBanner: JXBanner = {[weak self] in
         let banner = JXBanner()
-        banner.placeholderImgView.image = UIImage(named: "banner_placeholder")
-        banner.indentify = "linearBanner"
+        banner.placeholderImageView.image = UIImage(named: "banner_placeholder")
+        banner.identify = "linearBanner"
         banner.delegate = self
         banner.dataSource = self
         return banner
     }()
     
-    lazy var converflowBanner: JXBanner = {
+    lazy var connerFlowBanner: JXBanner = {
         let banner = JXBanner()
-        banner.placeholderImgView.image = UIImage(named: "banner_placeholder")
-        banner.indentify = "converflowBanner"
+        banner.placeholderImageView.image = UIImage(named: "banner_placeholder")
+        banner.identify = "connerFlowBanner"
         banner.delegate = self
         banner.dataSource = self
         return banner
@@ -36,7 +36,7 @@ class JXCustomVC: UIViewController {
     
     lazy var customBanner: JXBanner = {
         let banner = JXBanner()
-        banner.placeholderImgView.image = UIImage(named: "banner_placeholder")
+        banner.placeholderImageView.image = UIImage(named: "banner_placeholder")
         banner.delegate = self
         banner.dataSource = self
         return banner
@@ -46,7 +46,7 @@ class JXCustomVC: UIViewController {
         super.viewDidLoad()
         
         view.addSubview(linearBanner)
-        view.addSubview(converflowBanner)
+        view.addSubview(connerFlowBanner)
         view.addSubview(customBanner)
         
         linearBanner.snp.makeConstraints {(maker) in
@@ -55,7 +55,7 @@ class JXCustomVC: UIViewController {
             maker.top.equalTo(view.snp_top).offset(100)
         }
         
-        converflowBanner.snp.makeConstraints {(maker) in
+        connerFlowBanner.snp.makeConstraints {(maker) in
             maker.left.right.height.equalTo(linearBanner)
             maker.top.equalTo(linearBanner.snp_bottom).offset(50)
         }
@@ -63,7 +63,7 @@ class JXCustomVC: UIViewController {
         customBanner.snp.makeConstraints {(maker) in
             maker.left.right.equalTo(linearBanner)
             maker.height.equalTo(200)
-            maker.top.equalTo(converflowBanner.snp_bottom).offset(50)
+            maker.top.equalTo(connerFlowBanner.snp_bottom).offset(50)
         }
         
         linearBanner.scrollToIndex(3, animated: false)
@@ -74,7 +74,7 @@ class JXCustomVC: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 //        linearBanner.scrollToIndex(3, animated: false)
         pageCount = 1
-        converflowBanner.reloadView()
+        connerFlowBanner.reloadView()
         linearBanner.reloadView()
         customBanner.reloadView()
     }
@@ -90,12 +90,12 @@ extension JXCustomVC: JXBannerDataSource {
     func jxBanner(_ banner: JXBannerType)
         -> (JXBannerCellRegister) {
 
-            if banner.indentify == "linearBanner" {
+            if banner.identify == "linearBanner" {
                 return JXBannerCellRegister(type: JXBannerCell.self,
                                             reuseIdentifier: "LinearBannerCell")
-            }else if banner.indentify == "converflowBanner" {
+            }else if banner.identify == "connerFlowBanner" {
                 return JXBannerCellRegister(type: JXBannerCell.self,
-                                            reuseIdentifier: "ConverflowBannerCell")
+                                            reuseIdentifier: "connerFlowBannerCell")
             }else {
                 return JXBannerCellRegister(type: JXBannerCell.self,
                                             reuseIdentifier: "JXTransformCustomVCCell")
@@ -114,9 +114,9 @@ extension JXCustomVC: JXBannerDataSource {
             tempCell.layer.masksToBounds = true
             tempCell.layer.borderColor = UIColor.gray.cgColor
             tempCell.layer.borderWidth = 1
-            if banner.indentify == "linearBanner" {
+            if banner.identify == "linearBanner" {
                 tempCell.imageView.image = UIImage(named: "\(index).jpg")
-            }else if banner.indentify == "converflowBanner" {
+            }else if banner.identify == "connerFlowBanner" {
                 tempCell.imageView.image = UIImage(named: "\(index+5).jpg")
             }else {
                 tempCell.imageView.image = UIImage(named: "\(index+10).jpg")
@@ -130,12 +130,12 @@ extension JXCustomVC: JXBannerDataSource {
                   params: JXBannerParams)
         -> JXBannerParams {
         
-            if banner.indentify == "linearBanner" {
+            if banner.identify == "linearBanner" {
                 return params
                     .timeInterval(2)
                     .cycleWay(.forward)
                     .isAutoPlay(true)
-            }else if banner.indentify == "converflowBanner" {
+            }else if banner.identify == "connerFlowBanner" {
                 return params
                     .timeInterval(3)
                     .cycleWay(.forward)
@@ -152,22 +152,22 @@ extension JXCustomVC: JXBannerDataSource {
                   layoutParams: JXBannerLayoutParams)
         -> JXBannerLayoutParams {
             
-            if banner.indentify == "linearBanner" {
+            if banner.identify == "linearBanner" {
                 return layoutParams
                     .layoutType(JXBannerTransformLinear())
                     .itemSize(CGSize(width: 300, height: 150))
                     .itemSpacing(10)
                     .rateOfChange(0.8)
                     .minimumScale(0.7)
-                    .rateHorisonMargin(0.5)
+                    .rateHorizonMargin(0.5)
                     .minimumAlpha(0.8)
-            }else if banner.indentify == "converflowBanner" {
+            }else if banner.identify == "connerFlowBanner" {
                 return layoutParams
-                    .layoutType(JXBannerTransformCoverflow())
+                    .layoutType(JXBannerTransformCoverFlow())
                     .itemSize(CGSize(width: 300, height: 150))
                     .itemSpacing(0)
                     .maximumAngle(0.25)
-                    .rateHorisonMargin(0.3)
+                    .rateHorizonMargin(0.3)
                     .minimumAlpha(0.8)
             }else {
                 return layoutParams
@@ -183,7 +183,7 @@ extension JXCustomVC: JXBannerDataSource {
                   coverView: UIView,
                   builder: JXBannerPageControlBuilder) -> JXBannerPageControlBuilder {
 
-        if banner.indentify == "linearBanner" {
+        if banner.identify == "linearBanner" {
             let pageControl = JXPageControlScale()
             pageControl.contentMode = .bottom
             pageControl.activeSize = CGSize(width: 15, height: 6)

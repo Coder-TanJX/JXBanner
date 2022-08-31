@@ -17,7 +17,7 @@ public protocol JXBannerType: UIView {
     var delegate: JXBannerDelegate? { get set }
     
     /// Distinguish the banner
-    var indentify: String? { get set }
+    var identify: String? { get set }
     
     /// The refresh UI
     func reloadView()

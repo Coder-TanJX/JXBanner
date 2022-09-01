@@ -72,9 +72,9 @@ You don't need to set JXBanner -> JXBannerLayoutParams
 <img src="gif/linear.gif">
 --- 
 
-* JXBannerTransformCoverflow
+* JXBannerTransformCoverFlow
 
-<img src="gif/coverflow.gif">
+<img src="gif/CoverFlow.gif">
 ---
 
 * custom
@@ -127,7 +127,7 @@ Need to implement JXBannerTransformable agreement, modify UICollectionViewLayout
 * minimumAlpha ---> Cell transparency coefficient。
 * maximumAngle ---> Cell rotation coefficient。
 * rateOfChange ---> Cell variation coefficient。
-* rateHorisonMargin ---> Cell horizontal spacing adjustment factor。
+* rateHorizonMargin ---> Cell horizontal spacing adjustment factor。
 
 ---
 
@@ -173,7 +173,7 @@ class JXDefaultVC: UIViewController {
     lazy var banner: JXBanner = {
         let banner = JXBanner()
         banner.backgroundColor = UIColor.black
-        banner.placeholderImgView.image = UIImage(named: "banner_placeholder")
+        banner.placeholderImageView.image = UIImage(named: "banner_placeholder")
         banner.delegate = self
         banner.dataSource = self
         return banner
@@ -266,19 +266,19 @@ class JXCustomVC: UIViewController {
 
     lazy var linearBanner: JXBanner = {[weak self] in
         let banner = JXBanner()
-        banner.placeholderImgView.image = UIImage(named: "banner_placeholder")
+        banner.placeholderImageView.image = UIImage(named: "banner_placeholder")
         banner.backgroundColor = UIColor.black
-        banner.indentify = "linearBanner"
+        banner.identify = "linearBanner"
         banner.delegate = self
         banner.dataSource = self    
         return banner
     }()
 
-    lazy var converflowBanner: JXBanner = {
+    lazy var connerFlowBanner: JXBanner = {
         let banner = JXBanner()
-        banner.placeholderImgView.image = UIImage(named: "banner_placeholder")
+        banner.placeholderImageView.image = UIImage(named: "banner_placeholder")
         banner.backgroundColor = UIColor.black
-        banner.indentify = "converflowBanner"
+        banner.identify = "connerFlowBanner"
         banner.delegate = self
         banner.dataSource = self
         return banner
@@ -287,14 +287,14 @@ class JXCustomVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(linearBanner)
-        view.addSubview(converflowBanner)
+        view.addSubview(connerFlowBanner)
         linearBanner.snp.makeConstraints {(maker) in
             maker.left.right.equalTo(view)
             maker.height.equalTo(200)
             maker.top.equalTo(view.snp_top).offset(100)
         }
 
-        converflowBanner.snp.makeConstraints {(maker) in
+        connerFlowBanner.snp.makeConstraints {(maker) in
             maker.left.right.height.equalTo(linearBanner)
             maker.top.equalTo(linearBanner.snp_bottom).offset(100)
         }
@@ -314,12 +314,12 @@ extension JXCustomVC: JXBannerDataSource {
     func jxBanner(_ banner: JXBannerType)
         -> (JXBannerCellRegister) {
 
-        if banner.indentify == "linearBanner" {
+        if banner.identify == "linearBanner" {
             return JXBannerCellRegister(type: JXBannerCell.self,
                 reuseIdentifier: "LinearBannerCell")
         }else {
             return JXBannerCellRegister(type: JXBannerCell.self,
-            reuseIdentifier: "ConverflowBannerCell")
+            reuseIdentifier: "connerFlowBannerCell")
         }
     }
 
@@ -345,7 +345,7 @@ extension JXCustomVC: JXBannerDataSource {
         params: JXBannerParams)
         -> JXBannerParams {
 
-        if banner.indentify == "linearBanner" {
+        if banner.identify == "linearBanner" {
             return params
                 .timeInterval(2)
                 .cycleWay(.forward)
@@ -361,22 +361,22 @@ extension JXCustomVC: JXBannerDataSource {
         layoutParams: JXBannerLayoutParams)
         -> JXBannerLayoutParams {
 
-        if banner.indentify == "linearBanner" {
+        if banner.identify == "linearBanner" {
             return layoutParams
                 .layoutType(JXBannerTransformLinear())
                 .itemSize(CGSize(width: 250, height: 190))
                 .itemSpacing(10)
                 .rateOfChange(0.8)
                 .minimumScale(0.7)
-                .rateHorisonMargin(0.5)
+                .rateHorizonMargin(0.5)
                 .minimumAlpha(0.8)
         }else {
             return layoutParams
-                .layoutType(JXBannerTransformCoverflow())
+                .layoutType(JXBannerTransformCoverFlow())
                 .itemSize(CGSize(width: 300, height: 190))
                 .itemSpacing(0)
                 .maximumAngle(0.25)
-                .rateHorisonMargin(0.3)
+                .rateHorizonMargin(0.3)
                 .minimumAlpha(0.8)
         }
     }
@@ -388,7 +388,7 @@ extension JXCustomVC: JXBannerDataSource {
         coverView: UIView,
         builder: JXBannerPageControlBuilder) -> JXBannerPageControlBuilder {
 
-            if banner.indentify == "linearBanner" {
+            if banner.identify == "linearBanner" {
                 let pageControl = JXPageControlScale()
                 pageControl.contentMode = .bottom
                 pageControl.activeSize = CGSize(width: 15, height: 6)
@@ -485,14 +485,14 @@ struct JXCustomTransform: JXBannerTransformable {
         let collectionViewWidth = collectionView.frame.width
         if collectionViewWidth <= 0 { return }
 
-        let centetX = collectionView.contentOffset.x + collectionViewWidth * 0.5;
-        let delta = abs(attributes.center.x - centetX)
+        let centerX = collectionView.contentOffset.x + collectionViewWidth * 0.5;
+        let delta = abs(attributes.center.x - centerX)
         let calculateRate = 1 - delta / collectionViewWidth
         let angle = min(delta / collectionViewWidth * (1 - params.rateOfChange), params.maximumAngle)
         let alpha = max(calculateRate, params.minimumAlpha)
 
 
-        applyCoverflowTransformToAttributes(viewCentetX: centetX,
+        applyCoverFlowTransformToAttributes(viewCenterX: centerX,
             attributes: attributes,
             params: params,
             angle: angle,
@@ -500,7 +500,7 @@ struct JXCustomTransform: JXBannerTransformable {
             calculateRate: calculateRate)
     }
 
-    func applyCoverflowTransformToAttributes(viewCentetX: CGFloat,
+    func applyCoverFlowTransformToAttributes(viewCenterX: CGFloat,
         attributes: UICollectionViewLayoutAttributes,
         params: JXBannerLayoutParams,
         angle: CGFloat,
@@ -509,7 +509,7 @@ struct JXCustomTransform: JXBannerTransformable {
         var transform3D: CATransform3D = CATransform3DIdentity
 
 
-        let location = JXBannerTransfrom.itemLocation(viewCentetX: viewCentetX,
+        let location = JXBannerTransfrom.itemLocation(viewCenterX: viewCenterX,
         itemCenterX: attributes.center.x)
 
         var _angle = angle

@@ -21,7 +21,7 @@ public class JXBannerLayoutParams {
     public var minimumAlpha: CGFloat = 1.0
     public var maximumAngle: CGFloat = 0.2
     public var rateOfChange: CGFloat = 0.4
-    public var rateHorisonMargin: CGFloat = 0.2
+    public var rateHorizonMargin: CGFloat = 0.2
 
 }
 
@@ -68,8 +68,8 @@ public extension JXBannerLayoutParams {
         return self
     }
     
-    func rateHorisonMargin(_ rateHorisonMargin: CGFloat) -> JXBannerLayoutParams {
-        self.rateHorisonMargin = rateHorisonMargin
+    func rateHorizonMargin(_ rateHorizonMargin: CGFloat) -> JXBannerLayoutParams {
+        self.rateHorizonMargin = rateHorizonMargin
         return self
     }
 

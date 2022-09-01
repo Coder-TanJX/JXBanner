@@ -27,7 +27,7 @@ public class JXBaseBanner: UIView {
     
     /// Setup UI
     func setupSubViews() {
-        self.addSubview(placeholderImgView)
+        self.addSubview(placeholderImageView)
         self.addSubview(collectionView)
         self.addSubview(coverView)
     }
@@ -59,9 +59,9 @@ public class JXBaseBanner: UIView {
         if let itemSize = layout.params?.itemSize {
             let x = (bounds.size.width - itemSize.width) * 0.5
             let y = (bounds.size.height - itemSize.height) * 0.5
-            placeholderImgView.frame = CGRect(x: x, y: y, width: itemSize.width, height: itemSize.height)
+            placeholderImageView.frame = CGRect(x: x, y: y, width: itemSize.width, height: itemSize.height)
         }else {
-            placeholderImgView.frame = bounds
+            placeholderImageView.frame = bounds
             layout.params = layout.params
         }
         if pageCount > 0 {
@@ -83,7 +83,7 @@ public class JXBaseBanner: UIView {
         return layout
     }()
     
-    public lazy var placeholderImgView: UIImageView = {
+    public lazy var placeholderImageView: UIImageView = {
         let placeholder = UIImageView()
         return placeholder
     }()
@@ -116,7 +116,7 @@ public class JXBaseBanner: UIView {
     
     var pageCount: Int = 0
     
-    var params: JXBannerParams = JXBannerParams()
+   public var params: JXBannerParams = JXBannerParams()
 
     /// The IndexPath of the item in the middle of the bannerview
     var currentIndexPath: IndexPath = IndexPath(row: 0, section: 0) {

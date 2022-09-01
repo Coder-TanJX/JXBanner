@@ -1,6 +1,6 @@
 {
   "name": "JXBanner",
-  "version": "0.1.0",
+  "version": "0.3.6",
   "summary": "A multifunctional framework for banner unlimited rollover diagrams",
   "description": "The framework relies on JXPageConytrol and contains many custom interfaces, such as transition animation, view structure, and Settings",
   "homepage": "https://github.com/Coder-TanJX",
@@ -13,12 +13,15 @@
   },
   "source": {
     "git": "https://github.com/Coder-TanJX/JXBanner.git",
-    "tag": "0.1.0"
+    "tag": "0.3.6"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "swift_version": "5.0",
+  "swift_versions": [
+    "4.2",
+    "5.0"
+  ],
   "subspecs": [
     {
       "name": "PageControl",
@@ -78,5 +81,6 @@
         }
       ]
     }
-  ]
+  ],
+  "swift_version": "5.0"
 }

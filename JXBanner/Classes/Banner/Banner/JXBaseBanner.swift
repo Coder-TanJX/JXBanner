@@ -116,7 +116,7 @@ public class JXBaseBanner: UIView {
     
     var pageCount: Int = 0
     
-    var params: JXBannerParams = JXBannerParams()
+   public var params: JXBannerParams = JXBannerParams()
 
     /// The IndexPath of the item in the middle of the bannerview
     var currentIndexPath: IndexPath = IndexPath(row: 0, section: 0) {

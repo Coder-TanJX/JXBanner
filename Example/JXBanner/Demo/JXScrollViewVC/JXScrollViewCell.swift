@@ -10,15 +10,15 @@ import UIKit
 
 class JXScrollViewCell: UICollectionViewCell {
 
-    @IBOutlet weak var imgView: UIImageView!
-    @IBOutlet weak var title: UILabel!
-    @IBOutlet weak var detail: UILabel!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        imgView.layer.cornerRadius = 8
-        imgView.layer.masksToBounds = true
-        
-    }
+  @IBOutlet weak var imgView: UIImageView!
+  @IBOutlet weak var title: UILabel!
+  @IBOutlet weak var detail: UILabel!
+
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    imgView.layer.cornerRadius = 8
+    imgView.layer.masksToBounds = true
+
+  }
 
 }

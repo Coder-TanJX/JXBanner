@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "jxpagecontrol",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/MussaCharles/JXPageControl.git",
+      "state" : {
+        "branch" : "feature/SPM-support",
+        "revision" : "3790f6bbe1ce45faeda24a6748f78fc31f022d83"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -1,6 +1,0 @@
-framework module JXPageControl {
-  umbrella header "JXPageControl-umbrella.h"
-
-  export *
-  module * { export * }
-}

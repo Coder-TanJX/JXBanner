@@ -1,6 +1,0 @@
-framework module JXBanner {
-  umbrella header "JXBanner-umbrella.h"
-
-  export *
-  module * { export * }
-}

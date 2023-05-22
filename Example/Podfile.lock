@@ -1,34 +1,34 @@
 PODS:
-  - JXBanner (0.1.0):
-    - JXBanner/Banner (= 0.1.0)
-    - JXBanner/PageControl (= 0.1.0)
-  - JXBanner/Banner (0.1.0):
-    - JXBanner/Banner/API (= 0.1.0)
-    - JXBanner/Banner/Banner (= 0.1.0)
-    - JXBanner/Banner/Cell (= 0.1.0)
-    - JXBanner/Banner/Common (= 0.1.0)
-    - JXBanner/Banner/Transform (= 0.1.0)
-  - JXBanner/Banner/API (0.1.0):
+  - JXBanner (0.3.6):
+    - JXBanner/Banner (= 0.3.6)
+    - JXBanner/PageControl (= 0.3.6)
+  - JXBanner/Banner (0.3.6):
+    - JXBanner/Banner/API (= 0.3.6)
+    - JXBanner/Banner/Banner (= 0.3.6)
+    - JXBanner/Banner/Cell (= 0.3.6)
+    - JXBanner/Banner/Common (= 0.3.6)
+    - JXBanner/Banner/Transform (= 0.3.6)
+  - JXBanner/Banner/API (0.3.6):
     - JXBanner/Banner/Cell
     - JXBanner/PageControl
-  - JXBanner/Banner/Banner (0.1.0):
+  - JXBanner/Banner/Banner (0.3.6):
     - JXBanner/Banner/API
     - JXBanner/Banner/Common
     - JXBanner/Banner/Transform
-  - JXBanner/Banner/Cell (0.1.0)
-  - JXBanner/Banner/Common (0.1.0)
-  - JXBanner/Banner/Transform (0.1.0):
+  - JXBanner/Banner/Cell (0.3.6)
+  - JXBanner/Banner/Common (0.3.6)
+  - JXBanner/Banner/Transform (0.3.6):
     - JXBanner/Banner/API
-  - JXBanner/PageControl (0.1.0):
+  - JXBanner/PageControl (0.3.6):
     - JXPageControl
-  - JXPageControl (0.1.3):
-    - JXPageControl/Common (= 0.1.3)
-    - JXPageControl/Jump (= 0.1.3)
-    - JXPageControl/Transform (= 0.1.3)
-  - JXPageControl/Common (0.1.3)
-  - JXPageControl/Jump (0.1.3):
+  - JXPageControl (0.1.5):
+    - JXPageControl/Common (= 0.1.5)
+    - JXPageControl/Jump (= 0.1.5)
+    - JXPageControl/Transform (= 0.1.5)
+  - JXPageControl/Common (0.1.5)
+  - JXPageControl/Jump (0.1.5):
     - JXPageControl/Common
-  - JXPageControl/Transform (0.1.3):
+  - JXPageControl/Transform (0.1.5):
     - JXPageControl/Common
   - SnapKit (4.2.0)
 
@@ -37,7 +37,7 @@ DEPENDENCIES:
   - SnapKit
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - JXPageControl
     - SnapKit
 
@@ -46,10 +46,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JXBanner: d32dbf30f1d4fb014aad26f65e69b0ea32e32efe
-  JXPageControl: eea52838699a4949063e600b25eb9e8b6e20ae3f
+  JXBanner: 348dbef856e786494cbf30fb45d6b84826f2d3c5
+  JXPageControl: e9487b39e2e58fc17790833214f3b8e935bef98b
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
 PODFILE CHECKSUM: 55a2f798d49bb61948e4d464dc12db95c3ea531b
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.12.1
